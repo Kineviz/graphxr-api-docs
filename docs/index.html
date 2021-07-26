@@ -63,16 +63,20 @@
 				</a>
 				<p><a href="https://badge.fury.io/js/graphxr-api"><img src="https://badge.fury.io/js/graphxr-api.svg" alt="npm version"></a></p>
 				<p><code>graphxr-api</code> is a module which provides an API to GraphXR internals</p>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h1>Documentation</h1>
+				</a>
+				<p>Documentation is hosted on <a href="https://kineviz.github.io/graphxr-api-docs/">GitHub</a></p>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h1>Usage</h1>
 				</a>
 				<pre><code><span style="color: #008000">// Latest</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;graphxr-api&#039;</span><span style="color: #000000">)).</span><span style="color: #795E26">init</span><span style="color: #000000">()</span>
 
-<span style="color: #008000">// 1.0.35</span>
+<span style="color: #008000">// Target a version</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;graphxr-api@0.0.3&#039;</span><span style="color: #000000">)).</span><span style="color: #795E26">init</span><span style="color: #000000">()</span>
 
-<span style="color: #008000">// for example:</span>
+<span style="color: #008000">// Get nodes</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
 </code></pre>
 				<a href="#minimum-version-requirements" id="minimum-version-requirements" style="color: inherit; text-decoration: none;">
@@ -132,7 +136,7 @@
 </code></pre>
 				<p>This project enforces 100% coverage across the board.</p>
 				<p>A more detailed report is located at <code>coverage/lcov-report/index.html</code>.</p>
-				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+				<a href="#documentation-1" id="documentation-1" style="color: inherit; text-decoration: none;">
 					<h1>Documentation</h1>
 				</a>
 				<p><code>yarn build:docs</code> will run tsdoc and generate html at docs/index.html</p>
@@ -180,9 +184,18 @@
 				<p>In a terminal:</p>
 				<ol>
 					<li><code>yarn login</code></li>
-					<li><code>yarn release [v]1.0.34 | patch | minor | major</code></li>
+					<li><code>yarn release</code></li>
 				</ol>
-				<p>Most of the time you will run <code>yarn release patch</code></p>
+				<p>Most of the time you will run <code>yarn release</code></p>
+				<a href="#optional-arguments-to-yarn-release" id="optional-arguments-to-yarn-release" style="color: inherit; text-decoration: none;">
+					<h2>Optional arguments to <code>yarn release</code></h2>
+				</a>
+				<ul>
+					<li><code>--no-verify</code> Optional. Skips the tests</li>
+					<li><code>--no-publish-docs</code> Optional. Skips building and publishing docs</li>
+					<li><code>-v, --version &lt;version&gt;</code> Optional. Release type: [v]1.0.34 | patch | minor | major</li>
+					<li><code>-m, --tag-message &lt;message&gt;</code> Optional. Tag message.</li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
