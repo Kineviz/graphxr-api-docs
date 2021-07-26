@@ -64,13 +64,34 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface"><a href="interfaces/graphxr.html" class="tsd-kind-icon">GraphXR</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/api.html" class="tsd-kind-icon">API</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/edge.html" class="tsd-kind-icon">Edge</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/makeedgeoptions.html" class="tsd-kind-icon">Make<wbr>Edge<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/node.html" class="tsd-kind-icon">Node</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#edgestyles" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#layoutresult" class="tsd-kind-icon">Layout<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#nodestyles" class="tsd-kind-icon">Node<wbr>Styles</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#properties" class="tsd-kind-icon">Properties</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable"><a href="modules.html#minimum_graphxr_version" class="tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#this_api_version" class="tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION</a></li>
 							</ul>
 						</section>
@@ -84,23 +105,80 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="minimum_graphxr_version" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> MINIMUM_<wbr>GRAPHXR_<wbr>VERSION</h3>
-					<div class="tsd-signature tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;2.11.0&quot;</span><span class="tsd-signature-symbol"> = &quot;2.11.0&quot;</span></div>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="categoryid" class="tsd-anchor"></a>
+					<h3>Category<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Category<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in minimumRequirements.ts:5</li>
+							<li>Defined in category.ts:1</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>GraphXR must be this version or greater.
-							See package.json in the root directory of the <code>graph</code> repository.</p>
-						</div>
-					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="edgeid" class="tsd-anchor"></a>
+					<h3>Edge<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in edge.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="edgestyles" class="tsd-anchor"></a>
+					<h3>Edge<wbr>Styles</h3>
+					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/styles.html" class="tsd-signature-type" data-tsd-kind="Interface">Styles</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;icon&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pinned&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;position&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;size&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:25</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="layoutresult" class="tsd-anchor"></a>
+					<h3>Layout<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">, </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in applyLayout.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="nodeid" class="tsd-anchor"></a>
+					<h3>Node<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="nodestyles" class="tsd-anchor"></a>
+					<h3>Node<wbr>Styles</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>Styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/styles.html" class="tsd-signature-type" data-tsd-kind="Interface">Styles</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;width&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:22</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="properties" class="tsd-anchor"></a>
+					<h3>Properties</h3>
+					<div class="tsd-signature tsd-kind-icon">Properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">PropertyValue</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in properties.ts:4</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="this_api_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> THIS_<wbr>API_<wbr>VERSION</h3>
@@ -118,13 +196,13 @@
 					<a name="getapi" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Api</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Api<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/graphxr.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphXR</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Api<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/api.html" class="tsd-signature-type" data-tsd-kind="Interface">API</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:100</li>
+									<li>Defined in index.ts:111</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -132,7 +210,7 @@
 									<p>Perform a runtime check of the minimum required GraphXR and API version. If minimum requirements are met, return the API. Otherwise, throw an error.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/graphxr.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphXR</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/api.html" class="tsd-signature-type" data-tsd-kind="Interface">API</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>a Promise that resolves to the API</p>
 						</li>
 					</ul>
@@ -150,10 +228,58 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/graphxr.html" class="tsd-kind-icon">GraphXR</a>
+						<a href="interfaces/api.html" class="tsd-kind-icon">API</a>
 					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#minimum_graphxr_version" class="tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION</a>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/category.html" class="tsd-kind-icon">Category</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/edge.html" class="tsd-kind-icon">Edge</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/makeedgeoptions.html" class="tsd-kind-icon">Make<wbr>Edge<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/node.html" class="tsd-kind-icon">Node</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/position.html" class="tsd-kind-icon">Position</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#edgestyles" class="tsd-kind-icon">Edge<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#layoutresult" class="tsd-kind-icon">Layout<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#nodestyles" class="tsd-kind-icon">Node<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#properties" class="tsd-kind-icon">Properties</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#this_api_version" class="tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION</a>
