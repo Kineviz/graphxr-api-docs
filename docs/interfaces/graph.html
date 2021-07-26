@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Edge | graphxr-api</title>
+	<title>Graph | graphxr-api</title>
 	<meta name="description" content="Documentation for graphxr-api">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">graphxr-api</a>
 				</li>
 				<li>
-					<a href="edge.html">Edge</a>
+					<a href="graph.html">Graph</a>
 				</li>
 			</ul>
-			<h1>Interface Edge</h1>
+			<h1>Interface Graph</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Edge</span>
+						<span class="target">Graph</span>
 					</li>
 				</ul>
 			</section>
@@ -80,12 +80,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edge.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edge.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edge.html#source" class="tsd-kind-icon">source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edge.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edge.html#target" class="tsd-kind-icon">target</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edge.html#targetid" class="tsd-kind-icon">target<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="graph.html#edges" class="tsd-kind-icon">edges</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="graph.html#nodes" class="tsd-kind-icon">nodes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,62 +90,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="edges" class="tsd-anchor"></a>
+					<h3>edges</h3>
+					<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <a href="edge.html" class="tsd-signature-type" data-tsd-kind="Interface">Edge</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in edge.ts:13</li>
+							<li>Defined in graph.ts:5</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="nodes" class="tsd-anchor"></a>
+					<h3>nodes</h3>
+					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <a href="node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in edge.ts:12</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="source" class="tsd-anchor"></a>
-					<h3>source</h3>
-					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in edge.ts:10</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sourceid" class="tsd-anchor"></a>
-					<h3>source<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in edge.ts:8</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="target" class="tsd-anchor"></a>
-					<h3>target</h3>
-					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in edge.ts:11</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="targetid" class="tsd-anchor"></a>
-					<h3>target<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">target<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in edge.ts:9</li>
+							<li>Defined in graph.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -168,25 +124,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="edge.html" class="tsd-kind-icon">Edge</a>
+						<a href="graph.html" class="tsd-kind-icon">Graph</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="edge.html#id" class="tsd-kind-icon">id</a>
+								<a href="graph.html#edges" class="tsd-kind-icon">edges</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="edge.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="edge.html#source" class="tsd-kind-icon">source</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="edge.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="edge.html#target" class="tsd-kind-icon">target</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="edge.html#targetid" class="tsd-kind-icon">target<wbr>Id</a>
+								<a href="graph.html#nodes" class="tsd-kind-icon">nodes</a>
 							</li>
 						</ul>
 					</li>
