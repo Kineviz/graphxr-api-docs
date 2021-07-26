@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Category | graphxr-api</title>
+	<title>EdgeStyles | graphxr-api</title>
 	<meta name="description" content="Documentation for graphxr-api">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">graphxr-api</a>
 				</li>
 				<li>
-					<a href="category.html">Category</a>
+					<a href="edgestyles.html">EdgeStyles</a>
 				</li>
 			</ul>
-			<h1>Interface Category</h1>
+			<h1>Interface EdgeStyles</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Category</span>
+						<span class="target">EdgeStyles</span>
 					</li>
 				</ul>
 			</section>
@@ -80,7 +80,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="category.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edgestyles.html#alpha" class="tsd-kind-icon">alpha</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edgestyles.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edgestyles.html#highlight" class="tsd-kind-icon">highlight</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edgestyles.html#selected" class="tsd-kind-icon">selected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edgestyles.html#twinkled" class="tsd-kind-icon">twinkled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="edgestyles.html#width" class="tsd-kind-icon">width</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,12 +94,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="alpha" class="tsd-anchor"></a>
+					<h3>alpha</h3>
+					<div class="tsd-signature tsd-kind-icon">alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in category.ts:4</li>
+							<li>Defined in styles.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="color" class="tsd-anchor"></a>
+					<h3>color</h3>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Color</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:36</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="highlight" class="tsd-anchor"></a>
+					<h3>highlight</h3>
+					<div class="tsd-signature tsd-kind-icon">highlight<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="selected" class="tsd-anchor"></a>
+					<h3>selected</h3>
+					<div class="tsd-signature tsd-kind-icon">selected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:38</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="twinkled" class="tsd-anchor"></a>
+					<h3>twinkled</h3>
+					<div class="tsd-signature tsd-kind-icon">twinkled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:39</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="width" class="tsd-anchor"></a>
+					<h3>width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:40</li>
 						</ul>
 					</aside>
 				</section>
@@ -113,24 +168,39 @@
 					<li class=" tsd-kind-interface">
 						<a href="api.html" class="tsd-kind-icon">API</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="category.html" class="tsd-kind-icon">Category</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="edge.html" class="tsd-kind-icon">Edge</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="category.html" class="tsd-kind-icon">Category</a>
+						<a href="edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="category.html#id" class="tsd-kind-icon">id</a>
+								<a href="edgestyles.html#alpha" class="tsd-kind-icon">alpha</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="edgestyles.html#color" class="tsd-kind-icon">color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="edgestyles.html#highlight" class="tsd-kind-icon">highlight</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="edgestyles.html#selected" class="tsd-kind-icon">selected</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="edgestyles.html#twinkled" class="tsd-kind-icon">twinkled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="edgestyles.html#width" class="tsd-kind-icon">width</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="edge.html" class="tsd-kind-icon">Edge</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a>
 					</li>
