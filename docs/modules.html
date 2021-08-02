@@ -142,7 +142,11 @@
 							<h3>Layout Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#applylayout" class="tsd-kind-icon">apply<wbr>Layout</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#circle" class="tsd-kind-icon">circle</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#cube" class="tsd-kind-icon">cube</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#grid" class="tsd-kind-icon">grid</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#line" class="tsd-kind-icon">line</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#spiral" class="tsd-kind-icon">spiral</a></li>
 							</ul>
 							<h3>Node Functions</h3>
 							<ul class="tsd-index-list">
@@ -413,7 +417,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:154</li>
+									<li>Defined in index.ts:183</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -963,6 +967,105 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="circle" class="tsd-anchor"></a>
+					<h3>circle</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">circle<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/circle.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>All the Nodes spread on a circle</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.19</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodes: <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="cube" class="tsd-anchor"></a>
+					<h3>cube</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">cube<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/cube.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>All the Nodes spread on a cube.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.19</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodes: <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="grid" class="tsd-anchor"></a>
+					<h3>grid</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">grid<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/grid.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Equally space Nodes on the x-axis, y-axis, z=0.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.19</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodes: <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="line" class="tsd-anchor"></a>
 					<h3>line</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -983,6 +1086,39 @@
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
 									<dd><p>0.0.1</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodes: <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="spiral" class="tsd-anchor"></a>
+					<h3>spiral</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">spiral<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/spiral.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>All the Nodes spread on a spiral</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.19</p>
 									</dd>
 								</dl>
 							</div>
@@ -1786,7 +1922,13 @@
 						<a href="modules.html#applytransform" class="tsd-kind-icon">apply<wbr>Transform</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#circle" class="tsd-kind-icon">circle</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#cleargraph" class="tsd-kind-icon">clear<wbr>Graph</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#cube" class="tsd-kind-icon">cube</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#extract" class="tsd-kind-icon">extract</a>
@@ -1829,6 +1971,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#grid" class="tsd-kind-icon">grid</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#line" class="tsd-kind-icon">line</a>
@@ -1880,6 +2025,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setruntime" class="tsd-kind-icon">set<wbr>Runtime</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#spiral" class="tsd-kind-icon">spiral</a>
 					</li>
 				</ul>
 			</nav>
