@@ -71,6 +71,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractproperty.html" class="tsd-kind-icon">Extract<wbr>Property</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/makeedgeoptions.html" class="tsd-kind-icon">Make<wbr>Edge<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/node.html" class="tsd-kind-icon">Node</a></li>
@@ -79,6 +80,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -87,14 +89,16 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#layoutresult" class="tsd-kind-icon">Layout<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#interpolatelayoutfunction" class="tsd-kind-icon">Interpolate<wbr>Layout<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#legacyedge" class="tsd-kind-icon">Legacy<wbr>Edge</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#legacynode" class="tsd-kind-icon">Legacy<wbr>Node</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#nodetoposition" class="tsd-kind-icon">Node<wbr>ToPosition</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#properties" class="tsd-kind-icon">Properties</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertykey" class="tsd-kind-icon">Property<wbr>Key</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertyvalue" class="tsd-kind-icon">Property<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#relationshipid" class="tsd-kind-icon">Relationship<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#tweenlayoutoverrides" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Overrides</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -167,6 +171,7 @@
 							<h3>Style Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#makeposition" class="tsd-kind-icon">make<wbr>Position</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#makerandomposition" class="tsd-kind-icon">make<wbr>Random<wbr>Position</a></li>
 							</ul>
 							<h3>Transform Functions</h3>
 							<ul class="tsd-index-list">
@@ -210,14 +215,41 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="layoutresult" class="tsd-anchor"></a>
-					<h3>Layout<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">, </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="interpolatelayoutfunction" class="tsd-anchor"></a>
+					<h3>Interpolate<wbr>Layout<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">Interpolate<wbr>Layout<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, initial<span class="tsd-signature-symbol">: </span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a>, final<span class="tsd-signature-symbol">: </span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in applyLayout.ts:5</li>
+							<li>Defined in applyLayout.ts:97</li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, initial<span class="tsd-signature-symbol">: </span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a>, final<span class="tsd-signature-symbol">: </span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>t: <span class="tsd-signature-type">number</span></h5>
+											</li>
+											<li>
+												<h5>initial: <a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a></h5>
+											</li>
+											<li>
+												<h5>final: <a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="legacyedge" class="tsd-anchor"></a>
@@ -246,6 +278,16 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in node.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="nodetoposition" class="tsd-anchor"></a>
+					<h3>Node<wbr>ToPosition</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>ToPosition<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">, </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in applyLayout.ts:88</li>
 						</ul>
 					</aside>
 				</section>
@@ -286,6 +328,16 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in relationship.ts:1</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="tweenlayoutoverrides" class="tsd-anchor"></a>
+					<h3>Tween<wbr>Layout<wbr>Overrides</h3>
+					<div class="tsd-signature tsd-kind-icon">Tween<wbr>Layout<wbr>Overrides<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/tweenlayoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenLayoutOptions</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in applyLayout.ts:95</li>
 						</ul>
 					</aside>
 				</section>
@@ -361,7 +413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:143</li>
+									<li>Defined in index.ts:154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -860,35 +912,53 @@
 					<a name="applylayout" class="tsd-anchor"></a>
 					<h3>apply<wbr>Layout</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="modules.html#layoutresult" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutResult</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><a href="modules.html#tweenlayoutoverrides" class="tsd-signature-type" data-tsd-kind="Type alias">TweenLayoutOverrides</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in applyLayout.ts:13</li>
+									<li>Defined in applyLayout.ts:31</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the position of Nodes</p>
+									<p>Sets the positions of Nodes. Optionally animate the position.
+										If tween provided with the LayoutResult, use it.
+										Override them the default tweens returned by (for example) line() and circle() by providing TweenLayoutOverrides.
+									If tween is undefined, set all the positions immediately</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
 									<dd><p>0.0.1</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">())</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">circle</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">})</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">cube</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">, </span><span style="color: #001080">interpolate:</span><span style="color: #000000"> </span><span style="color: #001080">myInterpolate</span><span style="color: #000000">})</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span>
+<span style="color: #000000">  {</span>
+<span style="color: #000000">    </span><span style="color: #001080">final:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Map</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">n</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> [</span><span style="color: #001080">n</span><span style="color: #000000">, </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">makeRandomPosition</span><span style="color: #000000">()])),</span>
+<span style="color: #000000">    </span><span style="color: #001080">tween:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">      </span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">interpolate:</span><span style="color: #000000"> </span><span style="color: #001080">myInterpolate</span><span style="color: #000000">,</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">)</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="modules.html#layoutresult" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutResult</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The output of a Layout function</p>
-									</div>
+									<h5>__namedParameters: <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tweenOverrides: <a href="modules.html#tweenlayoutoverrides" class="tsd-signature-type" data-tsd-kind="Type alias">TweenLayoutOverrides</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodetoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeToPosition</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -896,18 +966,19 @@
 					<a name="line" class="tsd-anchor"></a>
 					<h3>line</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">line<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutresult" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">line<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/line.ts:14</li>
+									<li>Defined in layout/line.ts:16</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Equally space Nodes on the x-axis, y=0, z=0</p>
+									<p>Equally space Nodes on the x-axis, y=0, z=0.
+									Returns a tween function which lerps the position from start position to target</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
@@ -921,7 +992,7 @@
 									<h5>nodes: <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutresult" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1482,6 +1553,33 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="makerandomposition" class="tsd-anchor"></a>
+					<h3>make<wbr>Random<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Random<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in makeRandomPosition.ts:9</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a random Position (x,y,z)</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.16</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Transform Functions</h2>
@@ -1592,6 +1690,9 @@
 						<a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/makeedgeoptions.html" class="tsd-kind-icon">Make<wbr>Edge<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -1615,6 +1716,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a>
+					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
 					</li>
@@ -1625,7 +1729,7 @@
 						<a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#layoutresult" class="tsd-kind-icon">Layout<wbr>Result</a>
+						<a href="modules.html#interpolatelayoutfunction" class="tsd-kind-icon">Interpolate<wbr>Layout<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#legacyedge" class="tsd-kind-icon">Legacy<wbr>Edge</a>
@@ -1635,6 +1739,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#nodetoposition" class="tsd-kind-icon">Node<wbr>ToPosition</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#properties" class="tsd-kind-icon">Properties</a>
@@ -1647,6 +1754,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#relationshipid" class="tsd-kind-icon">Relationship<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#tweenlayoutoverrides" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Overrides</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#default_category_id" class="tsd-kind-icon">DEFAULT_<wbr>CATEGORY_<wbr>ID</a>
@@ -1734,6 +1844,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#makeposition" class="tsd-kind-icon">make<wbr>Position</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#makerandomposition" class="tsd-kind-icon">make<wbr>Random<wbr>Position</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#mergenodeproperties" class="tsd-kind-icon">merge<wbr>Node<wbr>Properties</a>
