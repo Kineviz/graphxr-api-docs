@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MakeNodeOptions | graphxr-api</title>
+	<title>AggregateOptions | graphxr-api</title>
 	<meta name="description" content="Documentation for graphxr-api">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">graphxr-api</a>
 				</li>
 				<li>
-					<a href="makenodeoptions.html">MakeNodeOptions</a>
+					<a href="aggregateoptions.html">AggregateOptions</a>
 				</li>
 			</ul>
-			<h1>Interface MakeNodeOptions</h1>
+			<h1>Interface AggregateOptions</h1>
 		</div>
 	</div>
 </header>
@@ -69,12 +69,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">MakeNodeOptions</span>
-							</li>
-						</ul>
+						<span class="target">AggregateOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -85,9 +80,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="makenodeoptions.html#category" class="tsd-kind-icon">category</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="makenodeoptions.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="makenodeoptions.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="aggregateoptions.html#aggregatealong" class="tsd-kind-icon">aggregate<wbr>Along</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="aggregateoptions.html#aggregateto" class="tsd-kind-icon">aggregate<wbr>To</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="aggregateoptions.html#mapsourceproperties" class="tsd-kind-icon">map<wbr>Source<wbr>Properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="aggregateoptions.html#sourceproperty" class="tsd-kind-icon">source<wbr>Property</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="aggregateoptions.html#targetproperty" class="tsd-kind-icon">target<wbr>Property</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,35 +92,53 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="category" class="tsd-anchor"></a>
-					<h3>category</h3>
-					<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="aggregatealong" class="tsd-anchor"></a>
+					<h3>aggregate<wbr>Along</h3>
+					<div class="tsd-signature tsd-kind-icon">aggregate<wbr>Along<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="node.html">Node</a>.<a href="node.html#category">category</a></p>
 						<ul>
-							<li>Defined in node.ts:10</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="node.html">Node</a>.<a href="node.html#id">id</a></p>
-						<ul>
-							<li>Defined in node.ts:9</li>
+							<li>Defined in transform/aggregate.ts:22</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="properties" class="tsd-anchor"></a>
-					<h3>properties</h3>
-					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a></div>
+					<a name="aggregateto" class="tsd-anchor"></a>
+					<h3>aggregate<wbr>To</h3>
+					<div class="tsd-signature tsd-kind-icon">aggregate<wbr>To<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in makeNode.ts:9</li>
+							<li>Defined in transform/aggregate.ts:21</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="mapsourceproperties" class="tsd-anchor"></a>
+					<h3>map<wbr>Source<wbr>Properties</h3>
+					<div class="tsd-signature tsd-kind-icon">map<wbr>Source<wbr>Properties<span class="tsd-signature-symbol">:</span> <a href="../modules.html#aggregateformula" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateFormula</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in transform/aggregate.ts:25</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sourceproperty" class="tsd-anchor"></a>
+					<h3>source<wbr>Property</h3>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Property<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in transform/aggregate.ts:23</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="targetproperty" class="tsd-anchor"></a>
+					<h3>target<wbr>Property</h3>
+					<div class="tsd-signature tsd-kind-icon">target<wbr>Property<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in transform/aggregate.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -142,16 +157,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a>
+						<a href="aggregateoptions.html" class="tsd-kind-icon">Aggregate<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="makenodeoptions.html#category" class="tsd-kind-icon">category</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="makenodeoptions.html#id" class="tsd-kind-icon">id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="aggregateoptions.html#aggregatealong" class="tsd-kind-icon">aggregate<wbr>Along</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="makenodeoptions.html#properties" class="tsd-kind-icon">properties</a>
+								<a href="aggregateoptions.html#aggregateto" class="tsd-kind-icon">aggregate<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="aggregateoptions.html#mapsourceproperties" class="tsd-kind-icon">map<wbr>Source<wbr>Properties</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="aggregateoptions.html#sourceproperty" class="tsd-kind-icon">source<wbr>Property</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="aggregateoptions.html#targetproperty" class="tsd-kind-icon">target<wbr>Property</a>
 							</li>
 						</ul>
 					</li>

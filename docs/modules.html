@@ -65,16 +65,20 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/api.html" class="tsd-kind-icon">API</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/aggregateoptions.html" class="tsd-kind-icon">Aggregate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edge.html" class="tsd-kind-icon">Edge</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractproperty.html" class="tsd-kind-icon">Extract<wbr>Property</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/makeedgeoptions.html" class="tsd-kind-icon">Make<wbr>Edge<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/node.html" class="tsd-kind-icon">Node</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
@@ -86,6 +90,8 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateformula" class="tsd-kind-icon">Aggregate<wbr>Formula</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateresult" class="tsd-kind-icon">Aggregate<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a></li>
@@ -164,6 +170,12 @@
 								<li class="tsd-kind-function"><a href="modules.html#setnodeproperties" class="tsd-kind-icon">set<wbr>Node<wbr>Properties</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#setnodestyles" class="tsd-kind-icon">set<wbr>Node<wbr>Styles</a></li>
 							</ul>
+							<h3>Other Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#maketransformresult" class="tsd-kind-icon">make<wbr>Transform<wbr>Result</a></li>
+							</ul>
 							<h3>Render Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a></li>
@@ -188,6 +200,47 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="aggregateformula" class="tsd-anchor"></a>
+					<h3>Aggregate<wbr>Formula</h3>
+					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in transform/aggregate.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>values: <a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="aggregateresult" class="tsd-anchor"></a>
+					<h3>Aggregate<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in transform/aggregate.ts:12</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="categoryid" class="tsd-anchor"></a>
 					<h3>Category<wbr>Id</h3>
@@ -268,10 +321,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="legacynode" class="tsd-anchor"></a>
 					<h3>Legacy<wbr>Node</h3>
-					<div class="tsd-signature tsd-kind-icon">Legacy<wbr>Node<span class="tsd-signature-symbol">:</span> <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol"> &amp; </span><a href="interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>detail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Legacy<wbr>Node<span class="tsd-signature-symbol">:</span> <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol"> &amp; </span><a href="interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>connectedEdge<span class="tsd-signature-symbol">: </span><a href="modules.html#edgeid" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>detail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>neighbor<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node.ts:12</li>
+							<li>Defined in node.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +334,7 @@
 					<div class="tsd-signature tsd-kind-icon">Node<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node.ts:5</li>
+							<li>Defined in node.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -417,7 +470,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:183</li>
+									<li>Defined in index.ts:189</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1582,6 +1635,95 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Other Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="aggregate" class="tsd-anchor"></a>
+					<h3>aggregate</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in transform/aggregate.ts:45</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>For each Node in the aggregateTo Category, collect the value of the targetProperty from every neighbor of that
+										Node connected by an Edge of the aggregateAlong Relationship into an array. Then, run a
+									mapping function mapSourceProperties on the array and store the resulting value in a property of the Node.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>js```
+											// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the
+											// episodeNumber property values from Episodes connected to the Season along the inSeason relationship
+											GraphXR.aggregate({
+											aggregateTo: &#39;Season&#39;,
+											aggregateAlong: &#39;inSeason&#39;,
+											sourceProperty: &#39;episodeNumber&#39;,
+											targetProperty: &#39;episodeNumbers&#39;,
+											mapSourceProperties: (neighborValues)
+										})</p>
+										<pre><code>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getsnapshot" class="tsd-anchor"></a>
+					<h3>get<wbr>Snapshot</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Snapshot<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in getSnapshot.ts:30</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="maketransformresult" class="tsd-anchor"></a>
+					<h3>make<wbr>Transform<wbr>Result</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Transform<wbr>Result<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in applyTransform.ts:19</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Render Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="getscene" class="tsd-anchor"></a>
@@ -1729,7 +1871,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in applyTransform.ts:22</li>
+									<li>Defined in applyTransform.ts:37</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1843,10 +1985,16 @@
 						<a href="interfaces/api.html" class="tsd-kind-icon">API</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/aggregateoptions.html" class="tsd-kind-icon">Aggregate<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/category.html" class="tsd-kind-icon">Category</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/edge.html" class="tsd-kind-icon">Edge</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a>
@@ -1861,6 +2009,9 @@
 						<a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -1871,6 +2022,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/node.html" class="tsd-kind-icon">Node</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a>
@@ -1889,6 +2043,12 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#aggregateformula" class="tsd-kind-icon">Aggregate<wbr>Formula</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#aggregateresult" class="tsd-kind-icon">Aggregate<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
@@ -1951,6 +2111,9 @@
 						<a href="modules.html#addnodes" class="tsd-kind-icon">add<wbr>Nodes</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#aggregate" class="tsd-kind-icon">aggregate</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#applylayout" class="tsd-kind-icon">apply<wbr>Layout</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -2008,6 +2171,9 @@
 						<a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#grid" class="tsd-kind-icon">grid</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -2027,6 +2193,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#makerandomposition" class="tsd-kind-icon">make<wbr>Random<wbr>Position</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#maketransformresult" class="tsd-kind-icon">make<wbr>Transform<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#mergenodeproperties" class="tsd-kind-icon">merge<wbr>Node<wbr>Properties</a>

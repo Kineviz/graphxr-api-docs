@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MakeNodeOptions | graphxr-api</title>
+	<title>GraphSnapshot | graphxr-api</title>
 	<meta name="description" content="Documentation for graphxr-api">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">graphxr-api</a>
 				</li>
 				<li>
-					<a href="makenodeoptions.html">MakeNodeOptions</a>
+					<a href="graphsnapshot.html">GraphSnapshot</a>
 				</li>
 			</ul>
-			<h1>Interface MakeNodeOptions</h1>
+			<h1>Interface GraphSnapshot</h1>
 		</div>
 	</div>
 </header>
@@ -69,12 +69,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">MakeNodeOptions</span>
-							</li>
-						</ul>
+						<span class="target">GraphSnapshot</span>
 					</li>
 				</ul>
 			</section>
@@ -85,9 +80,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="makenodeoptions.html#category" class="tsd-kind-icon">category</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="makenodeoptions.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="makenodeoptions.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="graphsnapshot.html#edges" class="tsd-kind-icon">edges</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="graphsnapshot.html#nodes" class="tsd-kind-icon">nodes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,35 +89,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="category" class="tsd-anchor"></a>
-					<h3>category</h3>
-					<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="edges" class="tsd-anchor"></a>
+					<h3>edges</h3>
+					<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <a href="edgesnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeSnapshot</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="node.html">Node</a>.<a href="node.html#category">category</a></p>
 						<ul>
-							<li>Defined in node.ts:10</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="node.html">Node</a>.<a href="node.html#id">id</a></p>
-						<ul>
-							<li>Defined in node.ts:9</li>
+							<li>Defined in getSnapshot.ts:26</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="properties" class="tsd-anchor"></a>
-					<h3>properties</h3>
-					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a></div>
+					<a name="nodes" class="tsd-anchor"></a>
+					<h3>nodes</h3>
+					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <a href="nodesnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeSnapshot</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in makeNode.ts:9</li>
+							<li>Defined in getSnapshot.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -142,16 +124,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a>
+						<a href="graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="makenodeoptions.html#category" class="tsd-kind-icon">category</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="makenodeoptions.html#id" class="tsd-kind-icon">id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="graphsnapshot.html#edges" class="tsd-kind-icon">edges</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="makenodeoptions.html#properties" class="tsd-kind-icon">properties</a>
+								<a href="graphsnapshot.html#nodes" class="tsd-kind-icon">nodes</a>
 							</li>
 						</ul>
 					</li>
