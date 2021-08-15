@@ -173,7 +173,6 @@
 							</ul>
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="modules.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#maketransformresult" class="tsd-kind-icon">make<wbr>Transform<wbr>Result</a></li>
 							</ul>
@@ -192,6 +191,7 @@
 							</ul>
 							<h3>Transform Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#applytransform" class="tsd-kind-icon">apply<wbr>Transform</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#extract" class="tsd-kind-icon">extract</a></li>
 							</ul>
@@ -1821,64 +1821,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Other Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="aggregate" class="tsd-anchor"></a>
-					<h3>aggregate</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in transform/aggregate.ts:88</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>For each Node in the aggregateTo Category, collect the value of the targetProperty from every neighbor of that
-										Node connected by an Edge of the aggregateAlong Relationship into an array. Then, run a
-									mapping function formula on the array and store the resulting value in a property of the Node.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>js```
-											// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the
-											// episodeNumber property values from Episodes connected to the Season along the inSeason relationship
-											GraphXR.aggregate({
-											aggregateTo: &#39;Season&#39;,
-											aggregateAlong: &#39;inSeason&#39;,
-											getPropertyFrom: &#39;node&#39;,
-											sourceProperty: &#39;episodeNumber&#39;,
-											targetProperty: &#39;episodeNumbers&#39;,
-											formula: &#39;concatenate&#39;
-										})</p>
-										<pre><code><span style="color: #000000">@</span><span style="color: #001080">example</span>
-<span style="color: #795E26">js</span><span style="color: #A31515">```</span>
-<span style="color: #A31515">// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the</span>
-<span style="color: #A31515">// episodeNumber property values from inSeason edges connected to the Season.</span>
-<span style="color: #A31515">GraphXR.aggregate({</span>
-<span style="color: #A31515">  aggregateTo: &#039;Season&#039;,</span>
-<span style="color: #A31515">  aggregateAlong: &#039;inSeason&#039;,</span>
-<span style="color: #A31515">  getPropertyFrom: &#039;edge&#039;,</span>
-<span style="color: #A31515">  sourceProperty: &#039;episodeNumber&#039;,</span>
-<span style="color: #A31515">  targetProperty: &#039;maxEpisodeNumber&#039;,</span>
-<span style="color: #A31515">  formula: &#039;max&#039;</span>
-<span style="color: #A31515">})</span>
-</code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="getsnapshot" class="tsd-anchor"></a>
 					<h3>get<wbr>Snapshot</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -2057,6 +1999,63 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Transform Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="aggregate" class="tsd-anchor"></a>
+					<h3>aggregate</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in transform/aggregate.ts:87</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>For each Node in the aggregateTo Category, collect the value of the targetProperty from every neighbor of that
+										Node connected by an Edge of the aggregateAlong Relationship into an array. Then, run a
+									mapping function formula on the array and store the resulting value in a property of the Node.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>js```
+											// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the
+											// episodeNumber property values from Episodes connected to the Season along the inSeason relationship
+											GraphXR.aggregate({
+											aggregateTo: &#39;Season&#39;,
+											aggregateAlong: &#39;inSeason&#39;,
+											getPropertyFrom: &#39;node&#39;,
+											sourceProperty: &#39;episodeNumber&#39;,
+											targetProperty: &#39;episodeNumbers&#39;,
+											formula: &#39;concatenate&#39;
+										})</p>
+										<p>// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the
+											// episodeNumber property values from inSeason edges connected to the Season.
+											GraphXR.aggregate({
+											aggregateTo: &#39;Season&#39;,
+											aggregateAlong: &#39;inSeason&#39;,
+											getPropertyFrom: &#39;edge&#39;,
+											sourceProperty: &#39;episodeNumber&#39;,
+											targetProperty: &#39;maxEpisodeNumber&#39;,
+											formula: &#39;max&#39;
+										})</p>
+										<pre><code>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="applytransform" class="tsd-anchor"></a>
 					<h3>apply<wbr>Transform</h3>
