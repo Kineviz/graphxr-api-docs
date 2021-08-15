@@ -2020,28 +2020,27 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>js```
-											// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the
-											// episodeNumber property values from Episodes connected to the Season along the inSeason relationship
-											GraphXR.aggregate({
-											aggregateTo: &#39;Season&#39;,
-											aggregateAlong: &#39;inSeason&#39;,
-											getPropertyFrom: &#39;node&#39;,
-											sourceProperty: &#39;episodeNumber&#39;,
-											targetProperty: &#39;episodeNumbers&#39;,
-											formula: &#39;concatenate&#39;
-										})</p>
-										<p>// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the
-											// episodeNumber property values from inSeason edges connected to the Season.
-											GraphXR.aggregate({
-											aggregateTo: &#39;Season&#39;,
-											aggregateAlong: &#39;inSeason&#39;,
-											getPropertyFrom: &#39;edge&#39;,
-											sourceProperty: &#39;episodeNumber&#39;,
-											targetProperty: &#39;maxEpisodeNumber&#39;,
-											formula: &#39;max&#39;
-										})</p>
-										<pre><code>
+									<dd><pre><code class="language-js"><span style="color: #008000">// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the</span>
+<span style="color: #008000">// episodeNumber property values from Episodes connected to the Season along the inSeason relationship</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;node&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumber&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumbers&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;concatenate&#039;</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #008000">// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the</span>
+<span style="color: #008000">// episodeNumber property values from inSeason edges connected to the Season.</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;edge&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumber&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;maxEpisodeNumber&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;max&#039;</span>
+<span style="color: #000000">})</span>
 </code></pre>
 									</dd>
 								</dl>
