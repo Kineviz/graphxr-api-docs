@@ -191,10 +191,11 @@
 					<h2>Optional arguments to <code>yarn release</code></h2>
 				</a>
 				<ul>
-					<li><code>--no-verify</code> Optional. Skips the tests</li>
-					<li><code>--no-publish-docs</code> Optional. Skips building and publishing docs</li>
-					<li><code>-v, --version &lt;version&gt;</code> Optional. Release type: [v]1.0.34 | patch | minor | major</li>
-					<li><code>-m, --tag-message &lt;message&gt;</code> Optional. Tag message.</li>
+					<li><code>--no-verify</code> Skips the tests.</li>
+					<li><code>--no-publish-docs</code> Skips building and publishing docs.</li>
+					<li><code>--beta</code> Publishes a new version tagged &quot;beta&quot; so that require(&quot;graphxr-api@beta&quot;) loads that version, and require(&quot;graphxr-api&quot;) does not.</li>
+					<li><code>-v, --version &lt;version&gt;</code> Release type: [v]1.0.34 | patch | minor | major.</li>
+					<li><code>-m, --tag-message &lt;message&gt;</code> Tag message. Default is &quot;&quot;.</li>
 				</ul>
 			</div>
 		</div>
