@@ -80,6 +80,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/mapoptions.html" class="tsd-kind-icon">Map<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/mappedproperty.html" class="tsd-kind-icon">Mapped<wbr>Property</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/mergeoptions.html" class="tsd-kind-icon">Merge<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/node.html" class="tsd-kind-icon">Node</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a></li>
@@ -202,6 +203,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#extract" class="tsd-kind-icon">extract</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#link" class="tsd-kind-icon">link</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#map" class="tsd-kind-icon">map</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#merge" class="tsd-kind-icon">merge</a></li>
 							</ul>
 						</section>
 					</div>
@@ -795,7 +797,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:219</li>
+									<li>Defined in index.ts:222</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2461,6 +2463,56 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3>merge</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in transform/merge.ts:51</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Combine similar Nodes or Edges</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.37</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>js```
+											// Combine all Nodes with equal seasonNumber into one Node
+											GraphXR.merge({
+											category: &quot;Episodes&quot;,
+											keyProperties: [&#39;seasonNumber&#39;],
+											clearUnselectedProperties: false,
+										})</p>
+										<p>// Combine all emails between two persons sent on the same day (thus removing directionality)
+											GraphXR.merge({
+											relationship: &quot;SENT_MAIL_TO&quot;
+											keyProperties: [&#39;sendDate&#39;],
+											clearUnselectedProperties: false,
+										})</p>
+										<pre><code>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -2520,6 +2572,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/mappedproperty.html" class="tsd-kind-icon">Mapped<wbr>Property</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/mergeoptions.html" class="tsd-kind-icon">Merge<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/node.html" class="tsd-kind-icon">Node</a>
@@ -2712,6 +2767,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#map" class="tsd-kind-icon">map</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#merge" class="tsd-kind-icon">merge</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#mergeedgeproperties" class="tsd-kind-icon">merge<wbr>Edge<wbr>Properties</a>
