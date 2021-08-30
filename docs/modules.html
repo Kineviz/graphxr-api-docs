@@ -62,6 +62,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/api.html" class="tsd-kind-icon">API</a></li>
@@ -87,7 +93,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/transformresultoptions.html" class="tsd-kind-icon">Transform<wbr>Result<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a></li>
 							</ul>
 						</section>
@@ -120,6 +126,8 @@
 								<li class="tsd-kind-variable"><a href="modules.html#minimum_graphxr_version" class="tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#this_api_version" class="tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#aggregateformula" class="tsd-kind-icon">aggregate<wbr>Formula</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a></li>
+								<li class="tsd-kind-variable"><a href="modules.html#identitytransform" class="tsd-kind-icon">identity<wbr>Transform</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#mapformula" class="tsd-kind-icon">map<wbr>Formula</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#runtime" class="tsd-kind-icon">runtime</a></li>
 							</ul>
@@ -181,7 +189,6 @@
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#maketransformresult" class="tsd-kind-icon">make<wbr>Transform<wbr>Result</a></li>
 							</ul>
 							<h3>Render Functions</h3>
 							<ul class="tsd-index-list">
@@ -674,6 +681,34 @@
 							</li>
 						</ul>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="defaultlinkoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Link<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Link<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>relationship<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in transform/link.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>relationship<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="identitytransform" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> identity<wbr>Transform</h3>
+					<div class="tsd-signature tsd-kind-icon">identity<wbr>Transform<span class="tsd-signature-symbol">:</span> <a href="interfaces/transformresultoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResultOptions</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in applyTransform.ts:21</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="mapformula" class="tsd-anchor"></a>
@@ -2016,29 +2051,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="maketransformresult" class="tsd-anchor"></a>
-					<h3>make<wbr>Transform<wbr>Result</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Transform<wbr>Result<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in applyTransform.ts:21</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
-						</li>
-					</ul>
-				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Render Functions</h2>
@@ -2182,7 +2194,7 @@
 					<a name="aggregate" class="tsd-anchor"></a>
 					<h3>aggregate</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2233,7 +2245,7 @@
 									<h5>options: <a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2241,13 +2253,13 @@
 					<a name="applytransform" class="tsd-anchor"></a>
 					<h3>apply<wbr>Transform</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in applyTransform.ts:40</li>
+									<li>Defined in applyTransform.ts:65</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2263,7 +2275,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h5>
+									<h5>result: <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The output of a Transform function</p>
 									</div>
@@ -2277,7 +2289,7 @@
 					<a name="extract" class="tsd-anchor"></a>
 					<h3>extract</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">extract<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/extractoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExtractOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">extract<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/extractoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExtractOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2341,7 +2353,7 @@
 									<h5>options: <a href="interfaces/extractoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExtractOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2349,13 +2361,13 @@
 					<a name="link" class="tsd-anchor"></a>
 					<h3>link</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/linkoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/linkoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/link.ts:33</li>
+									<li>Defined in transform/link.ts:37</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2387,7 +2399,7 @@
 									<h5>options: <a href="interfaces/linkoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2395,7 +2407,7 @@
 					<a name="map" class="tsd-anchor"></a>
 					<h3>map</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/mapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MapOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/mapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MapOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2459,7 +2471,7 @@
 									<h5>options: <a href="interfaces/mapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MapOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2467,7 +2479,7 @@
 					<a name="merge" class="tsd-anchor"></a>
 					<h3>merge</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2509,7 +2521,7 @@
 									<h5>options: <a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/transformresult.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2525,6 +2537,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/api.html" class="tsd-kind-icon">API</a>
 					</li>
@@ -2595,7 +2610,7 @@
 						<a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
+						<a href="interfaces/transformresultoptions.html" class="tsd-kind-icon">Transform<wbr>Result<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a>
@@ -2662,6 +2677,12 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#aggregateformula" class="tsd-kind-icon">aggregate<wbr>Formula</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#identitytransform" class="tsd-kind-icon">identity<wbr>Transform</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#mapformula" class="tsd-kind-icon">map<wbr>Formula</a>
@@ -2763,9 +2784,6 @@
 						<a href="modules.html#makerandomposition" class="tsd-kind-icon">make<wbr>Random<wbr>Position</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="modules.html#maketransformresult" class="tsd-kind-icon">make<wbr>Transform<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="modules.html#map" class="tsd-kind-icon">map</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -2819,6 +2837,11 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
