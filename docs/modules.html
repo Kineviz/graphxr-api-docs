@@ -65,7 +65,6 @@
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class"><a href="classes/graph.html" class="tsd-kind-icon">Graph</a></li>
-								<li class="tsd-kind-class"><a href="classes/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -94,7 +93,6 @@
 								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/transformresultoptions.html" class="tsd-kind-icon">Transform<wbr>Result<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a></li>
 							</ul>
 						</section>
@@ -105,17 +103,20 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateresult" class="tsd-kind-icon">Aggregate<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#edgefilter" class="tsd-kind-icon">Edge<wbr>Filter</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#interpolatelayoutfunction" class="tsd-kind-icon">Interpolate<wbr>Layout<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#legacyedge" class="tsd-kind-icon">Legacy<wbr>Edge</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#legacynode" class="tsd-kind-icon">Legacy<wbr>Node</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#mapformula" class="tsd-kind-icon">Map<wbr>Formula</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#nodefilter" class="tsd-kind-icon">Node<wbr>Filter</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodetoposition" class="tsd-kind-icon">Node<wbr>ToPosition</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#properties" class="tsd-kind-icon">Properties</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertykey" class="tsd-kind-icon">Property<wbr>Key</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertyvalue" class="tsd-kind-icon">Property<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#relationshipid" class="tsd-kind-icon">Relationship<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#transformfunction" class="tsd-kind-icon">Transform<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#tweenlayoutoverrides" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Overrides</a></li>
 							</ul>
 						</section>
@@ -128,7 +129,6 @@
 								<li class="tsd-kind-variable"><a href="modules.html#this_api_version" class="tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#aggregateformula" class="tsd-kind-icon">aggregate<wbr>Formula</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a></li>
-								<li class="tsd-kind-variable"><a href="modules.html#identitytransform" class="tsd-kind-icon">identity<wbr>Transform</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#mapformula" class="tsd-kind-icon">map<wbr>Formula</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#runtime" class="tsd-kind-icon">runtime</a></li>
 							</ul>
@@ -157,6 +157,11 @@
 								<li class="tsd-kind-function"><a href="modules.html#setedgeproperties" class="tsd-kind-icon">set<wbr>Edge<wbr>Properties</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#setedgerelationship" class="tsd-kind-icon">set<wbr>Edge<wbr>Relationship</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#setedgestyles" class="tsd-kind-icon">set<wbr>Edge<wbr>Styles</a></li>
+							</ul>
+							<h3>Filter Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#edgesbyrelationship" class="tsd-kind-icon">edges<wbr>ByRelationship</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#nodesbycategory" class="tsd-kind-icon">nodes<wbr>ByCategory</a></li>
 							</ul>
 							<h3>Graph Functions</h3>
 							<ul class="tsd-index-list">
@@ -226,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/aggregate.ts:21</li>
+							<li>Defined in transform/aggregate.ts:15</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -280,6 +285,37 @@
 							<li>Defined in styles.ts:1</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="edgefilter" class="tsd-anchor"></a>
+					<h3>Edge<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">Edge<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/edge.html" class="tsd-signature-type" data-tsd-kind="Interface">Edge</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in filter.ts:6</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/edge.html" class="tsd-signature-type" data-tsd-kind="Interface">Edge</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>graph: <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="interfaces/edge.html" class="tsd-signature-type" data-tsd-kind="Interface">Edge</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="edgeid" class="tsd-anchor"></a>
@@ -354,7 +390,7 @@
 					<div class="tsd-signature tsd-kind-icon">Map<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a>, properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/map.ts:13</li>
+							<li>Defined in transform/map.ts:16</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -376,6 +412,37 @@
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="nodefilter" class="tsd-anchor"></a>
+					<h3>Node<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in filter.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>graph: <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -443,6 +510,37 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="transformfunction" class="tsd-anchor"></a>
+					<h3>Transform<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">Transform<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in applyTransform.ts:4</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>graph: <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="tweenlayoutoverrides" class="tsd-anchor"></a>
 					<h3>Tween<wbr>Layout<wbr>Overrides</h3>
 					<div class="tsd-signature tsd-kind-icon">Tween<wbr>Layout<wbr>Overrides<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/tweenlayoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenLayoutOptions</a><span class="tsd-signature-symbol">&gt;</span></div>
@@ -507,7 +605,7 @@
 					<div class="tsd-signature tsd-kind-icon">aggregate<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>average<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>concatenate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>sum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takeFirst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/aggregate.ts:32</li>
+							<li>Defined in transform/aggregate.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -690,7 +788,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Link<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>relationship<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/link.ts:17</li>
+							<li>Defined in transform/link.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -703,22 +801,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="identitytransform" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> identity<wbr>Transform</h3>
-					<div class="tsd-signature tsd-kind-icon">identity<wbr>Transform<span class="tsd-signature-symbol">:</span> <a href="interfaces/transformresultoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResultOptions</a><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in applyTransform.ts:22</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="mapformula" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> map<wbr>Formula</h3>
 					<div class="tsd-signature tsd-kind-icon">map<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>toDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>toNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>toString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>toWeek<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/map.ts:27</li>
+							<li>Defined in transform/map.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -834,7 +922,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:226</li>
+									<li>Defined in index.ts:236</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1329,6 +1417,86 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Filter Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="edgesbyrelationship" class="tsd-anchor"></a>
+					<h3>edges<wbr>ByRelationship</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">edges<wbr>ByRelationship<span class="tsd-signature-symbol">(</span>relationship<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#edgefilter" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeFilter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in edgesByRelationship.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a function which, given a Graph, returns all edges of a specific relationship</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.41</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>relationship: <a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#edgefilter" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeFilter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="nodesbycategory" class="tsd-anchor"></a>
+					<h3>nodes<wbr>ByCategory</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">nodes<wbr>ByCategory<span class="tsd-signature-symbol">(</span>category<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#nodefilter" class="tsd-signature-type" data-tsd-kind="Type alias">NodeFilter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in nodesByCategory.ts:22</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a function which, given a Graph, returns all Nodes of a certain category</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.41</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #795E26">nodesByCategory</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">),</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;inSeason&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;node&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;minMillionViewers&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;min&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>category: <a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#nodefilter" class="tsd-signature-type" data-tsd-kind="Type alias">NodeFilter</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2219,13 +2387,13 @@
 					<a name="aggregate" class="tsd-anchor"></a>
 					<h3>aggregate</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/aggregate.ts:88</li>
+									<li>Defined in transform/aggregate.ts:71</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2270,7 +2438,7 @@
 									<h5>options: <a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2278,13 +2446,13 @@
 					<a name="applytransform" class="tsd-anchor"></a>
 					<h3>apply<wbr>Transform</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a><span class="tsd-signature-symbol"> | </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>transform<span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in applyTransform.ts:66</li>
+									<li>Defined in applyTransform.ts:12</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2300,9 +2468,9 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a><span class="tsd-signature-symbol"> | </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
+									<h5>transform: <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The output of a Transform function</p>
+										<p>A function which accepts a Graph and returns a mutated Graph</p>
 									</div>
 								</li>
 							</ul>
@@ -2314,13 +2482,13 @@
 					<a name="extract" class="tsd-anchor"></a>
 					<h3>extract</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">extract<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/extractoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExtractOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">extract<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/extractoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExtractOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/extract.ts:56</li>
+									<li>Defined in transform/extract.ts:83</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2333,10 +2501,11 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
-<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">(), {</span>
+<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">    </span><span style="color: #001080">keyProps:</span><span style="color: #000000"> [</span>
 <span style="color: #000000">      {</span>
-<span style="color: #000000">  ,      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">        </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">        </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">        </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
 <span style="color: #000000">        </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
@@ -2372,13 +2541,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nodes: <a href="interfaces/node.html" class="tsd-signature-type" data-tsd-kind="Interface">Node</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
 									<h5>options: <a href="interfaces/extractoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExtractOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2386,13 +2552,13 @@
 					<a name="link" class="tsd-anchor"></a>
 					<h3>link</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/linkoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/linkoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/link.ts:37</li>
+									<li>Defined in transform/link.ts:38</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2405,15 +2571,13 @@
 									<dd><p>0.0.36</p>
 									</dd>
 									<dt>example</dt>
-									<dd><p>js```
-											GraphXR.link({
-											sourceCategory: &quot;Roles&quot;,
-											sourceProperty: &quot;ParentName&quot;,
-											targetCategory: &quot;Roles&quot;,
-											targetProperty: &quot;ComponentName&quot;,
-											relationship: &quot;IS_PARENT_OF&quot;
-										})</p>
-										<pre><code>
+									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">link</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">sourceCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Roles&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;ParentName&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">targetCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Roles&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;ComponentName&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">relationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;IS_PARENT_OF&quot;</span>
+<span style="color: #000000">})</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -2424,7 +2588,7 @@
 									<h5>options: <a href="interfaces/linkoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2432,13 +2596,13 @@
 					<a name="map" class="tsd-anchor"></a>
 					<h3>map</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/mapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MapOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">map<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/mapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MapOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/map.ts:81</li>
+									<li>Defined in transform/map.ts:82</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2496,7 +2660,7 @@
 									<h5>options: <a href="interfaces/mapoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MapOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2504,13 +2668,13 @@
 					<a name="merge" class="tsd-anchor"></a>
 					<h3>merge</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></li>
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/merge.ts:49</li>
+									<li>Defined in transform/merge.ts:58</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2522,20 +2686,27 @@
 									<dd><p>0.0.37</p>
 									</dd>
 									<dt>example</dt>
-									<dd><p>js```
-											// Combine all Nodes with equal seasonNumber into one Node
-											GraphXR.merge({
-											category: &quot;Episodes&quot;,
-											keyProperties: [&#39;seasonNumber&#39;],
-											clearUnselectedProperties: false,
-										})</p>
-										<p>// Combine all emails between two persons sent on the same day (thus removing directionality)
-											GraphXR.merge({
-											relationship: &quot;SENT_MAIL_TO&quot;
-											keyProperties: [&#39;sendDate&#39;],
-											clearUnselectedProperties: false,
-										})</p>
-										<pre><code>
+									<dd><pre><code class="language-js"><span style="color: #008000">// Combine all Nodes with equal seasonNumber into one Node</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">merge</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">keyProperties:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;seasonNumber&#039;</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">clearUnselectedProperties:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #008000">// Combine all emails between two persons sent on the same day (thus removing directionality)</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">merge</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">relationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;SENT_MAIL_TO&quot;</span>
+<span style="color: #000000">  </span><span style="color: #001080">keyProperties</span><span style="color: #000000">: [</span><span style="color: #A31515">&#039;sendDate&#039;</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">clearUnselectedProperties:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #008000">// Combine all emails between two persons sent on the same day and preserve directionality</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">merge</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">relationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;SENT_MAIL_TO&quot;</span>
+<span style="color: #000000">  </span><span style="color: #001080">keyProperties</span><span style="color: #000000">: [</span><span style="color: #A31515">&#039;sendDate&#039;</span><span style="color: #000000">],</span>
+<span style="color: #000000">  </span><span style="color: #001080">clearUnselectedProperties:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">directional:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -2543,13 +2714,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
-								</li>
-								<li>
 									<h5>options: <a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2567,9 +2735,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
 						<a href="classes/graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/api.html" class="tsd-kind-icon">API</a>
@@ -2641,9 +2806,6 @@
 						<a href="interfaces/styles.html" class="tsd-kind-icon">Styles</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/transformresultoptions.html" class="tsd-kind-icon">Transform<wbr>Result<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -2659,6 +2821,9 @@
 						<a href="modules.html#color" class="tsd-kind-icon">Color</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#edgefilter" class="tsd-kind-icon">Edge<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -2672,6 +2837,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#mapformula" class="tsd-kind-icon">Map<wbr>Formula</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#nodefilter" class="tsd-kind-icon">Node<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a>
@@ -2690,6 +2858,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#relationshipid" class="tsd-kind-icon">Relationship<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#transformfunction" class="tsd-kind-icon">Transform<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#tweenlayoutoverrides" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Overrides</a>
@@ -2711,9 +2882,6 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#identitytransform" class="tsd-kind-icon">identity<wbr>Transform</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#mapformula" class="tsd-kind-icon">map<wbr>Formula</a>
@@ -2744,6 +2912,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#cube" class="tsd-kind-icon">cube</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#edgesbyrelationship" class="tsd-kind-icon">edges<wbr>ByRelationship</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#extract" class="tsd-kind-icon">extract</a>
@@ -2831,6 +3002,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#mergenodes" class="tsd-kind-icon">merge<wbr>Nodes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#nodesbycategory" class="tsd-kind-icon">nodes<wbr>ByCategory</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#removeedges" class="tsd-kind-icon">remove<wbr>Edges</a>
