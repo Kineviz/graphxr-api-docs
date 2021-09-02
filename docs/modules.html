@@ -64,6 +64,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class"><a href="classes/graph.html" class="tsd-kind-icon">Graph</a></li>
 								<li class="tsd-kind-class"><a href="classes/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a></li>
 							</ul>
 						</section>
@@ -78,9 +79,9 @@
 								<li class="tsd-kind-interface"><a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractproperty.html" class="tsd-kind-icon">Extract<wbr>Property</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/legacygraph.html" class="tsd-kind-icon">Legacy<wbr>Graph</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/linkoptions.html" class="tsd-kind-icon">Link<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/makeedgeoptions.html" class="tsd-kind-icon">Make<wbr>Edge<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/makenodeoptions.html" class="tsd-kind-icon">Make<wbr>Node<wbr>Options</a></li>
@@ -188,6 +189,7 @@
 							</ul>
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#getgraph" class="tsd-kind-icon">get<wbr>Graph</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a></li>
 							</ul>
 							<h3>Render Functions</h3>
@@ -706,7 +708,7 @@
 					<div class="tsd-signature tsd-kind-icon">identity<wbr>Transform<span class="tsd-signature-symbol">:</span> <a href="interfaces/transformresultoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TransformResultOptions</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in applyTransform.ts:21</li>
+							<li>Defined in applyTransform.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -832,7 +834,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:222</li>
+									<li>Defined in index.ts:226</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2035,6 +2037,29 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Other Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getgraph" class="tsd-anchor"></a>
+					<h3>get<wbr>Graph</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in getGraph.ts:8</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a copy of the Graph visible on the screen in the GraphXR UI. Any mutations of this Graph
+									do not propagate to GraphXR until Graph::mergeInto is called.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="getsnapshot" class="tsd-anchor"></a>
 					<h3>get<wbr>Snapshot</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -2253,13 +2278,13 @@
 					<a name="applytransform" class="tsd-anchor"></a>
 					<h3>apply<wbr>Transform</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a><span class="tsd-signature-symbol"> | </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in applyTransform.ts:65</li>
+									<li>Defined in applyTransform.ts:66</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2275,7 +2300,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h5>
+									<h5>result: <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a><span class="tsd-signature-symbol"> | </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The output of a Transform function</p>
 									</div>
@@ -2479,13 +2504,13 @@
 					<a name="merge" class="tsd-anchor"></a>
 					<h3>merge</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/merge.ts:51</li>
+									<li>Defined in transform/merge.ts:49</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2518,10 +2543,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>graph: <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h5>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/mergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">MergeOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="classes/transformresult.html" class="tsd-signature-type" data-tsd-kind="Class">TransformResult</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/graph.html" class="tsd-signature-type" data-tsd-kind="Class">Graph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2537,6 +2565,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/graph.html" class="tsd-kind-icon">Graph</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/transformresult.html" class="tsd-kind-icon">Transform<wbr>Result</a>
 					</li>
@@ -2565,13 +2596,13 @@
 						<a href="interfaces/extractproperty.html" class="tsd-kind-icon">Extract<wbr>Property</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/legacygraph.html" class="tsd-kind-icon">Legacy<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/linkoptions.html" class="tsd-kind-icon">Link<wbr>Options</a>
@@ -2737,6 +2768,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getedges" class="tsd-kind-icon">get<wbr>Edges</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getgraph" class="tsd-kind-icon">get<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a>
