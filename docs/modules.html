@@ -73,7 +73,6 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/api.html" class="tsd-kind-icon">API</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/aggregateoptions.html" class="tsd-kind-icon">Aggregate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
@@ -95,6 +94,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a></li>
 							</ul>
@@ -102,8 +102,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateformula" class="tsd-kind-icon">Aggregate<wbr>Formula</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateresult" class="tsd-kind-icon">Aggregate<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edge" class="tsd-kind-icon">Edge</a></li>
@@ -136,7 +135,6 @@
 								<li class="tsd-kind-variable"><a href="modules.html#default_relationship_id" class="tsd-kind-icon">DEFAULT_<wbr>RELATIONSHIP_<wbr>ID</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#minimum_graphxr_version" class="tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#this_api_version" class="tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION</a></li>
-								<li class="tsd-kind-variable"><a href="modules.html#aggregateformula" class="tsd-kind-icon">aggregate<wbr>Formula</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#mapformula" class="tsd-kind-icon">map<wbr>Formula</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#runtime" class="tsd-kind-icon">runtime</a></li>
@@ -187,6 +185,10 @@
 								<li class="tsd-kind-function"><a href="modules.html#makenodeid" class="tsd-kind-icon">make<wbr>Node<wbr>Id</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#mergenodes" class="tsd-kind-icon">merge<wbr>Nodes</a></li>
 							</ul>
+							<h3>Other Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a></li>
+							</ul>
 							<h3>Properties Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#comparepropertyvalues" class="tsd-kind-icon">compare<wbr>Property<wbr>Values</a></li>
@@ -224,43 +226,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="aggregateformula" class="tsd-anchor"></a>
-					<h3>Aggregate<wbr>Formula</h3>
-					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></div>
+					<a name="aggregateoptions" class="tsd-anchor"></a>
+					<h3>Aggregate<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>aggregateAlong<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">; </span>aggregateTo<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#nodefilter" class="tsd-signature-type" data-tsd-kind="Type alias">NodeFilter</a><span class="tsd-signature-symbol">; </span>getPropertyFrom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;edge&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;node&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">AggregateProperty</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/aggregate.ts:13</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>values: <a href="modules.html#propertyvalue" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyValue</a><span class="tsd-signature-symbol">[]</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="modules.html#aggregateresult" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateResult</a></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="aggregateresult" class="tsd-anchor"></a>
-					<h3>Aggregate<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in transform/aggregate.ts:12</li>
+							<li>Defined in transform/aggregate.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -718,189 +689,6 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="aggregateformula" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> aggregate<wbr>Formula</h3>
-					<div class="tsd-signature tsd-kind-icon">aggregate<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>average<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>concatenate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>sum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takeFirst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in transform/aggregate.ts:24</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>average<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>concatenate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>sum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="tsd-parameter">
-								<h5>take<wbr>First<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>values: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="defaultlinkoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Link<wbr>Options</h3>
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Link<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>relationship<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
@@ -1040,7 +828,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:197</li>
+									<li>Defined in index.ts:202</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1829,6 +1617,32 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Other Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="shortcut" class="tsd-anchor"></a>
+					<h3>shortcut</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">shortcut<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/shortcutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ShortcutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in transform/shortcut.ts:30</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/shortcutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ShortcutOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="comparepropertyvalues" class="tsd-anchor"></a>
@@ -1951,13 +1765,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in sort/sortByProperty.ts:14</li>
+									<li>Defined in sort/sortByProperty.ts:18</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns a function which compares two property values.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">nodes</span><span style="color: #000000">.</span><span style="color: #795E26">sort</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">sortByProperty</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;size&#039;</span><span style="color: #000000">))</span>
+</code></pre>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2039,13 +1859,13 @@
 					<a name="aggregate" class="tsd-anchor"></a>
 					<h3>aggregate</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">aggregate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="modules.html#aggregateoptions" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/aggregate.ts:69</li>
+									<li>Defined in transform/aggregate.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2087,7 +1907,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="interfaces/aggregateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AggregateOptions</a></h5>
+									<h5>options: <a href="modules.html#aggregateoptions" class="tsd-signature-type" data-tsd-kind="Type alias">AggregateOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
@@ -2401,9 +2221,6 @@
 						<a href="interfaces/api.html" class="tsd-kind-icon">API</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/aggregateoptions.html" class="tsd-kind-icon">Aggregate<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/category.html" class="tsd-kind-icon">Category</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -2467,16 +2284,16 @@
 						<a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/tweenlayoutoptions.html" class="tsd-kind-icon">Tween<wbr>Layout<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#aggregateformula" class="tsd-kind-icon">Aggregate<wbr>Formula</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#aggregateresult" class="tsd-kind-icon">Aggregate<wbr>Result</a>
+						<a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
@@ -2558,9 +2375,6 @@
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#this_api_version" class="tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#aggregateformula" class="tsd-kind-icon">aggregate<wbr>Formula</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a>
@@ -2666,6 +2480,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setruntime" class="tsd-kind-icon">set<wbr>Runtime</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#sortbyproperty" class="tsd-kind-icon">sort<wbr>ByProperty</a>
