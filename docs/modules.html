@@ -185,10 +185,6 @@
 								<li class="tsd-kind-function"><a href="modules.html#makenodeid" class="tsd-kind-icon">make<wbr>Node<wbr>Id</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#mergenodes" class="tsd-kind-icon">merge<wbr>Nodes</a></li>
 							</ul>
-							<h3>Other Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a></li>
-							</ul>
 							<h3>Properties Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#comparepropertyvalues" class="tsd-kind-icon">compare<wbr>Property<wbr>Values</a></li>
@@ -217,6 +213,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#link" class="tsd-kind-icon">link</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#map" class="tsd-kind-icon">map</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#merge" class="tsd-kind-icon">merge</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#transform" class="tsd-kind-icon">transform</a></li>
 							</ul>
 						</section>
@@ -1617,32 +1614,6 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Other Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="shortcut" class="tsd-anchor"></a>
-					<h3>shortcut</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">shortcut<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/shortcutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ShortcutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in transform/shortcut.ts:30</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="interfaces/shortcutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ShortcutOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="comparepropertyvalues" class="tsd-anchor"></a>
@@ -1881,7 +1852,7 @@
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the</span>
 <span style="color: #008000">// episodeNumber property values from Episodes connected to the Season along the inSeason relationship</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;node&#039;</span><span style="color: #000000">,</span>
@@ -1892,7 +1863,7 @@
 
 <span style="color: #008000">// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the</span>
 <span style="color: #008000">// episodeNumber property values from inSeason edges connected to the Season.</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;edge&#039;</span><span style="color: #000000">,</span>
@@ -1924,7 +1895,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/extract.ts:82</li>
+									<li>Defined in transform/extract.ts:80</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1936,40 +1907,38 @@
 									<dd><p>0.0.1</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
-<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">keyProps:</span><span style="color: #000000"> [</span>
-<span style="color: #000000">      {</span>
-<span style="color: #000000">        </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      }</span>
-<span style="color: #000000">    ],</span>
-<span style="color: #000000">    </span><span style="color: #001080">noKeyProps:</span><span style="color: #000000"> [</span>
-<span style="color: #000000">      {</span>
-<span style="color: #000000">        </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      },</span>
-<span style="color: #000000">      {</span>
-<span style="color: #000000">        </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;episodeAirDate&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;episodeAirDate&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #000000">        </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      },</span>
-<span style="color: #000000">    ],</span>
-<span style="color: #000000">    </span><span style="color: #001080">newCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Season Number&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">newRelationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;inSeason&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">inheritLinks:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">skipEmpty:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
-<span style="color: #000000">  })</span>
-<span style="color: #000000">);</span>
+									<dd><pre><code class="language-js"><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">keyProps:</span><span style="color: #000000"> [</span>
+<span style="color: #000000">    {</span>
+<span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">  </span><span style="color: #001080">noKeyProps:</span><span style="color: #000000"> [</span>
+<span style="color: #000000">    {</span>
+<span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    },</span>
+<span style="color: #000000">    {</span>
+<span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;episodeAirDate&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;episodeAirDate&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    },</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">  </span><span style="color: #001080">newCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Season Number&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">newRelationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;inSeason&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">inheritLinks:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">skipEmpty:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -2007,7 +1976,7 @@
 									<dd><p>0.0.36</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">link</span><span style="color: #000000">({</span>
+									<dd><pre><code class="language-js"><span style="color: #795E26">link</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">sourceCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Roles&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;ParentName&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">targetCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Roles&quot;</span><span style="color: #000000">,</span>
@@ -2052,7 +2021,7 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// Convert every episodeAirDate property to a week value, in Nodes of the Episodes category</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">map</span><span style="color: #000000">({</span>
+<span style="color: #795E26">map</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Episode&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">mappedProperties:</span><span style="color: #000000"> [</span>
 <span style="color: #000000">    {</span>
@@ -2064,7 +2033,7 @@
 <span style="color: #000000">})</span>
 
 <span style="color: #008000">// Add 5 to every millionViewers property in Nodes belonging to the Episodes Category</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">map</span><span style="color: #000000">({</span>
+<span style="color: #795E26">map</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Episode&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">mappedProperties:</span><span style="color: #000000"> [</span>
 <span style="color: #000000">    {</span>
@@ -2076,7 +2045,7 @@
 <span style="color: #000000">})</span>
 
 <span style="color: #008000">// Add 1 to every seasonNumber property in Edges belonging to the inSeason Relationship</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">map</span><span style="color: #000000">({</span>
+<span style="color: #795E26">map</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">relationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">mappedProperties:</span><span style="color: #000000"> [</span>
 <span style="color: #000000">    {</span>
@@ -2115,7 +2084,7 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Combine similar Nodes or Edges</p>
+									<p>Combine Nodes or Edges which have equivalent key properties.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
@@ -2123,21 +2092,21 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// Combine all Nodes with equal seasonNumber into one Node</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">merge</span><span style="color: #000000">({</span>
+<span style="color: #795E26">merge</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">keyProperties:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;seasonNumber&#039;</span><span style="color: #000000">],</span>
 <span style="color: #000000">  </span><span style="color: #001080">clearUnselectedProperties:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">})</span>
 
 <span style="color: #008000">// Combine all emails between two persons sent on the same day (thus removing directionality)</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">merge</span><span style="color: #000000">({</span>
+<span style="color: #795E26">merge</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">relationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;SENT_MAIL_TO&quot;</span>
 <span style="color: #000000">  </span><span style="color: #001080">keyProperties</span><span style="color: #000000">: [</span><span style="color: #A31515">&#039;sendDate&#039;</span><span style="color: #000000">],</span>
 <span style="color: #000000">  </span><span style="color: #001080">clearUnselectedProperties:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">})</span>
 
 <span style="color: #008000">// Combine all emails between two persons sent on the same day and preserve directionality</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">merge</span><span style="color: #000000">({</span>
+<span style="color: #795E26">merge</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">relationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;SENT_MAIL_TO&quot;</span>
 <span style="color: #000000">  </span><span style="color: #001080">keyProperties</span><span style="color: #000000">: [</span><span style="color: #A31515">&#039;sendDate&#039;</span><span style="color: #000000">],</span>
 <span style="color: #000000">  </span><span style="color: #001080">clearUnselectedProperties:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
@@ -2158,6 +2127,63 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="shortcut" class="tsd-anchor"></a>
+					<h3>shortcut</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">shortcut<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/shortcutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ShortcutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in transform/shortcut.ts:60</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given incomingRelationship, centerCategory, and outgoingRelationship, Shortcut finds all unique paths
+										from node A to node C, traveling first along incomingRelationship, passing through centerCategory, and
+										travelling lastly through outgoingRelationship to arrive at C. Once it finds all unique paths from A to C,
+									Shortcut creates an edge A -&gt; C with properties aggregated from the center nodes.</p>
+								</div>
+								<p>Written differently, A -R0-&gt; [B] -R1-&gt; C =&gt; A -R2-&gt; C where R0 is incomingRelationship, B is centerCategory,
+									R1 is outgoingRelationship, and R2 is the new relationship. [B] means the set of all nodes B which are
+								between A and C.</p>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.43</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">shortcut</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">incomingRelationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;IS_PARENT_OF&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">centerCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Node&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">outgoingRelationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;IS_PARENT_OF&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">shortcutRelationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;IS_GRANDPARENT_OF&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">directional:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateProperties:</span><span style="color: #000000"> [</span>
+<span style="color: #000000">    {</span>
+<span style="color: #000000">      </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;age&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;averageAge&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;average&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    },</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">  </span><span style="color: #001080">countLinks:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/shortcutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ShortcutOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="transform" class="tsd-anchor"></a>
 					<h3>transform</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -2167,7 +2193,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/transform.ts:13</li>
+									<li>Defined in transform/transform.ts:27</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2177,6 +2203,20 @@
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
 									<dd><p>0.0.1</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">transform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(),</span>
+<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;node&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumber&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumbers&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;concatenate&#039;</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
