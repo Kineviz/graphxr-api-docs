@@ -180,7 +180,6 @@
 							<h3>Node Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#arenodesequal" class="tsd-kind-icon">are<wbr>Nodes<wbr>Equal</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makenode" class="tsd-kind-icon">make<wbr>Node</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makenodeid" class="tsd-kind-icon">make<wbr>Node<wbr>Id</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#mergenodes" class="tsd-kind-icon">merge<wbr>Nodes</a></li>
@@ -825,7 +824,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:202</li>
+									<li>Defined in index.ts:201</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1316,13 +1315,13 @@
 					<a name="layout" class="tsd-anchor"></a>
 					<h3>layout</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">(</span>computeLayout<span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><a href="modules.html#tweenlayoutoverrides" class="tsd-signature-type" data-tsd-kind="Type alias">TweenLayoutOverrides</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GraphView</span>, computeLayout<span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><a href="modules.html#tweenlayoutoverrides" class="tsd-signature-type" data-tsd-kind="Type alias">TweenLayoutOverrides</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/layout.ts:31</li>
+									<li>Defined in layout/layout.ts:30</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1355,6 +1354,9 @@
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>view: <span class="tsd-signature-type">GraphView</span></h5>
+								</li>
 								<li>
 									<h5>computeLayout: <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h5>
 								</li>
@@ -1464,39 +1466,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="getnodebyid" class="tsd-anchor"></a>
-					<h3>get<wbr>Node<wbr>ById</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in getNodeById.ts:9</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets a Node in the graph space by id</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>since</dt>
-									<dd><p>0.0.1</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id: <a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1895,7 +1864,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/extract.ts:80</li>
+									<li>Defined in transform/extract.ts:75</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1913,7 +1882,6 @@
 <span style="color: #000000">    {</span>
 <span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">    }</span>
@@ -1922,14 +1890,12 @@
 <span style="color: #000000">    {</span>
 <span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;millionViewers&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">    },</span>
 <span style="color: #000000">    {</span>
 <span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;episodeAirDate&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;episodeAirDate&quot;</span><span style="color: #000000">,</span>
-<span style="color: #000000">      </span><span style="color: #001080">isKey:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">    },</span>
@@ -2460,9 +2426,6 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>
