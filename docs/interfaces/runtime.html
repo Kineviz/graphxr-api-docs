@@ -96,7 +96,7 @@
 					<div class="tsd-signature tsd-kind-icon">_GXR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Edge<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>Node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>TypeColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>getColorByType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in setRuntime.ts:17</li>
+							<li>Defined in setRuntime.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -140,18 +140,50 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="_app" class="tsd-anchor"></a>
 					<h3>_app</h3>
-					<div class="tsd-signature tsd-kind-icon">_app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>drawing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>cloudScene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Group</span><span class="tsd-signature-symbol">; </span>forceStartLayout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>graph<span class="tsd-signature-symbol">: </span><a href="legacygraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyGraph</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">_app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>API<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>on<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>drawing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>cloudScene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Group</span><span class="tsd-signature-symbol">; </span>forceStartLayout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>graph<span class="tsd-signature-symbol">: </span><a href="legacygraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyGraph</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in setRuntime.ts:8</li>
+							<li>Defined in setRuntime.ts:9</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>drawing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>cloudScene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Group</span><span class="tsd-signature-symbol">; </span>forceStartLayout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>graph<span class="tsd-signature-symbol">: </span><a href="legacygraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyGraph</a><span class="tsd-signature-symbol"> }</span></h5>
+								<h5>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>API<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>on<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>drawing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>cloudScene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Group</span><span class="tsd-signature-symbol">; </span>forceStartLayout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>graph<span class="tsd-signature-symbol">: </span><a href="legacygraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyGraph</a><span class="tsd-signature-symbol"> }</span></h5>
 								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>API<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>on<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5>on<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter-signature">
+														<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+														</ul>
+														<ul class="tsd-descriptions">
+															<li class="tsd-description">
+																<h4 class="tsd-parameters-title">Parameters</h4>
+																<ul class="tsd-parameters">
+																	<li>
+																		<h5>event: <a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a></h5>
+																	</li>
+																	<li>
+																		<h5>callback: <a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a></h5>
+																	</li>
+																	<li>
+																		<h5>id: <span class="tsd-signature-type">string</span></h5>
+																	</li>
+																</ul>
+																<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
 									<li class="tsd-parameter">
 										<h5>drawing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>cloudScene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Group</span><span class="tsd-signature-symbol">; </span>forceStartLayout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></h5>
 										<ul class="tsd-parameters">
@@ -189,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Variable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in setRuntime.ts:26</li>
+							<li>Defined in setRuntime.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">

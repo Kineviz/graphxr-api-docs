@@ -103,6 +103,8 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#apievent" class="tsd-kind-icon">Api<wbr>Event</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#apieventcallback" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edge" class="tsd-kind-icon">Edge</a></li>
@@ -187,6 +189,7 @@
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
 							</ul>
 							<h3>Properties Functions</h3>
 							<ul class="tsd-index-list">
@@ -234,6 +237,50 @@
 							<li>Defined in transform/aggregate.ts:16</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="apievent" class="tsd-anchor"></a>
+					<h3>Api<wbr>Event</h3>
+					<div class="tsd-signature tsd-kind-icon">Api<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;change&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;select&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;nearby&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in on.ts:4</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="apieventcallback" class="tsd-anchor"></a>
+					<h3>Api<wbr>Event<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">Api<wbr>Event<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in on.ts:5</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">unknown</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="categoryid" class="tsd-anchor"></a>
@@ -811,7 +858,7 @@
 					<div class="tsd-signature tsd-kind-icon">runtime<span class="tsd-signature-symbol">:</span> <a href="interfaces/runtime.html" class="tsd-signature-type" data-tsd-kind="Interface">Runtime</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in setRuntime.ts:51</li>
+							<li>Defined in setRuntime.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -828,7 +875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:204</li>
+									<li>Defined in index.ts:209</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1617,6 +1664,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, callbackId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in on.ts:7</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a></h5>
+								</li>
+								<li>
+									<h5>callback: <a href="modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a></h5>
+								</li>
+								<li>
+									<h5>callbackId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties Functions</h2>
@@ -1702,7 +1778,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in setRuntime.ts:60</li>
+									<li>Defined in setRuntime.ts:64</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2338,6 +2414,12 @@
 						<a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#apievent" class="tsd-kind-icon">Api<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#apieventcallback" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -2519,6 +2601,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#nodesbycategory" class="tsd-kind-icon">nodes<wbr>ByCategory</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#on" class="tsd-kind-icon">on</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setruntime" class="tsd-kind-icon">set<wbr>Runtime</a>
