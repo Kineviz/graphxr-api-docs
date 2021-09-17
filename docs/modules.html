@@ -105,6 +105,7 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#apievent" class="tsd-kind-icon">Api<wbr>Event</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#apieventcallback" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#apieventcallbackid" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#computefunction" class="tsd-kind-icon">Compute<wbr>Function</a></li>
@@ -159,6 +160,10 @@
 								<li class="tsd-kind-function"><a href="modules.html#makeedge" class="tsd-kind-icon">make<wbr>Edge</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makeedgeid" class="tsd-kind-icon">make<wbr>Edge<wbr>Id</a></li>
 							</ul>
+							<h3>Events Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#observe" class="tsd-kind-icon">observe</a></li>
+							</ul>
 							<h3>Filter Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#edgesbyrelationship" class="tsd-kind-icon">edges<wbr>ByRelationship</a></li>
@@ -191,7 +196,6 @@
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#observe" class="tsd-kind-icon">observe</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
 							</ul>
 							<h3>Properties Functions</h3>
@@ -284,6 +288,16 @@
 							</li>
 						</ul>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="apieventcallbackid" class="tsd-anchor"></a>
+					<h3>Api<wbr>Event<wbr>Callback<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Api<wbr>Event<wbr>Callback<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in on.ts:6</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="categoryid" class="tsd-anchor"></a>
@@ -1099,6 +1113,59 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Events Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="observe" class="tsd-anchor"></a>
+					<h3>observe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">observe&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, compute<span class="tsd-signature-symbol">: </span><a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in observe.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert an async API event, like &#39;change&#39;, into an Iterator.
+									Useful in Grove to define variables which react to data changes</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.53</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">personaNodes</span><span style="color: #000000"> = </span><span style="color: #795E26">observe</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #A31515">&#039;change&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">nodesByCategory</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Persona&#039;</span><span style="color: #000000">))</span>
+<span style="color: #000000">)</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a></h5>
+								</li>
+								<li>
+									<h5>compute: <a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Filter Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="edgesbyrelationship" class="tsd-anchor"></a>
@@ -1724,42 +1791,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="observe" class="tsd-anchor"></a>
-					<h3>observe</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">observe<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, compute<span class="tsd-signature-symbol">: </span><a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Generator</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in observe.ts:8</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a></h5>
-								</li>
-								<li>
-									<h5>compute: <a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Generator</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, callbackId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a>, callbackId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#apieventcallbackid" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallbackId</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in on.ts:7</li>
+									<li>Defined in on.ts:8</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1774,7 +1815,7 @@
 									<h5>callbackId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#apieventcallbackid" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallbackId</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2505,6 +2546,9 @@
 						<a href="modules.html#apieventcallback" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#apieventcallbackid" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -2693,7 +2737,7 @@
 					<li class=" tsd-kind-function">
 						<a href="modules.html#nodesbycategory" class="tsd-kind-icon">nodes<wbr>ByCategory</a>
 					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#observe" class="tsd-kind-icon">observe</a>
 					</li>
 					<li class=" tsd-kind-function">

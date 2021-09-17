@@ -117,7 +117,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#mergegraphs" class="tsd-kind-icon">merge<wbr>Graphs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#mergenodes" class="tsd-kind-icon">merge<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#nodesbycategory" class="tsd-kind-icon">nodes<wbr>ByCategory</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#observe" class="tsd-kind-icon">observe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="api.html#observe" class="tsd-kind-icon">observe</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#on" class="tsd-kind-icon">on</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#random" class="tsd-kind-icon">random</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#setruntime" class="tsd-kind-icon">set<wbr>Runtime</a></li>
@@ -877,11 +877,11 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
 					<a name="observe" class="tsd-anchor"></a>
 					<h3>observe</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">observe<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, compute<span class="tsd-signature-symbol">: </span><a href="../modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">observe&lt;T&gt;<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, compute<span class="tsd-signature-symbol">: </span><a href="../modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -890,6 +890,12 @@
 									<li>Defined in index.ts:189</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -899,7 +905,7 @@
 									<h5>compute: <a href="../modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -907,7 +913,7 @@
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -925,7 +931,7 @@
 									<h5>callback: <a href="../modules.html#apieventcallback" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallback</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1183,7 +1189,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api.html#nodesbycategory" class="tsd-kind-icon">nodes<wbr>ByCategory</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
 								<a href="api.html#observe" class="tsd-kind-icon">observe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
