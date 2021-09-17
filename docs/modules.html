@@ -111,8 +111,8 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#edge" class="tsd-kind-icon">Edge</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edgefilter" class="tsd-kind-icon">Edge<wbr>Filter</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#emitter" class="tsd-kind-icon">Emitter</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#filter" class="tsd-kind-icon">Filter</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#generator" class="tsd-kind-icon">Generator</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#geometriclayoutfunction" class="tsd-kind-icon">Geometric<wbr>Layout<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#interpolatelayoutfunction" class="tsd-kind-icon">Interpolate<wbr>Layout<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#layoutfunction" class="tsd-kind-icon">Layout<wbr>Function</a></li>
@@ -123,7 +123,6 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodefilter" class="tsd-kind-icon">Node<wbr>Filter</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeidtoposition" class="tsd-kind-icon">Node<wbr>IdTo<wbr>Position</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#observor" class="tsd-kind-icon">Observor</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#properties" class="tsd-kind-icon">Properties</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertykey" class="tsd-kind-icon">Property<wbr>Key</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertyvalue" class="tsd-kind-icon">Property<wbr>Value</a></li>
@@ -312,7 +311,7 @@
 					<div class="tsd-signature tsd-kind-icon">Compute<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in observe.ts:4</li>
+							<li>Defined in observe.ts:5</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -361,6 +360,37 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="emitter" class="tsd-anchor"></a>
+					<h3>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in observe.ts:6</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>data: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="filter" class="tsd-anchor"></a>
 					<h3>Filter</h3>
@@ -397,16 +427,6 @@
 							</li>
 						</ul>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="generator" class="tsd-anchor"></a>
-					<h3>Generator</h3>
-					<div class="tsd-signature tsd-kind-icon">Generator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unknown</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in observe.ts:6</li>
-						</ul>
-					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="geometriclayoutfunction" class="tsd-anchor"></a>
@@ -603,55 +623,6 @@
 							<li>Defined in layout/layout.ts:90</li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="observor" class="tsd-anchor"></a>
-					<h3>Observor</h3>
-					<div class="tsd-signature tsd-kind-icon">Observor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>emit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in observe.ts:5</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>emit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>emit: <span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-												<ul class="tsd-parameters">
-													<li class="tsd-parameter-signature">
-														<ul class="tsd-signatures tsd-kind-type-literal">
-															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-														</ul>
-														<ul class="tsd-descriptions">
-															<li class="tsd-description">
-																<h4 class="tsd-parameters-title">Parameters</h4>
-																<ul class="tsd-parameters">
-																	<li>
-																		<h5>data: <span class="tsd-signature-type">any</span></h5>
-																	</li>
-																</ul>
-																<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="properties" class="tsd-anchor"></a>
@@ -1756,13 +1727,13 @@
 					<a name="observe" class="tsd-anchor"></a>
 					<h3>observe</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">observe<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, compute<span class="tsd-signature-symbol">: </span><a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#generator" class="tsd-signature-type" data-tsd-kind="Type alias">Generator</a></li>
+						<li class="tsd-signature tsd-kind-icon">observe<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="modules.html#apievent" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEvent</a>, compute<span class="tsd-signature-symbol">: </span><a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Generator</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in observe.ts:13</li>
+									<li>Defined in observe.ts:8</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1774,7 +1745,7 @@
 									<h5>compute: <a href="modules.html#computefunction" class="tsd-signature-type" data-tsd-kind="Type alias">ComputeFunction</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#generator" class="tsd-signature-type" data-tsd-kind="Type alias">Generator</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Generator</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2551,11 +2522,11 @@
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a>
 					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#emitter" class="tsd-kind-icon">Emitter</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#filter" class="tsd-kind-icon">Filter</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#generator" class="tsd-kind-icon">Generator</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#geometriclayoutfunction" class="tsd-kind-icon">Geometric<wbr>Layout<wbr>Function</a>
@@ -2586,9 +2557,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#nodeidtoposition" class="tsd-kind-icon">Node<wbr>IdTo<wbr>Position</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#observor" class="tsd-kind-icon">Observor</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#properties" class="tsd-kind-icon">Properties</a>
