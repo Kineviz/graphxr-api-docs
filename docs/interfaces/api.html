@@ -90,12 +90,15 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#applylayout" class="tsd-kind-icon">apply<wbr>Layout</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#applytransform" class="tsd-kind-icon">apply<wbr>Transform</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#circle" class="tsd-kind-icon">circle</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#comparepropertyvalues" class="tsd-kind-icon">compare<wbr>Property<wbr>Values</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#cube" class="tsd-kind-icon">cube</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#edgesbyrelationship" class="tsd-kind-icon">edges<wbr>ByRelationship</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#extract" class="tsd-kind-icon">extract</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#geometriclayout" class="tsd-kind-icon">geometric<wbr>Layout</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#filter" class="tsd-kind-icon">filter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#filterbyproperties" class="tsd-kind-icon">filter<wbr>ByProperties</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getcategorycolor" class="tsd-kind-icon">get<wbr>Category<wbr>Color</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a></li>
@@ -124,7 +127,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#shortcut" class="tsd-kind-icon">shortcut</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#sortbyproperty" class="tsd-kind-icon">sort<wbr>ByProperty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#spiral" class="tsd-kind-icon">spiral</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#transform" class="tsd-kind-icon">transform</a></li>
 							</ul>
 						</section>
 					</div>
@@ -138,7 +140,7 @@
 					<div class="tsd-signature tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:202</li>
+							<li>Defined in index.ts:206</li>
 						</ul>
 					</aside>
 				</section>
@@ -148,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">THIS_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:203</li>
+							<li>Defined in index.ts:207</li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">aggregate<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>average<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>concatenate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>sum<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol">; </span>takeFirst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateFormula</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:158</li>
+							<li>Defined in index.ts:160</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -197,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">map<wbr>Formula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>toDate<span class="tsd-signature-symbol">: </span><a href="../modules.html#mapformula" class="tsd-signature-type" data-tsd-kind="Type alias">MapFormula</a><span class="tsd-signature-symbol">; </span>toNumber<span class="tsd-signature-symbol">: </span><a href="../modules.html#mapformula" class="tsd-signature-type" data-tsd-kind="Type alias">MapFormula</a><span class="tsd-signature-symbol">; </span>toString<span class="tsd-signature-symbol">: </span><a href="../modules.html#mapformula" class="tsd-signature-type" data-tsd-kind="Type alias">MapFormula</a><span class="tsd-signature-symbol">; </span>toWeek<span class="tsd-signature-symbol">: </span><a href="../modules.html#mapformula" class="tsd-signature-type" data-tsd-kind="Type alias">MapFormula</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:171</li>
+							<li>Defined in index.ts:174</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -231,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:157</li>
+									<li>Defined in index.ts:159</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -245,22 +247,77 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="circle" class="tsd-anchor"></a>
-					<h3>circle</h3>
+					<a name="applylayout" class="tsd-anchor"></a>
+					<h3>apply<wbr>Layout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">circle<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GraphView</span>, computeLayout<span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweenLayoutOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:147</li>
+									<li>Defined in index.ts:144</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5>view: <span class="tsd-signature-type">GraphView</span></h5>
+								</li>
+								<li>
+									<h5>computeLayout: <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tweenOverrides: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweenLayoutOptions</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="applytransform" class="tsd-anchor"></a>
+					<h3>apply<wbr>Transform</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, transform<span class="tsd-signature-symbol">: </span><a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:158</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+								</li>
+								<li>
+									<h5>transform: <a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="circle" class="tsd-anchor"></a>
+					<h3>circle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">circle<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:149</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
@@ -277,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:181</li>
+									<li>Defined in index.ts:184</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -300,19 +357,19 @@
 					<a name="cube" class="tsd-anchor"></a>
 					<h3>cube</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">cube<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">cube<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:148</li>
+									<li>Defined in index.ts:150</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
@@ -329,7 +386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:186</li>
+									<li>Defined in index.ts:190</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -352,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:168</li>
+									<li>Defined in index.ts:170</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -366,28 +423,48 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="geometriclayout" class="tsd-anchor"></a>
-					<h3>geometric<wbr>Layout</h3>
+					<a name="filter" class="tsd-anchor"></a>
+					<h3>filter</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">geometric<wbr>Layout<span class="tsd-signature-symbol">(</span>computeLayout<span class="tsd-signature-symbol">: </span><a href="../modules.html#geometriclayoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">GeometricLayoutFunction</a>, options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="filteroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FilterOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:149</li>
+									<li>Defined in index.ts:171</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>computeLayout: <a href="../modules.html#geometriclayoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">GeometricLayoutFunction</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5>options: <a href="filteroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FilterOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="filterbyproperties" class="tsd-anchor"></a>
+					<h3>filter<wbr>ByProperties</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>ByProperties<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>properties<span class="tsd-signature-symbol">: </span><a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#filter" class="tsd-signature-type" data-tsd-kind="Type alias">Filter</a><span class="tsd-signature-symbol">&lt;</span><a href="inmemoryproperties.html" class="tsd-signature-type" data-tsd-kind="Interface">InMemoryProperties</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:188</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>properties: <a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#filter" class="tsd-signature-type" data-tsd-kind="Type alias">Filter</a><span class="tsd-signature-symbol">&lt;</span><a href="inmemoryproperties.html" class="tsd-signature-type" data-tsd-kind="Interface">InMemoryProperties</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -401,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:125</li>
+									<li>Defined in index.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -424,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:120</li>
+									<li>Defined in index.ts:122</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GraphView</span></h4>
@@ -441,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:193</li>
+									<li>Defined in index.ts:197</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Group</span></h4>
@@ -458,7 +535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:119</li>
+									<li>Defined in index.ts:121</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -475,19 +552,19 @@
 					<a name="grid" class="tsd-anchor"></a>
 					<h3>grid</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">grid<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">grid<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:150</li>
+									<li>Defined in index.ts:152</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
@@ -498,36 +575,7 @@
 					<a name="layout" class="tsd-anchor"></a>
 					<h3>layout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GraphView</span>, computeLayout<span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="tweenlayoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenLayoutOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in index.ts:142</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>view: <span class="tsd-signature-type">GraphView</span></h5>
-								</li>
-								<li>
-									<h5>computeLayout: <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tweenOverrides: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="tweenlayoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenLayoutOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="line" class="tsd-anchor"></a>
-					<h3>line</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">line<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">(</span>computeLayout<span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutnodesfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutNodesFunction</a>, options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -539,7 +587,33 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5>computeLayout: <a href="../modules.html#layoutnodesfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutNodesFunction</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="line" class="tsd-anchor"></a>
+					<h3>line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">line<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:153</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
@@ -556,7 +630,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:169</li>
+									<li>Defined in index.ts:172</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -579,7 +653,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:196</li>
+									<li>Defined in index.ts:200</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -602,19 +676,19 @@
 					<a name="makeedge" class="tsd-anchor"></a>
 					<h3>make<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="mutableedge.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:128</li>
+									<li>Defined in index.ts:130</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>edge: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="mutableedge.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>edge: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
@@ -631,7 +705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:129</li>
+									<li>Defined in index.ts:131</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -663,7 +737,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:121</li>
+									<li>Defined in index.ts:123</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h4>
@@ -680,7 +754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:133</li>
+									<li>Defined in index.ts:135</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -703,7 +777,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:132</li>
+									<li>Defined in index.ts:134</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -720,7 +794,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:197</li>
+									<li>Defined in index.ts:201</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -743,7 +817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:198</li>
+									<li>Defined in index.ts:202</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
@@ -760,7 +834,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:170</li>
+									<li>Defined in index.ts:173</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -783,7 +857,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:177</li>
+									<li>Defined in index.ts:180</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -806,7 +880,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:122</li>
+									<li>Defined in index.ts:124</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -832,7 +906,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:134</li>
+									<li>Defined in index.ts:136</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -864,7 +938,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:185</li>
+									<li>Defined in index.ts:189</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -887,7 +961,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:189</li>
+									<li>Defined in index.ts:193</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -919,7 +993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:190</li>
+									<li>Defined in index.ts:194</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -939,19 +1013,19 @@
 					<a name="random" class="tsd-anchor"></a>
 					<h3>random</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">random<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">random<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:152</li>
+									<li>Defined in index.ts:154</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
@@ -968,7 +1042,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:201</li>
+									<li>Defined in index.ts:205</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -991,7 +1065,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:178</li>
+									<li>Defined in index.ts:181</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1014,7 +1088,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:182</li>
+									<li>Defined in index.ts:185</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1031,48 +1105,22 @@
 					<a name="spiral" class="tsd-anchor"></a>
 					<h3>spiral</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">spiral<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">spiral<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:153</li>
+									<li>Defined in index.ts:155</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="geometricoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GeometricOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="layoutoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="transform" class="tsd-anchor"></a>
-					<h3>transform</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">transform<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, transform<span class="tsd-signature-symbol">: </span><a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in index.ts:156</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
-								</li>
-								<li>
-									<h5>transform: <a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1109,6 +1157,12 @@
 								<a href="api.html#aggregate" class="tsd-kind-icon">aggregate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api.html#applylayout" class="tsd-kind-icon">apply<wbr>Layout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api.html#applytransform" class="tsd-kind-icon">apply<wbr>Transform</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api.html#circle" class="tsd-kind-icon">circle</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -1124,7 +1178,10 @@
 								<a href="api.html#extract" class="tsd-kind-icon">extract</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="api.html#geometriclayout" class="tsd-kind-icon">geometric<wbr>Layout</a>
+								<a href="api.html#filter" class="tsd-kind-icon">filter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api.html#filterbyproperties" class="tsd-kind-icon">filter<wbr>ByProperties</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api.html#getcategorycolor" class="tsd-kind-icon">get<wbr>Category<wbr>Color</a>
@@ -1209,9 +1266,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api.html#spiral" class="tsd-kind-icon">spiral</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="api.html#transform" class="tsd-kind-icon">transform</a>
 							</li>
 						</ul>
 					</li>
