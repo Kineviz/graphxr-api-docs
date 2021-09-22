@@ -1370,7 +1370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/applyLayout.ts:31</li>
+									<li>Defined in layout/applyLayout.ts:46</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1385,10 +1385,16 @@
 									<dd><p>0.0.1</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">())</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">circle</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">})</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">cube</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">, </span><span style="color: #001080">interpolate:</span><span style="color: #000000"> </span><span style="color: #001080">myInterpolate</span><span style="color: #000000">})</span>
+									<dd><pre><code class="language-js"><span style="color: #008000">// Basic example</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">())</span>
+
+<span style="color: #008000">// Layouts can be tweened, or not.</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">circle</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">})</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">cube</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">, </span><span style="color: #001080">interpolate:</span><span style="color: #000000"> </span><span style="color: #001080">myInterpolate</span><span style="color: #000000">})</span>
+
+<span style="color: #008000">// Define your own layout!</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(),</span>
 <span style="color: #000000">  {</span>
 <span style="color: #000000">    </span><span style="color: #001080">final:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Map</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">n</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> [</span><span style="color: #001080">n</span><span style="color: #000000">, </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">makeRandomPosition</span><span style="color: #000000">()])),</span>
 <span style="color: #000000">    </span><span style="color: #001080">tween:</span><span style="color: #000000"> {</span>
@@ -1397,6 +1403,15 @@
 <span style="color: #000000">    }</span>
 <span style="color: #000000">  }</span>
 <span style="color: #000000">)</span>
+
+<span style="color: #008000">// Sort and Filter can apply to the geometric layouts.</span>
+<span style="color: #008000">// Also, note that you can call applyLayout on a GraphView.</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">sort:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;price&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// shorthand for GraphXR.sortByProperty({property: &#039;price&#039;, ascending: true})</span>
+<span style="color: #000000">    </span><span style="color: #001080">filter:</span><span style="color: #000000"> </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">nodesByCategory</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Item&#039;</span><span style="color: #000000">),</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">))</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -2001,7 +2016,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">nodes</span><span style="color: #000000">.</span><span style="color: #795E26">sort</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">sortByProperty</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;size&#039;</span><span style="color: #000000">))</span>
+									<dd><pre><code class="language-js"><span style="color: #001080">nodes</span><span style="color: #000000">.</span><span style="color: #795E26">sort</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">sortByProperty</span><span style="color: #000000">({</span><span style="color: #001080">property:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;size&#039;</span><span style="color: #000000">}))</span>
 </code></pre>
 									</dd>
 								</dl>
