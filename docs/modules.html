@@ -96,7 +96,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parametricdimension.html" class="tsd-kind-icon">Parametric<wbr>Dimension</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parametricoptions.html" class="tsd-kind-icon">Parametric<wbr>Options</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/position.html" class="tsd-kind-icon">Position</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a></li>
@@ -130,6 +130,7 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeid" class="tsd-kind-icon">Node<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeidtoposition" class="tsd-kind-icon">Node<wbr>IdTo<wbr>Position</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodestyle" class="tsd-kind-icon">Node<wbr>Style</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#position" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#properties" class="tsd-kind-icon">Properties</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertykey" class="tsd-kind-icon">Property<wbr>Key</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertyvalue" class="tsd-kind-icon">Property<wbr>Value</a></li>
@@ -141,6 +142,7 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="modules.html#axes" class="tsd-kind-icon">AXES</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#default_category_id" class="tsd-kind-icon">DEFAULT_<wbr>CATEGORY_<wbr>ID</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#default_relationship_id" class="tsd-kind-icon">DEFAULT_<wbr>RELATIONSHIP_<wbr>ID</a></li>
 								<li class="tsd-kind-variable"><a href="modules.html#dimensions" class="tsd-kind-icon">DIMENSIONS</a></li>
@@ -207,6 +209,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#rotate" class="tsd-kind-icon">rotate</a></li>
 							</ul>
 							<h3>Properties Functions</h3>
 							<ul class="tsd-index-list">
@@ -357,10 +360,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="dimension" class="tsd-anchor"></a>
 					<h3>Dimension</h3>
-					<div class="tsd-signature tsd-kind-icon">Dimension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></div>
+					<div class="tsd-signature tsd-kind-icon">Dimension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;x&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;y&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;z&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in styles.ts:9</li>
+							<li>Defined in styles.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -478,7 +481,7 @@
 					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout/layout.ts:18</li>
+							<li>Defined in layout/layout.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -506,10 +509,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="layoutnodesfunction" class="tsd-anchor"></a>
 					<h3>Layout<wbr>Nodes<wbr>Function</h3>
-					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Nodes<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span>, view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></div>
+					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Nodes<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span>, view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, initial<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout/layout.ts:16</li>
+							<li>Defined in layout/layout.ts:17</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -517,7 +520,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span>, view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span>, view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, initial<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -528,6 +531,9 @@
 											</li>
 											<li>
 												<h5>view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+											</li>
+											<li>
+												<h5>initial: <a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
@@ -634,10 +640,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="nodeidtoposition" class="tsd-anchor"></a>
 					<h3>Node<wbr>IdTo<wbr>Position</h3>
-					<div class="tsd-signature tsd-kind-icon">Node<wbr>IdTo<wbr>Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>IdTo<wbr>Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in layout/layout.ts:25</li>
+							<li>Defined in layout/layout.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -647,7 +653,17 @@
 					<div class="tsd-signature tsd-kind-icon">Node<wbr>Style<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in styles.ts:28</li>
+							<li>Defined in styles.ts:24</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="position" class="tsd-anchor"></a>
+					<h3>Position</h3>
+					<div class="tsd-signature tsd-kind-icon">Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">THREE.Vector3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in styles.ts:3</li>
 						</ul>
 					</aside>
 				</section>
@@ -766,6 +782,30 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="axes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> AXES</h3>
+					<div class="tsd-signature tsd-kind-icon">AXES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector3</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector3</span><span class="tsd-signature-symbol">; </span>z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector3</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in layout/layout.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector3</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector3</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vector3</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="default_category_id" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> DEFAULT_<wbr>CATEGORY_<wbr>ID</h3>
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>CATEGORY_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;Node&quot;</span><span class="tsd-signature-symbol"> = &quot;Node&quot;</span></div>
@@ -791,7 +831,7 @@
 					<div class="tsd-signature tsd-kind-icon">DIMENSIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#dimension" class="tsd-signature-type" data-tsd-kind="Type alias">Dimension</a><span class="tsd-signature-symbol">, </span><a href="modules.html#dimension" class="tsd-signature-type" data-tsd-kind="Type alias">Dimension</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in styles.ts:10</li>
+							<li>Defined in styles.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -961,7 +1001,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:227</li>
+									<li>Defined in index.ts:230</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1650,7 +1690,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/layout.ts:42</li>
+									<li>Defined in layout/layout.ts:49</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2026,6 +2066,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="rotate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> rotate</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">rotate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/rotateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RotateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/rotate.ts:13</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/rotateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RotateOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties Functions</h2>
@@ -2181,7 +2244,7 @@
 					<a name="makeposition" class="tsd-anchor"></a>
 					<h3>make<wbr>Position</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Position<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Position<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;x&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;y&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;z&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2203,10 +2266,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;x&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;y&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;z&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2214,7 +2277,7 @@
 					<a name="makerandomposition" class="tsd-anchor"></a>
 					<h3>make<wbr>Random<wbr>Position</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Random<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Random<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2233,7 +2296,7 @@
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2741,7 +2804,7 @@
 						<a href="interfaces/parametricoptions.html" class="tsd-kind-icon">Parametric<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/position.html" class="tsd-kind-icon">Position</a>
+						<a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a>
@@ -2828,6 +2891,9 @@
 						<a href="modules.html#nodestyle" class="tsd-kind-icon">Node<wbr>Style</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#position" class="tsd-kind-icon">Position</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#properties" class="tsd-kind-icon">Properties</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -2844,6 +2910,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#transformfunction" class="tsd-kind-icon">Transform<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#axes" class="tsd-kind-icon">AXES</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#default_category_id" class="tsd-kind-icon">DEFAULT_<wbr>CATEGORY_<wbr>ID</a>
@@ -2982,6 +3051,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#parametric" class="tsd-kind-icon">parametric</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#rotate" class="tsd-kind-icon">rotate</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setruntime" class="tsd-kind-icon">set<wbr>Runtime</a>
