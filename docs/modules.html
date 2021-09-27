@@ -195,6 +195,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#layout" class="tsd-kind-icon">layout</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#line" class="tsd-kind-icon">line</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#parametric" class="tsd-kind-icon">parametric</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#rotate" class="tsd-kind-icon">rotate</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#spiral" class="tsd-kind-icon">spiral</a></li>
 							</ul>
 							<h3>Node Functions</h3>
@@ -209,7 +210,6 @@
 								<li class="tsd-kind-function"><a href="modules.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#rotate" class="tsd-kind-icon">rotate</a></li>
 							</ul>
 							<h3>Properties Functions</h3>
 							<ul class="tsd-index-list">
@@ -1424,7 +1424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/alignBy.ts:24</li>
+									<li>Defined in layout/alignBy.ts:25</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1804,6 +1804,53 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="rotate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> rotate</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">rotate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/rotateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RotateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/rotate.ts:32</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given one of the x, y, or z dimensions, find the center point of all the Nodes
+										and rotate all Nodes around the axis passing through the center point
+									and lying on the dimension given</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.72</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">rotate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">dimension:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;x&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">theta:</span><span style="color: #000000"> </span><span style="color: #098658">90</span><span style="color: #000000">,</span>
+<span style="color: #000000">})</span>
+
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">rotate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">dimension:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;z&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">theta:</span><span style="color: #000000"> </span><span style="color: #098658">45</span>
+<span style="color: #000000">})</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/rotateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RotateOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="spiral" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> spiral</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -2063,29 +2110,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#apieventcallbackid" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallbackId</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="rotate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> rotate</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">rotate<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/rotateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RotateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in layout/rotate.ts:13</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="interfaces/rotateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">RotateOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
 						</li>
 					</ul>
 				</section>

@@ -78,6 +78,43 @@
 
 <span style="color: #008000">// Get nodes</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+
+<span style="color: #008000">// Apply Layout</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">()</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">sort:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;price&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #795E26">filter</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">node</span><span style="color: #000000">: </span><span style="color: #267F99">Node</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">properties</span><span style="color: #000000">.</span><span style="color: #001080">price</span><span style="color: #000000"> &gt; </span><span style="color: #098658">13</span><span style="color: #000000">,</span>
+<span style="color: #000000">}))</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">rotate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">dimension:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;x&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">theta:</span><span style="color: #000000"> </span><span style="color: #098658">90</span><span style="color: #000000">,</span>
+<span style="color: #000000">}))</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">parametric</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;price&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">}))</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">distributionBy</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">dimension:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;y&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">bin:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;seasonNumber&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">}))</span>
+
+<span style="color: #008000">// Apply Transform</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">()</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">keyProps:</span><span style="color: #000000"> [</span>
+<span style="color: #000000">    {</span>
+<span style="color: #000000">      </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">newName:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;seasonNumber&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">isSplit:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">splitChar:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">  </span><span style="color: #001080">noKeyProps:</span><span style="color: #000000"> [],</span>
+<span style="color: #000000">  </span><span style="color: #001080">newCategory:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Season Number&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">newRelationship:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;inSeason&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">inheritLinks:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">skipEmpty:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">}))</span>
 </code></pre>
 				<a href="#minimum-version-requirements" id="minimum-version-requirements" style="color: inherit; text-decoration: none;">
 					<h1>Minimum Version Requirements</h1>
