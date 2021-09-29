@@ -99,6 +99,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/parametricoptions.html" class="tsd-kind-icon">Parametric<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/scaleoptions.html" class="tsd-kind-icon">Scale<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a></li>
 							</ul>
@@ -212,6 +213,7 @@
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lazychannels" class="tsd-kind-icon">lazy<wbr>Channels</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#scale" class="tsd-kind-icon">scale</a></li>
 							</ul>
 							<h3>Properties Functions</h3>
 							<ul class="tsd-index-list">
@@ -997,7 +999,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:230</li>
+									<li>Defined in index.ts:233</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2141,6 +2143,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="scale" class="tsd-anchor"></a>
+					<h3>scale</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/scaleoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ScaleOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/scale.ts:17</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/scaleoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ScaleOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties Functions</h2>
@@ -2296,7 +2321,7 @@
 					<a name="makeposition" class="tsd-anchor"></a>
 					<h3>make<wbr>Position</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Position<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;x&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;y&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;z&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Position<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2318,7 +2343,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;x&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;y&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;z&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></h4>
@@ -2865,6 +2890,9 @@
 						<a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/scaleoptions.html" class="tsd-kind-icon">Scale<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -3112,6 +3140,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#rotate" class="tsd-kind-icon">rotate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#scale" class="tsd-kind-icon">scale</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setruntime" class="tsd-kind-icon">set<wbr>Runtime</a>
