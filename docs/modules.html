@@ -197,6 +197,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#circle" class="tsd-kind-icon">circle</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#cube" class="tsd-kind-icon">cube</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#distributionby" class="tsd-kind-icon">distribution<wbr>By</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#ego" class="tsd-kind-icon">ego</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#grid" class="tsd-kind-icon">grid</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#layout" class="tsd-kind-icon">layout</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#line" class="tsd-kind-icon">line</a></li>
@@ -213,7 +214,6 @@
 							</ul>
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function"><a href="modules.html#ego" class="tsd-kind-icon">ego</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lazychannels" class="tsd-kind-icon">lazy<wbr>Channels</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
@@ -1699,6 +1699,60 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="ego" class="tsd-anchor"></a>
+					<h3>ego</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">ego<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/egooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EgoOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in layout/ego.ts:66</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ego reveals hierarchal data by arranging nodes in a tree, where a node&#39;s depth in
+										the tree is equal to the length of the shortest path to the node. The tree projects
+									linearly in one direction, or radially around the root[s].</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.93</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">();</span>
+
+<span style="color: #008000">// The minimum requirements</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">ego</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #795E26">filter</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">node</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">properties</span><span style="color: #000000">.</span><span style="color: #001080">Level</span><span style="color: #000000"> === </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #008000">// Find the root node[s]</span>
+<span style="color: #000000">}))</span>
+
+<span style="color: #008000">// Applying optional settings</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">ego</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">depth:</span><span style="color: #000000"> </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #008000">// maximum depth of the tree; default 100</span>
+<span style="color: #000000">  </span><span style="color: #001080">edgeLength:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> </span><span style="color: #008000">// visual length of the edges in the tree; default 0.2</span>
+<span style="color: #000000">  </span><span style="color: #001080">mode</span><span style="color: #000000">: </span><span style="color: #A31515">&#039;rings&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// &#039;tree&#039; or &#039;rings&#039;; default &#039;tree&#039;</span>
+<span style="color: #000000">  </span><span style="color: #001080">orientation</span><span style="color: #000000">: </span><span style="color: #A31515">&#039;down&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// &#039;up&#039;, &#039;down&#039;, &#039;left&#039;, or &#039;right&#039;; default &#039;right&#039;  </span>
+<span style="color: #000000">  </span><span style="color: #001080">sortByProperty</span><span style="color: #000000">: </span><span style="color: #A31515">&#039;ComponentName&#039;</span><span style="color: #000000"> </span><span style="color: #008000">// arrange child nodes in ascending order by a property</span>
+<span style="color: #000000">  [</span><span style="color: #001080">sortByProperty</span><span style="color: #000000">: </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">sortByProperty</span><span style="color: #000000">({</span><span style="color: #001080">property:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;ComponentName&quot;</span><span style="color: #000000">, </span><span style="color: #001080">ascending:</span><span style="color: #000000"> </span><span style="color: #0000FF">false</span><span style="color: #000000">})] </span><span style="color: #008000">// same as above, but descending</span>
+<span style="color: #000000">}))</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/egooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EgoOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="grid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> grid</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -2083,29 +2137,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Other Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="ego" class="tsd-anchor"></a>
-					<h3>ego</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">ego<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/egooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EgoOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in layout/ego.ts:39</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="interfaces/egooptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EgoOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="filter" class="tsd-anchor"></a>
 					<h3>filter</h3>
