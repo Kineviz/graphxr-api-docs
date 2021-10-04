@@ -77,6 +77,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/alignbyoptions.html" class="tsd-kind-icon">Align<wbr>ByOptions</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/computepositionarguments.html" class="tsd-kind-icon">Compute<wbr>Position<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/dijkstraoptions.html" class="tsd-kind-icon">Dijkstra<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/egooptions.html" class="tsd-kind-icon">Ego<wbr>Options</a></li>
@@ -99,6 +100,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parametricdimension.html" class="tsd-kind-icon">Parametric<wbr>Dimension</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parametricoptions.html" class="tsd-kind-icon">Parametric<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/parent.html" class="tsd-kind-icon">Parent</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scaleoptions.html" class="tsd-kind-icon">Scale<wbr>Options</a></li>
@@ -137,6 +139,7 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeidtoposition" class="tsd-kind-icon">Node<wbr>IdTo<wbr>Position</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodeidtopositionentry" class="tsd-kind-icon">Node<wbr>IdTo<wbr>Position<wbr>Entry</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodestyle" class="tsd-kind-icon">Node<wbr>Style</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#path" class="tsd-kind-icon">Path</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#position" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#properties" class="tsd-kind-icon">Properties</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#propertykey" class="tsd-kind-icon">Property<wbr>Key</a></li>
@@ -164,6 +167,10 @@
 							<h3>API Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#getapi" class="tsd-kind-icon">get<wbr>Api</a></li>
+							</ul>
+							<h3>Algorithm Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#dijkstra" class="tsd-kind-icon">dijkstra</a></li>
 							</ul>
 							<h3>Category Functions</h3>
 							<ul class="tsd-index-list">
@@ -704,6 +711,16 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="path" class="tsd-anchor"></a>
+					<h3>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">Path<span class="tsd-signature-symbol">:</span> <a href="interfaces/parent.html" class="tsd-signature-type" data-tsd-kind="Interface">Parent</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in path-finding/dijkstra.ts:26</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="position" class="tsd-anchor"></a>
 					<h3>Position</h3>
 					<div class="tsd-signature tsd-kind-icon">Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">THREE.Vector3</span></div>
@@ -1047,7 +1064,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:239</li>
+									<li>Defined in index.ts:244</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1062,6 +1079,58 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/api.html" class="tsd-signature-type" data-tsd-kind="Interface">API</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>a Promise that resolves to the API</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Algorithm Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="dijkstra" class="tsd-anchor"></a>
+					<h3>dijkstra</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">dijkstra<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in path-finding/dijkstra.ts:49</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns all shortest paths from the source to target node.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.95</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">()</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">nodes</span><span style="color: #000000"> = </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">sourceId</span><span style="color: #000000"> = </span><span style="color: #001080">nodes</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">].</span><span style="color: #001080">id</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">targetId</span><span style="color: #000000"> = </span><span style="color: #001080">nodes</span><span style="color: #000000">[</span><span style="color: #001080">nodes</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000"> - </span><span style="color: #098658">1</span><span style="color: #000000">].</span><span style="color: #001080">id</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">paths</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">dijkstra</span><span style="color: #000000">(</span><span style="color: #001080">view</span><span style="color: #000000">, {</span><span style="color: #001080">sourceId</span><span style="color: #000000">, </span><span style="color: #001080">targetId</span><span style="color: #000000">})</span>
+<span style="color: #008000">// Optionally provide a custom weight property</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">weightProperty</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;weight_property&#039;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">paths</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">dijkstra</span><span style="color: #000000">(</span><span style="color: #001080">view</span><span style="color: #000000">, {</span><span style="color: #001080">sourceId</span><span style="color: #000000">, </span><span style="color: #001080">targetId</span><span style="color: #000000">, </span><span style="color: #001080">weightProperty</span><span style="color: #000000">})</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">paths</span><span style="color: #000000">)</span>
+<span style="color: #008000">// [[{nodeId: &#039;a&#039;, edgeId: &#039;ab&#039;}, {nodeId: &#039;b&#039;}]]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3001,6 +3070,9 @@
 						<a href="interfaces/computepositionarguments.html" class="tsd-kind-icon">Compute<wbr>Position<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/dijkstraoptions.html" class="tsd-kind-icon">Dijkstra<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -3065,6 +3137,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/parametricoptions.html" class="tsd-kind-icon">Parametric<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parent.html" class="tsd-kind-icon">Parent</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a>
@@ -3166,6 +3241,9 @@
 						<a href="modules.html#nodestyle" class="tsd-kind-icon">Node<wbr>Style</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#path" class="tsd-kind-icon">Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#position" class="tsd-kind-icon">Position</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -3239,6 +3317,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#cube" class="tsd-kind-icon">cube</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#dijkstra" class="tsd-kind-icon">dijkstra</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#distributionby" class="tsd-kind-icon">distribution<wbr>By</a>
