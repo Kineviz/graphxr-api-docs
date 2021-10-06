@@ -125,6 +125,8 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#computefunction" class="tsd-kind-icon">Compute<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#computeposition" class="tsd-kind-icon">Compute<wbr>Position</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#connectedcomponent" class="tsd-kind-icon">Connected<wbr>Component</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#connectedcomponentresult" class="tsd-kind-icon">Connected<wbr>Component<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#dimension" class="tsd-kind-icon">Dimension</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#distributionoptions" class="tsd-kind-icon">Distribution<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#edge" class="tsd-kind-icon">Edge</a></li>
@@ -136,6 +138,7 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#layoutnodesfunction" class="tsd-kind-icon">Layout<wbr>Nodes<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#legacyedge" class="tsd-kind-icon">Legacy<wbr>Edge</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#legacynode" class="tsd-kind-icon">Legacy<wbr>Node</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#louvainresult" class="tsd-kind-icon">Louvain<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#mapformula" class="tsd-kind-icon">Map<wbr>Formula</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#mutableedge" class="tsd-kind-icon">Mutable<wbr>Edge</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#node" class="tsd-kind-icon">Node</a></li>
@@ -184,6 +187,12 @@
 								<li class="tsd-kind-function"><a href="modules.html#betweenness" class="tsd-kind-icon">betweenness</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#closeness" class="tsd-kind-icon">closeness</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#pagerank" class="tsd-kind-icon">page<wbr>Rank</a></li>
+							</ul>
+							<h3>Community Detection Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#connectedcomponent" class="tsd-kind-icon">connected<wbr>Component</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#louvain" class="tsd-kind-icon">louvain</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#stronglyconnectedcomponent" class="tsd-kind-icon">strongly<wbr>Connected<wbr>Component</a></li>
 							</ul>
 							<h3>Edge Functions</h3>
 							<ul class="tsd-index-list">
@@ -460,6 +469,26 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="connectedcomponent" class="tsd-anchor"></a>
+					<h3>Connected<wbr>Component</h3>
+					<div class="tsd-signature tsd-kind-icon">Connected<wbr>Component<span class="tsd-signature-symbol">:</span> <a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in community-detection/connectedComponent.ts:4</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="connectedcomponentresult" class="tsd-anchor"></a>
+					<h3>Connected<wbr>Component<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Connected<wbr>Component<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in community-detection/connectedComponent.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="dimension" class="tsd-anchor"></a>
 					<h3>Dimension</h3>
 					<div class="tsd-signature tsd-kind-icon">Dimension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;x&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;y&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;z&quot;</span><span class="tsd-signature-symbol">&gt;</span></div>
@@ -656,6 +685,16 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in node.ts:15</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="louvainresult" class="tsd-anchor"></a>
+					<h3>Louvain<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Louvain<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in community-detection/louvain.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -1137,7 +1176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:255</li>
+									<li>Defined in index.ts:266</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1323,6 +1362,126 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#pagerankresult" class="tsd-signature-type" data-tsd-kind="Type alias">PageRankResult</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Community Detection Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="connectedcomponent" class="tsd-anchor"></a>
+					<h3>connected<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in community-detection/connectedComponent.ts:18</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find all Connected Components in the graph</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.102</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">connectedComponent</span><span style="color: #000000">(</span><span style="color: #001080">graph</span><span style="color: #000000">)</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">))</span>
+<span style="color: #008000">// 3</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="louvain" class="tsd-anchor"></a>
+					<h3>louvain</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">louvain<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in community-detection/louvain.ts:19</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find all Louvain components in the graph</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.102</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">louvain</span><span style="color: #000000">(</span><span style="color: #001080">graph</span><span style="color: #000000">)</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">))</span>
+<span style="color: #008000">// 3</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="stronglyconnectedcomponent" class="tsd-anchor"></a>
+					<h3>strongly<wbr>Connected<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">strongly<wbr>Connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in community-detection/stronglyConnectedComponent.ts:23</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find all Strongly Connected Components in the graph</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.102</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">stronglyConnectedComponent</span><span style="color: #000000">(</span><span style="color: #001080">graph</span><span style="color: #000000">)</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">))</span>
+<span style="color: #008000">// 3</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -3404,6 +3563,12 @@
 						<a href="modules.html#computeposition" class="tsd-kind-icon">Compute<wbr>Position</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#connectedcomponent" class="tsd-kind-icon">Connected<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#connectedcomponentresult" class="tsd-kind-icon">Connected<wbr>Component<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#dimension" class="tsd-kind-icon">Dimension</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -3435,6 +3600,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#legacynode" class="tsd-kind-icon">Legacy<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#louvainresult" class="tsd-kind-icon">Louvain<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#mapformula" class="tsd-kind-icon">Map<wbr>Formula</a>
@@ -3548,6 +3716,9 @@
 						<a href="modules.html#comparepropertyvalues" class="tsd-kind-icon">compare<wbr>Property<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#connectedcomponent" class="tsd-kind-icon">connected<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#cube" class="tsd-kind-icon">cube</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -3597,6 +3768,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#link" class="tsd-kind-icon">link</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#louvain" class="tsd-kind-icon">louvain</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a>
@@ -3669,6 +3843,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#spiral" class="tsd-kind-icon">spiral</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#stronglyconnectedcomponent" class="tsd-kind-icon">strongly<wbr>Connected<wbr>Component</a>
 					</li>
 				</ul>
 			</nav>
