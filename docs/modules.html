@@ -120,6 +120,8 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#betweenness" class="tsd-kind-icon">Betweenness</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#betweennessresult" class="tsd-kind-icon">Betweenness<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#closeness" class="tsd-kind-icon">Closeness</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#closenessresult" class="tsd-kind-icon">Closeness<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#computefunction" class="tsd-kind-icon">Compute<wbr>Function</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#computeposition" class="tsd-kind-icon">Compute<wbr>Position</a></li>
@@ -180,6 +182,7 @@
 							<h3>Centrality Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#betweenness" class="tsd-kind-icon">betweenness</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#closeness" class="tsd-kind-icon">closeness</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#pagerank" class="tsd-kind-icon">page<wbr>Rank</a></li>
 							</ul>
 							<h3>Edge Functions</h3>
@@ -367,6 +370,26 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in category.ts:1</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="closeness" class="tsd-anchor"></a>
+					<h3>Closeness</h3>
+					<div class="tsd-signature tsd-kind-icon">Closeness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in centrality/closeness.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="closenessresult" class="tsd-anchor"></a>
+					<h3>Closeness<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Closeness<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><a href="modules.html#closeness" class="tsd-signature-type" data-tsd-kind="Type alias">Closeness</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in centrality/closeness.ts:7</li>
 						</ul>
 					</aside>
 				</section>
@@ -1114,7 +1137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:252</li>
+									<li>Defined in index.ts:255</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1211,6 +1234,49 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="closeness" class="tsd-anchor"></a>
+					<h3>closeness</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">closeness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in centrality/closeness.ts:24</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compute Closeness score for each node in the graph</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.101</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">closeness</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">())</span>
+<span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">((</span><span style="color: #001080">graph</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #001080">graph</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">forEach</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">properties</span><span style="color: #000000">.</span><span style="color: #001080">closeness</span><span style="color: #000000"> = </span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">graph</span><span style="color: #000000">;</span>
+<span style="color: #000000">})</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -3323,6 +3389,12 @@
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#closeness" class="tsd-kind-icon">Closeness</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#closenessresult" class="tsd-kind-icon">Closeness<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#color" class="tsd-kind-icon">Color</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -3468,6 +3540,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#circle" class="tsd-kind-icon">circle</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#closeness" class="tsd-kind-icon">closeness</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#comparepropertyvalues" class="tsd-kind-icon">compare<wbr>Property<wbr>Values</a>
