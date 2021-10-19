@@ -96,6 +96,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/mappedproperty.html" class="tsd-kind-icon">Mapped<wbr>Property</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/mergeoptions.html" class="tsd-kind-icon">Merge<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/mutablenode.html" class="tsd-kind-icon">Mutable<wbr>Node</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/neo4joptions.html" class="tsd-kind-icon">Neo4j<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/pagerankoptions.html" class="tsd-kind-icon">Page<wbr>Rank<wbr>Options</a></li>
@@ -233,6 +234,10 @@
 								<li class="tsd-kind-function"><a href="modules.html#shift" class="tsd-kind-icon">shift</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#spiral" class="tsd-kind-icon">spiral</a></li>
 							</ul>
+							<h3>Neo4j Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#neo4j" class="tsd-kind-icon">neo4j</a></li>
+							</ul>
 							<h3>Node Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#arenodesequal" class="tsd-kind-icon">are<wbr>Nodes<wbr>Equal</a></li>
@@ -245,7 +250,6 @@
 								<li class="tsd-kind-function"><a href="modules.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lazychannels" class="tsd-kind-icon">lazy<wbr>Channels</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#neo4j" class="tsd-kind-icon">neo4j</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
 							</ul>
 							<h3>Path Finding Functions</h3>
@@ -2468,6 +2472,50 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Neo4j Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="neo4j" class="tsd-anchor"></a>
+					<h3>neo4j</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">neo4j<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/neo4joptions.html" class="tsd-signature-type" data-tsd-kind="Interface">Neo4jOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in neo4j.ts:50</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Execute a Neo4j query through the GraphXR server using the currently opened project&#39;s
+									saved Neo4j credentials.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.114</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">mergeGraphs</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (p:Person {name: &#039;Kevin Bacon&#039;})-[d:ACTED_IN *1..3]-(hollywood) return DISTINCT p, hollywood, d`</span><span style="color: #000000">))</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/neo4joptions.html" class="tsd-signature-type" data-tsd-kind="Interface">Neo4jOptions</a><span class="tsd-signature-symbol"> = {}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Node Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="arenodesequal" class="tsd-anchor"></a>
@@ -2696,29 +2744,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#color" class="tsd-signature-type" data-tsd-kind="Type alias">Color</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="neo4j" class="tsd-anchor"></a>
-					<h3>neo4j</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">neo4j<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in neo4j.ts:35</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>query: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3513,6 +3538,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/mutablenode.html" class="tsd-kind-icon">Mutable<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/neo4joptions.html" class="tsd-kind-icon">Neo4j<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a>
