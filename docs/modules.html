@@ -106,6 +106,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scaleoptions.html" class="tsd-kind-icon">Scale<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/searchgraph.html" class="tsd-kind-icon">Search<wbr>Graph</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/shiftoptions.html" class="tsd-kind-icon">Shift<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a></li>
@@ -211,8 +212,8 @@
 							</ul>
 							<h3>Graph Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#getgraphsnapshot" class="tsd-kind-icon">get<wbr>Graph<wbr>Snapshot</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makegraph" class="tsd-kind-icon">make<wbr>Graph</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#mergegraphs" class="tsd-kind-icon">merge<wbr>Graphs</a></li>
 							</ul>
@@ -246,6 +247,8 @@
 							</ul>
 							<h3>Other Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#aregraphsnapshotsequal" class="tsd-kind-icon">are<wbr>Graph<wbr>Snapshots<wbr>Equal</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#aregraphsequal" class="tsd-kind-icon">are<wbr>Graphs<wbr>Equal</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lazychannels" class="tsd-kind-icon">lazy<wbr>Channels</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
@@ -1153,7 +1156,7 @@
 					<div class="tsd-signature tsd-kind-icon">runtime<span class="tsd-signature-symbol">:</span> <a href="interfaces/runtime.html" class="tsd-signature-type" data-tsd-kind="Interface">Runtime</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in setRuntime.ts:57</li>
+							<li>Defined in setRuntime.ts:58</li>
 						</ul>
 					</aside>
 				</section>
@@ -1170,7 +1173,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:269</li>
+									<li>Defined in index.ts:272</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1725,6 +1728,37 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Graph Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getgraphsnapshot" class="tsd-anchor"></a>
+					<h3>get<wbr>Graph<wbr>Snapshot</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>Snapshot<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeStyles<span class="tsd-signature-symbol">: </span><a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in getGraphSnapshot.ts:34</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a snapshot of the Graph. Useful for unit testing.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+								</li>
+								<li>
+									<h5>nodeStyles: <a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="getgraphview" class="tsd-anchor"></a>
 					<h3>get<wbr>Graph<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -1743,37 +1777,6 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="getsnapshot" class="tsd-anchor"></a>
-					<h3>get<wbr>Snapshot</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Snapshot<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeStyles<span class="tsd-signature-symbol">: </span><a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in getSnapshot.ts:34</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a snapshot of the Graph. Useful for unit testing.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>graph: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
-								</li>
-								<li>
-									<h5>nodeStyles: <a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2653,6 +2656,58 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Other Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="aregraphsnapshotsequal" class="tsd-anchor"></a>
+					<h3>are<wbr>Graph<wbr>Snapshots<wbr>Equal</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">are<wbr>Graph<wbr>Snapshots<wbr>Equal<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a>, right<span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in areGraphSnapshotsEqual.ts:9</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>left: <a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></h5>
+								</li>
+								<li>
+									<h5>right: <a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="aregraphsequal" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> are<wbr>Graphs<wbr>Equal</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">are<wbr>Graphs<wbr>Equal<span class="tsd-signature-symbol">(</span>leftGraph<span class="tsd-signature-symbol">: </span><a href="interfaces/searchgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchGraph</a>, rightGraph<span class="tsd-signature-symbol">: </span><a href="interfaces/searchgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in areGraphSnapshotsEqual.ts:138</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leftGraph: <a href="interfaces/searchgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchGraph</a></h5>
+								</li>
+								<li>
+									<h5>rightGraph: <a href="interfaces/searchgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchGraph</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="filter" class="tsd-anchor"></a>
 					<h3>filter</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -2902,7 +2957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in setRuntime.ts:66</li>
+									<li>Defined in setRuntime.ts:67</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3559,6 +3614,9 @@
 						<a href="interfaces/scaleoptions.html" class="tsd-kind-icon">Scale<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/searchgraph.html" class="tsd-kind-icon">Search<wbr>Graph</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/shiftoptions.html" class="tsd-kind-icon">Shift<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -3739,6 +3797,12 @@
 						<a href="modules.html#areedgesequal" class="tsd-kind-icon">are<wbr>Edges<wbr>Equal</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#aregraphsnapshotsequal" class="tsd-kind-icon">are<wbr>Graph<wbr>Snapshots<wbr>Equal</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#aregraphsequal" class="tsd-kind-icon">are<wbr>Graphs<wbr>Equal</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#arenodesequal" class="tsd-kind-icon">are<wbr>Nodes<wbr>Equal</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -3784,13 +3848,13 @@
 						<a href="modules.html#getcategorycolor" class="tsd-kind-icon">get<wbr>Category<wbr>Color</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#getgraphsnapshot" class="tsd-kind-icon">get<wbr>Graph<wbr>Snapshot</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="modules.html#getsnapshot" class="tsd-kind-icon">get<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#grid" class="tsd-kind-icon">grid</a>
