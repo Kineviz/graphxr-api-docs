@@ -2524,7 +2524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in neo4j/neo4j.ts:58</li>
+									<li>Defined in neo4j/neo4j.ts:59</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2538,13 +2538,14 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// Merge result into graph workspace</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">mergeGraphs</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4jQueryGraphContentToGraph</span><span style="color: #000000">(</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (p:Person {name: &#039;Kevin Bacon&#039;})-[d:ACTED_IN *1..3]-(hollywood) return DISTINCT p, hollywood, d`</span><span style="color: #000000">)))</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">graph</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (p:Person {name: &#039;Kevin Bacon&#039;})-[d:ACTED_IN *1..3]-(hollywood) return DISTINCT p, hollywood, d`</span><span style="color: #000000">)).</span><span style="color: #795E26">toGraph</span><span style="color: #000000">();</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">mergeGraphs</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">graph</span><span style="color: #000000">)</span>
 
 <span style="color: #008000">// It can return table data</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tableData</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (n) RETURN n.name`</span><span style="color: #000000">)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tableData</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (n) RETURN n.name`</span><span style="color: #000000">)).</span><span style="color: #001080">data</span>
 
 <span style="color: #008000">// It can return graph data</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">graphData</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (n) RETURN n`</span><span style="color: #000000">)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">graphData</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (n) RETURN n`</span><span style="color: #000000">)).</span><span style="color: #001080">data</span>
 </code></pre>
 									</dd>
 								</dl>
