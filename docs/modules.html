@@ -248,6 +248,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#parametric" class="tsd-kind-icon">parametric</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#rotate" class="tsd-kind-icon">rotate</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#scale" class="tsd-kind-icon">scale</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#setaxesoptions" class="tsd-kind-icon">set<wbr>Axes<wbr>Options</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#shift" class="tsd-kind-icon">shift</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#spiral" class="tsd-kind-icon">spiral</a></li>
 							</ul>
@@ -271,7 +272,6 @@
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lazychannels" class="tsd-kind-icon">lazy<wbr>Channels</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#showaxes" class="tsd-kind-icon">show<wbr>Axes</a></li>
 							</ul>
 							<h3>Path Finding Functions</h3>
 							<ul class="tsd-index-list">
@@ -312,6 +312,10 @@
 								<li class="tsd-kind-function"><a href="modules.html#map" class="tsd-kind-icon">map</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#merge" class="tsd-kind-icon">merge</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a></li>
+							</ul>
+							<h3>Utility Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#sleep" class="tsd-kind-icon">sleep</a></li>
 							</ul>
 							<h3>window Functions</h3>
 							<ul class="tsd-index-list">
@@ -1279,7 +1283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:305</li>
+									<li>Defined in index.ts:314</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2183,7 +2187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/applyLayout.ts:47</li>
+									<li>Defined in layout/applyLayout.ts:46</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2679,6 +2683,45 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="setaxesoptions" class="tsd-anchor"></a>
+					<h3>set<wbr>Axes<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Axes<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/axesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AxesOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in axes/setAxesOptions.ts:33</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the axes options. Parametric layout automatically sets these.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.143</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>// Hide the axes
+											api.setAxesOptions({
+											showAxes: false,
+										})</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/axesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AxesOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="shift" class="tsd-anchor"></a>
 					<h3>shift</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -3154,29 +3197,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#apieventcallbackid" class="tsd-signature-type" data-tsd-kind="Type alias">ApiEventCallbackId</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="showaxes" class="tsd-anchor"></a>
-					<h3>show<wbr>Axes</h3>
-					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Axes<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/axesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AxesOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in layout/showAxes.ts:26</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="interfaces/axesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AxesOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3929,6 +3949,45 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Utility Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="sleep" class="tsd-anchor"></a>
+					<h3>sleep</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">sleep<span class="tsd-signature-symbol">(</span>ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in sleep.ts:9</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a promise that resolves after the given amount of milliseconds.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.143</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>await sleep(1000); // Sleep for 1 second</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ms: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>window Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="setfullscreen" class="tsd-anchor"></a>
@@ -4454,6 +4513,9 @@
 						<a href="modules.html#setautoshowimage" class="tsd-kind-icon">set<wbr>Auto<wbr>Show<wbr>Image</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#setaxesoptions" class="tsd-kind-icon">set<wbr>Axes<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#setcamerarotating" class="tsd-kind-icon">set<wbr>Camera<wbr>Rotating</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -4475,7 +4537,7 @@
 						<a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="modules.html#showaxes" class="tsd-kind-icon">show<wbr>Axes</a>
+						<a href="modules.html#sleep" class="tsd-kind-icon">sleep</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#sortbyproperty" class="tsd-kind-icon">sort<wbr>ByProperty</a>
