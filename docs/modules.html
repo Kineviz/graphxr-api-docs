@@ -262,6 +262,7 @@
 								<li class="tsd-kind-function"><a href="modules.html#aregraphsnapshotsequal" class="tsd-kind-icon">are<wbr>Graph<wbr>Snapshots<wbr>Equal</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#aregraphsequal" class="tsd-kind-icon">are<wbr>Graphs<wbr>Equal</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#filter" class="tsd-kind-icon">filter</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#flytocenter" class="tsd-kind-icon">fly<wbr>ToCenter</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#flytoposition" class="tsd-kind-icon">fly<wbr>ToPosition</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#lazychannels" class="tsd-kind-icon">lazy<wbr>Channels</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makecolor" class="tsd-kind-icon">make<wbr>Color</a></li>
@@ -544,7 +545,7 @@
 					<div class="tsd-signature tsd-kind-icon">Edge<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in edge.ts:22</li>
+							<li>Defined in edge.ts:16</li>
 						</ul>
 					</aside>
 				</section>
@@ -642,7 +643,7 @@
 					<div class="tsd-signature tsd-kind-icon">Interpolate<wbr>Position<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, initial<span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a>, final<span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in camera/flyToPosition.ts:10</li>
+							<li>Defined in camera/flyToPosition.ts:11</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -741,7 +742,7 @@
 					<div class="tsd-signature tsd-kind-icon">Legacy<wbr>Edge<span class="tsd-signature-symbol">:</span> <a href="interfaces/edgestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeStyles</a><span class="tsd-signature-symbol"> &amp; </span><a href="modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in edge.ts:24</li>
+							<li>Defined in edge.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -805,7 +806,7 @@
 					<div class="tsd-signature tsd-kind-icon">Mutable<wbr>Edge<span class="tsd-signature-symbol">:</span> <a href="interfaces/inmemoryproperties.html" class="tsd-signature-type" data-tsd-kind="Interface">InMemoryProperties</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#edgeid" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeId</a><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">?: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">; </span>relationship<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">; </span>sourceId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>targetId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in edge.ts:14</li>
+							<li>Defined in edge.ts:8</li>
 						</ul>
 					</aside>
 				</section>
@@ -1274,7 +1275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:299</li>
+									<li>Defined in index.ts:302</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2917,22 +2918,57 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="flytoposition" class="tsd-anchor"></a>
-					<h3>fly<wbr>ToPosition</h3>
+					<a name="flytocenter" class="tsd-anchor"></a>
+					<h3>fly<wbr>ToCenter</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToPosition<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToCenter<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">?: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeIds<span class="tsd-signature-symbol">?: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in camera/flyToPosition.ts:27</li>
+									<li>Defined in camera/flyToCenter.ts:8</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nodeIds: <a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>offset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="flytoposition" class="tsd-anchor"></a>
+					<h3>fly<wbr>ToPosition</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToPosition<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in camera/flyToPosition.ts:28</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>position: <a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a></h5>
+								</li>
+								<li>
+									<h5>offset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
 									<h5>options: <a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
@@ -4222,6 +4258,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#filter" class="tsd-kind-icon">filter</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#flytocenter" class="tsd-kind-icon">fly<wbr>ToCenter</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#flytoposition" class="tsd-kind-icon">fly<wbr>ToPosition</a>
