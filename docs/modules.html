@@ -114,6 +114,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/shiftoptions.html" class="tsd-kind-icon">Shift<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/shortcutoptions.html" class="tsd-kind-icon">Shortcut<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/traceneighborsoptions.html" class="tsd-kind-icon">Trace<wbr>Neighbors<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenpositionoptions.html" class="tsd-kind-icon">Tween<wbr>Position<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenpositionupdateevent.html" class="tsd-kind-icon">Tween<wbr>Position<wbr>Update<wbr>Event</a></li>
 							</ul>
@@ -188,6 +189,10 @@
 							<h3>API Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#getapi" class="tsd-kind-icon">get<wbr>Api</a></li>
+							</ul>
+							<h3>Algorithm Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#traceneighbors" class="tsd-kind-icon">trace<wbr>Neighbors</a></li>
 							</ul>
 							<h3>Camera Functions</h3>
 							<ul class="tsd-index-list">
@@ -1283,7 +1288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:312</li>
+									<li>Defined in index.ts:315</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1298,6 +1303,52 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/api.html" class="tsd-signature-type" data-tsd-kind="Interface">API</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>a Promise that resolves to the API</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Algorithm Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="traceneighbors" class="tsd-anchor"></a>
+					<h3>trace<wbr>Neighbors</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">trace<wbr>Neighbors<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, rootId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/traceneighborsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TraceNeighborsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in path-finding/traceNeighbors.ts:23</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Highlight the root Node and all connected Edges and neighboring Nodes up to a specified depth.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.146</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">traceNeighbors</span><span style="color: #000000">(</span><span style="color: #001080">view</span><span style="color: #000000">, </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()[</span><span style="color: #098658">0</span><span style="color: #000000">].</span><span style="color: #001080">id</span><span style="color: #000000">, {</span><span style="color: #001080">depth:</span><span style="color: #000000"> </span><span style="color: #098658">3</span><span style="color: #000000">})</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+								</li>
+								<li>
+									<h5>rootId: <a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a></h5>
+								</li>
+								<li>
+									<h5>options: <a href="interfaces/traceneighborsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TraceNeighborsOptions</a><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -4174,6 +4225,9 @@
 						<a href="interfaces/sortbypropertyoptions.html" class="tsd-kind-icon">Sort<wbr>ByProperty<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/traceneighborsoptions.html" class="tsd-kind-icon">Trace<wbr>Neighbors<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/tweenpositionoptions.html" class="tsd-kind-icon">Tween<wbr>Position<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -4547,6 +4601,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#stronglyconnectedcomponent" class="tsd-kind-icon">strongly<wbr>Connected<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#traceneighbors" class="tsd-kind-icon">trace<wbr>Neighbors</a>
 					</li>
 				</ul>
 			</nav>
