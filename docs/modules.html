@@ -335,10 +335,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="aggregateoptions" class="tsd-anchor"></a>
 					<h3>Aggregate<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>aggregateAlong<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">; </span>aggregateTo<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#nodefilter" class="tsd-signature-type" data-tsd-kind="Type alias">NodeFilter</a><span class="tsd-signature-symbol">; </span>getPropertyFrom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;edge&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;node&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">AggregateProperty</span></div>
+					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>aggregateAlong<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">; </span>aggregateTo<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#nodefilter" class="tsd-signature-type" data-tsd-kind="Type alias">NodeFilter</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>getPropertyFrom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;edge&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;node&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">AggregateProperty</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/aggregate.ts:16</li>
+							<li>Defined in transform/aggregate.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -3604,7 +3604,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/aggregate.ts:53</li>
+									<li>Defined in transform/aggregate.ts:74</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3620,25 +3620,45 @@
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the</span>
 <span style="color: #008000">// episodeNumber property values from Episodes connected to the Season along the inSeason relationship</span>
-<span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;node&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumber&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumbers&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;concatenate&#039;</span>
-<span style="color: #000000">})</span>
+<span style="color: #000000">}))</span>
 
 <span style="color: #008000">// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the</span>
 <span style="color: #008000">// episodeNumber property values from inSeason edges connected to the Season.</span>
-<span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;edge&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">sourceProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;episodeNumber&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">targetProperty:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;maxEpisodeNumber&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;max&#039;</span>
-<span style="color: #000000">})</span>
+<span style="color: #000000">}))</span>
+
+<span style="color: #008000">// aggregateTo can be a function, a category, an array of nodes, or an array of node ids</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #008000">// function</span>
+<span style="color: #000000">  </span><span style="color: #795E26">aggregateTo</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #008000">// category</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #008000">// array of nodes</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">),</span>
+<span style="color: #000000">  </span><span style="color: #008000">// array of node ids</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">).</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">),</span>
+<span style="color: #000000">}))</span>
+
+<span style="color: #008000">// formula can be a function or a string</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #000000"> </span><span style="color: #008000">// function</span>
+<span style="color: #000000"> </span><span style="color: #795E26">formula</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">values</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">values</span><span style="color: #000000">.</span><span style="color: #795E26">reduce</span><span style="color: #000000">((</span><span style="color: #001080">a</span><span style="color: #000000">, </span><span style="color: #001080">b</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> + </span><span style="color: #001080">b</span><span style="color: #000000">, </span><span style="color: #098658">0</span><span style="color: #000000">),</span>
+<span style="color: #000000"> </span><span style="color: #008000">// string</span>
+<span style="color: #000000"> </span><span style="color: #001080">formula:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;sum&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">}))</span>
 </code></pre>
 									</dd>
 								</dl>
