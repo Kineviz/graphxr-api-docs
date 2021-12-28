@@ -109,6 +109,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#addnodes" class="tsd-kind-icon">add<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#applylayout" class="tsd-kind-icon">apply<wbr>Layout</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#applytransform" class="tsd-kind-icon">apply<wbr>Transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#assign" class="tsd-kind-icon">assign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="graphview.html#findneighbors" class="tsd-kind-icon">find<wbr>Neighbors</a></li>
@@ -118,6 +119,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#getnode" class="tsd-kind-icon">get<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#getnodestyles" class="tsd-kind-icon">get<wbr>Node<wbr>Styles</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#hideedges" class="tsd-kind-icon">hide<wbr>Edges</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#hidenodes" class="tsd-kind-icon">hide<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#removeedge" class="tsd-kind-icon">remove<wbr>Edge</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#removeedges" class="tsd-kind-icon">remove<wbr>Edges</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#removenode" class="tsd-kind-icon">remove<wbr>Node</a></li>
@@ -126,9 +129,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#selectnode" class="tsd-kind-icon">select<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#setedgeproperties" class="tsd-kind-icon">set<wbr>Edge<wbr>Properties</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#setedgestyles" class="tsd-kind-icon">set<wbr>Edge<wbr>Styles</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#setnodecollection" class="tsd-kind-icon">set<wbr>Node<wbr>Collection</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="graphview.html#setnodeproperties" class="tsd-kind-icon">set<wbr>Node<wbr>Properties</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#setnodestyles" class="tsd-kind-icon">set<wbr>Node<wbr>Styles</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="graphview.html#transform" class="tsd-kind-icon">transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#showedges" class="tsd-kind-icon">show<wbr>Edges</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphview.html#shownodes" class="tsd-kind-icon">show<wbr>Nodes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -147,7 +152,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in graphView.ts:20</li>
+									<li>Defined in graphView.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -169,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">graph<span class="tsd-signature-symbol">:</span> <a href="../interfaces/legacygraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LegacyGraph</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphView.ts:20</li>
+							<li>Defined in graphView.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -188,7 +193,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addedge">addEdge</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#addedge">addEdge</a></p>
 								<ul>
-									<li>Defined in graphView.ts:95</li>
+									<li>Defined in graphView.ts:98</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,7 +210,7 @@
 					<a name="addedges" class="tsd-anchor"></a>
 					<h3>add<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Edges<span class="tsd-signature-symbol">(</span>edges<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Edges<span class="tsd-signature-symbol">(</span>edges<span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -213,13 +218,13 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addedges">addEdges</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#addedges">addEdges</a></p>
 								<ul>
-									<li>Defined in graphView.ts:81</li>
+									<li>Defined in graphView.ts:94</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>edges: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>edges: <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -230,7 +235,7 @@
 					<a name="addnode" class="tsd-anchor"></a>
 					<h3>add<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -238,16 +243,16 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addnode">addNode</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#addnode">addNode</a></p>
 								<ul>
-									<li>Defined in graphView.ts:52</li>
+									<li>Defined in graphView.ts:54</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>node: <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -255,7 +260,7 @@
 					<a name="addnodes" class="tsd-anchor"></a>
 					<h3>add<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Nodes<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Nodes<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -263,16 +268,16 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addnodes">addNodes</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#addnodes">addNodes</a></p>
 								<ul>
-									<li>Defined in graphView.ts:40</li>
+									<li>Defined in graphView.ts:43</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nodes: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>nodes: <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -286,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:120</li>
+									<li>Defined in graphView.ts:201</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -306,22 +311,45 @@
 					<a name="applytransform" class="tsd-anchor"></a>
 					<h3>apply<wbr>Transform</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transform<span class="tsd-signature-symbol">(</span>transform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransformFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:127</li>
+									<li>Defined in graphView.ts:205</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h5>
+									<h5>transform: <span class="tsd-signature-type">TransformFunction</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="assign" class="tsd-anchor"></a>
+					<h3>assign</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">assign<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApiGraph</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in graphView.ts:141</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graph: <span class="tsd-signature-type">ApiGraph</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -335,7 +363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:27</li>
+									<li>Defined in graphView.ts:30</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -346,7 +374,7 @@
 					<a name="clone" class="tsd-anchor"></a>
 					<h3>clone</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></li>
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApiGraph</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -354,10 +382,10 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#clone">clone</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in graphView.ts:116</li>
+									<li>Defined in graphView.ts:119</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ApiGraph</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -373,7 +401,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#findneighbors">findNeighbors</a></p>
 								<p>Inherited from <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#findneighbors">findNeighbors</a></p>
 								<ul>
-									<li>Defined in graph.ts:76</li>
+									<li>Defined in graph.ts:78</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -393,7 +421,7 @@
 					<a name="getedge" class="tsd-anchor"></a>
 					<h3>get<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Edge<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Edge<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -401,7 +429,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getedge">getEdge</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#getedge">getEdge</a></p>
 								<ul>
-									<li>Defined in graphView.ts:77</li>
+									<li>Defined in graphView.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -410,7 +438,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -424,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:154</li>
+									<li>Defined in graphView.ts:238</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -441,7 +469,7 @@
 					<a name="getedges" class="tsd-anchor"></a>
 					<h3>get<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Edges<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Edges<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -449,10 +477,10 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getedges">getEdges</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#getedges">getEdges</a></p>
 								<ul>
-									<li>Defined in graphView.ts:73</li>
+									<li>Defined in graphView.ts:85</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -460,7 +488,7 @@
 					<a name="getnode" class="tsd-anchor"></a>
 					<h3>get<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -468,7 +496,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getnode">getNode</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#getnode">getNode</a></p>
 								<ul>
-									<li>Defined in graphView.ts:35</li>
+									<li>Defined in graphView.ts:38</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -477,7 +505,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -491,7 +519,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:131</li>
+									<li>Defined in graphView.ts:215</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -508,7 +536,7 @@
 					<a name="getnodes" class="tsd-anchor"></a>
 					<h3>get<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Nodes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Nodes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -516,10 +544,56 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getnodes">getNodes</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#getnodes">getNodes</a></p>
 								<ul>
-									<li>Defined in graphView.ts:31</li>
+									<li>Defined in graphView.ts:34</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hideedges" class="tsd-anchor"></a>
+					<h3>hide<wbr>Edges</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">hide<wbr>Edges<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in graphView.ts:274</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hidenodes" class="tsd-anchor"></a>
+					<h3>hide<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">hide<wbr>Nodes<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in graphView.ts:266</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -535,7 +609,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removeedge">removeEdge</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#removeedge">removeEdge</a></p>
 								<ul>
-									<li>Defined in graphView.ts:105</li>
+									<li>Defined in graphView.ts:108</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -552,7 +626,7 @@
 					<a name="removeedges" class="tsd-anchor"></a>
 					<h3>remove<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edges<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edges<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -560,7 +634,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removeedges">removeEdges</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#removeedges">removeEdges</a></p>
 								<ul>
-									<li>Defined in graphView.ts:99</li>
+									<li>Defined in graphView.ts:102</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -569,7 +643,7 @@
 									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -577,7 +651,7 @@
 					<a name="removenode" class="tsd-anchor"></a>
 					<h3>remove<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -585,7 +659,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removenode">removeNode</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#removenode">removeNode</a></p>
 								<ul>
-									<li>Defined in graphView.ts:62</li>
+									<li>Defined in graphView.ts:64</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -594,7 +668,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -602,7 +676,7 @@
 					<a name="removenodes" class="tsd-anchor"></a>
 					<h3>remove<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Nodes<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Nodes<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -610,7 +684,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removenodes">removeNodes</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#removenodes">removeNodes</a></p>
 								<ul>
-									<li>Defined in graphView.ts:56</li>
+									<li>Defined in graphView.ts:58</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -619,7 +693,7 @@
 									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -633,7 +707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:178</li>
+									<li>Defined in graphView.ts:262</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -656,7 +730,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:174</li>
+									<li>Defined in graphView.ts:258</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -681,7 +755,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#setedgeproperties">setEdgeProperties</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#setedgeproperties">setEdgeProperties</a></p>
 								<ul>
-									<li>Defined in graphView.ts:110</li>
+									<li>Defined in graphView.ts:113</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -707,7 +781,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:168</li>
+									<li>Defined in graphView.ts:252</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -717,6 +791,34 @@
 								</li>
 								<li>
 									<h5>styles: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/edgestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeStyles</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setnodecollection" class="tsd-anchor"></a>
+					<h3>set<wbr>Node<wbr>Collection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Node<wbr>Collection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, collection<span class="tsd-signature-symbol">: </span><a href="../interfaces/apinodecollection.html" class="tsd-signature-type" data-tsd-kind="Interface">ApiNodeCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#setnodecollection">setNodeCollection</a></p>
+								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#setnodecollection">setNodeCollection</a></p>
+								<ul>
+									<li>Defined in graphView.ts:75</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>collection: <a href="../interfaces/apinodecollection.html" class="tsd-signature-type" data-tsd-kind="Interface">ApiNodeCollection</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -735,7 +837,7 @@
 								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#setnodeproperties">setNodeProperties</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#setnodeproperties">setNodeProperties</a></p>
 								<ul>
-									<li>Defined in graphView.ts:67</li>
+									<li>Defined in graphView.ts:69</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -761,7 +863,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphView.ts:148</li>
+									<li>Defined in graphView.ts:232</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -777,28 +879,49 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="transform" class="tsd-anchor"></a>
-					<h3>transform</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">transform<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showedges" class="tsd-anchor"></a>
+					<h3>show<wbr>Edges</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Edges<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#transform">transform</a></p>
-								<p>Inherited from <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#transform">transform</a></p>
 								<ul>
-									<li>Defined in graph.ts:82</li>
+									<li>Defined in graphView.ts:278</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <a href="../modules.html#transformfunction" class="tsd-signature-type" data-tsd-kind="Type alias">TransformFunction</a></h5>
+									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="shownodes" class="tsd-anchor"></a>
+					<h3>show<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Nodes<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in graphView.ts:270</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -844,6 +967,9 @@
 								<a href="graphview.html#applytransform" class="tsd-kind-icon">apply<wbr>Transform</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphview.html#assign" class="tsd-kind-icon">assign</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="graphview.html#clear" class="tsd-kind-icon">clear</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
@@ -870,6 +996,12 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="graphview.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphview.html#hideedges" class="tsd-kind-icon">hide<wbr>Edges</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphview.html#hidenodes" class="tsd-kind-icon">hide<wbr>Nodes</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="graphview.html#removeedge" class="tsd-kind-icon">remove<wbr>Edge</a>
 							</li>
@@ -895,13 +1027,19 @@
 								<a href="graphview.html#setedgestyles" class="tsd-kind-icon">set<wbr>Edge<wbr>Styles</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="graphview.html#setnodecollection" class="tsd-kind-icon">set<wbr>Node<wbr>Collection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="graphview.html#setnodeproperties" class="tsd-kind-icon">set<wbr>Node<wbr>Properties</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="graphview.html#setnodestyles" class="tsd-kind-icon">set<wbr>Node<wbr>Styles</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="graphview.html#transform" class="tsd-kind-icon">transform</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphview.html#showedges" class="tsd-kind-icon">show<wbr>Edges</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphview.html#shownodes" class="tsd-kind-icon">show<wbr>Nodes</a>
 							</li>
 						</ul>
 					</li>

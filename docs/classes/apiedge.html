@@ -93,11 +93,19 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#legacyedge" class="tsd-kind-icon">legacy<wbr>Edge</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#legacyid" class="tsd-kind-icon">legacy<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#properties" class="tsd-kind-icon">properties</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#relationship" class="tsd-kind-icon">relationship</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="apiedge.html#targetid" class="tsd-kind-icon">target<wbr>Id</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiedge.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="apiedge.html#equals" class="tsd-kind-icon">equals</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,19 +117,34 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Api<wbr>Edge<span class="tsd-signature-symbol">(</span>edge<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Api<wbr>Edge<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, relationship<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, properties<span class="tsd-signature-symbol">: </span><a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a>, legacyEdge<span class="tsd-signature-symbol">?: </span><a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in apiEdge.ts:12</li>
+									<li>Defined in apiEdge.ts:14</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>edge: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>sourceId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>targetId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>relationship: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>properties: <a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> legacyEdge: <a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
@@ -138,7 +161,17 @@
 					<aside class="tsd-sources">
 						<p>Implementation of Edge.id</p>
 						<ul>
-							<li>Defined in apiEdge.ts:7</li>
+							<li>Defined in apiEdge.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="legacyedge" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> legacy<wbr>Edge</h3>
+					<div class="tsd-signature tsd-kind-icon">legacy<wbr>Edge<span class="tsd-signature-symbol">:</span> <a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in apiEdge.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -148,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">legacy<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in apiEdge.ts:12</li>
+							<li>Defined in apiEdge.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -159,7 +192,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of Edge.properties</p>
 						<ul>
-							<li>Defined in apiEdge.ts:11</li>
+							<li>Defined in apiEdge.ts:12</li>
 						</ul>
 					</aside>
 				</section>
@@ -170,7 +203,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of Edge.relationship</p>
 						<ul>
-							<li>Defined in apiEdge.ts:10</li>
+							<li>Defined in apiEdge.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -181,7 +214,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of Edge.sourceId</p>
 						<ul>
-							<li>Defined in apiEdge.ts:8</li>
+							<li>Defined in apiEdge.ts:9</li>
 						</ul>
 					</aside>
 				</section>
@@ -192,9 +225,52 @@
 					<aside class="tsd-sources">
 						<p>Implementation of Edge.targetId</p>
 						<ul>
-							<li>Defined in apiEdge.ts:9</li>
+							<li>Defined in apiEdge.ts:10</li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in apiEdge.ts:25</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in apiEdge.ts:36</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -220,6 +296,9 @@
 								<a href="apiedge.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="apiedge.html#legacyedge" class="tsd-kind-icon">legacy<wbr>Edge</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="apiedge.html#legacyid" class="tsd-kind-icon">legacy<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -233,6 +312,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="apiedge.html#targetid" class="tsd-kind-icon">target<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiedge.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="apiedge.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
 						</ul>
 					</li>
