@@ -67,9 +67,157 @@
 					<h1>Documentation</h1>
 				</a>
 				<p>Documentation is hosted on <a href="https://kineviz.github.io/graphxr-api-docs/">GitHub</a></p>
-				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h1>Usage</h1>
+				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+					<h1>Table of Contents</h1>
 				</a>
+				<ul>
+					<li>Algorithm<ul>
+							<li>Algorithm functions return a result. They don&#39;t mutate the graph.</li>
+							<li>Centrality<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#betweenness">betweenness</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#closeness">closeness</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#pagerank">pageRank</a></li>
+								</ul>
+							</li>
+							<li>Community Detection<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#connectedcomponent">connectedComponent</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#louvain">louvain</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#stronglyconnectedcomponent">stronglyConnectedComponent</a></li>
+								</ul>
+							</li>
+							<li>Path Finding<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#dijkstra">dijkstra</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#traceneighbors">traceNeighbors</a> // Highlight all paths of a certain depth from the root node</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Camera<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#flytocenter">flyToCenter</a> // Fly to the center of a group of nodes</li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#flytoposition">flyToPosition</a> // Fly to a specific node</li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#setcamerarotating">setCameraRotating</a></li>
+						</ul>
+					</li>
+					<li>Events<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#observe">observe</a> // Create a reactive Grove variable. Wraps <code>on()</code></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#on">on</a> // Register a callback function with a GraphXR event</li>
+						</ul>
+					</li>
+					<li>Filter<ul>
+							<li>Handy filter functions e.g. <code>GraphXR.getGraphView().getNodes().filter(GraphXR.nodesByCategory(&quot;Episodes&quot;))</code></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#filterbyproperties">filterByProperties</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#nodesbycategory">nodesByCategory</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#edgesbyrelationship">edgesByRelationship</a></li>
+						</ul>
+					</li>
+					<li>Graph<ul>
+							<li>e.g. <code>GraphXR.getGraphView()</code> -&gt; <a href="https://kineviz.github.io/graphxr-api-docs/classes/graphview.html">GraphView</a> // an API to the graph rendered in GraphXR<ul>
+									<li>Some member functions include</li>
+									<li>addEdges, addNodes, removeEdges, removeNodes</li>
+									<li>getEdges // Returns only visible edges</li>
+									<li>getNodes // Returns only visible nodes</li>
+									<li>Visibility<ul>
+											<li>hideEdges, hideNodes</li>
+											<li>showEdges, showNodes</li>
+										</ul>
+									</li>
+									<li>Nodes and Edges returned from API functions are immutable, so you need to use these setters<ul>
+											<li>setEdgeProperties, setNodeProperties</li>
+											<li>setEdgeStyles, setNodeStyles</li>
+											<li>setNodeCollection</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Category<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#getcategorycolor">getCategoryColor</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#setcategorycaptionproperties">setCategoryCaptionProperties</a></li>
+								</ul>
+							</li>
+							<li>Edge<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makeedge">makeEdge</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makeedgeid">makeEdgeId</a></li>
+								</ul>
+							</li>
+							<li>Node<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makenode">makeNode</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makenodeid">makeNodeId</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Layout<ul>
+							<li>e.g. <code>GraphXR.getGraphView().applyLayout(GraphXR.cube())</code></li>
+							<li>e.g. <code>GraphXR.getGraphView().applyLayout(GraphXR.line())</code></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#alignby">alignBy</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#circle">circle</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#cube">cube</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#distributionby">distributionBy</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#ego">ego</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#grid">grid</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#line">line</a></li>
+							<li>Parametric<ul>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#parametric">parametric</a></li>
+									<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#setcamerarotating">setParametricAxesOptions</a></li>
+								</ul>
+							</li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#random">random</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#rotate">rotate</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#scale">scale</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#shift">shift</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#spiral">spiral</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#triggerforcelayout">triggerForceLayout</a></li>
+						</ul>
+					</li>
+					<li>Neo4j<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#neo4j">neo4j</a> // Execute a Neo4j Through Server query</li>
+						</ul>
+					</li>
+					<li>Project Settings<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#setautoshowimage">setAutoShowImage</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#setedgescale">setEdgeScale</a></li>
+						</ul>
+					</li>
+					<li>Render (THREE.js helpers)<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#getscene">getScene</a></li>
+						</ul>
+					</li>
+					<li>Sort<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#comparepropertyvalues">comparePropertyValues</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#sortbyproperty">sortByProperty</a></li>
+						</ul>
+					</li>
+					<li>Styles<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makecolor">makeColor</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makeposition">makePosition</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#makerandomposition">makeRandomPosition</a></li>
+						</ul>
+					</li>
+					<li>Transform<ul>
+							<li>e.g. <code>GraphXR.getGraphView().applyTransform(GraphXR.collectNodes())</code></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#aggregate">aggregate</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#collectnodes">collectNodes</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#extract">extract</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#filter">filter</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#link">link</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#map">map</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#merge">merge</a></li>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#shortcut">shortcut</a></li>
+						</ul>
+					</li>
+					<li>Utility<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#sleep">sleep</a> // Returns a Promise which resolves in a number of milliseconds</li>
+						</ul>
+					</li>
+					<li>Window<ul>
+							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#setfullscreen">setFullscreen</a>
+								<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+									<h1>Examples</h1>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 				<pre><code><span style="color: #008000">// Latest</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;graphxr-api&#039;</span><span style="color: #000000">)).</span><span style="color: #795E26">getApi</span><span style="color: #000000">()</span>
 
@@ -336,9 +484,6 @@
 						<a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/pagerankoptions.html" class="tsd-kind-icon">Page<wbr>Rank<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/parametricdimension.html" class="tsd-kind-icon">Parametric<wbr>Dimension</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -390,16 +535,10 @@
 						<a href="modules.html#apieventcallbackid" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#betweenness" class="tsd-kind-icon">Betweenness</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#betweennessresult" class="tsd-kind-icon">Betweenness<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#categoryid" class="tsd-kind-icon">Category<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#closeness" class="tsd-kind-icon">Closeness</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#closenessresult" class="tsd-kind-icon">Closeness<wbr>Result</a>
@@ -412,9 +551,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#computeposition" class="tsd-kind-icon">Compute<wbr>Position</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#connectedcomponent" class="tsd-kind-icon">Connected<wbr>Component</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#connectedcomponentresult" class="tsd-kind-icon">Connected<wbr>Component<wbr>Result</a>
@@ -493,9 +629,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#nodestyle" class="tsd-kind-icon">Node<wbr>Style</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#pagerank" class="tsd-kind-icon">Page<wbr>Rank</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#pagerankresult" class="tsd-kind-icon">Page<wbr>Rank<wbr>Result</a>
@@ -600,6 +733,9 @@
 						<a href="modules.html#filter" class="tsd-kind-icon">filter</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#filterbyproperties" class="tsd-kind-icon">filter<wbr>ByProperties</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#flytocenter" class="tsd-kind-icon">fly<wbr>ToCenter</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -693,6 +829,9 @@
 						<a href="modules.html#parametric" class="tsd-kind-icon">parametric</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#random" class="tsd-kind-icon">random</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#rotate" class="tsd-kind-icon">rotate</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -739,6 +878,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#traceneighbors" class="tsd-kind-icon">trace<wbr>Neighbors</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#triggerforcelayout" class="tsd-kind-icon">trigger<wbr>Force<wbr>Layout</a>
 					</li>
 				</ul>
 			</nav>
