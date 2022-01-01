@@ -86,6 +86,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/egooptions.html" class="tsd-kind-icon">Ego<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/explodecollectionsoptions.html" class="tsd-kind-icon">Explode<wbr>Collections<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractproperty.html" class="tsd-kind-icon">Extract<wbr>Property</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/filteroptions.html" class="tsd-kind-icon">Filter<wbr>Options</a></li>
@@ -120,6 +121,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/traceneighborsoptions.html" class="tsd-kind-icon">Trace<wbr>Neighbors<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenpositionoptions.html" class="tsd-kind-icon">Tween<wbr>Position<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/tweenpositionupdateevent.html" class="tsd-kind-icon">Tween<wbr>Position<wbr>Update<wbr>Event</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/uncollectnodesoptions.html" class="tsd-kind-icon">Uncollect<wbr>Nodes<wbr>Options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -311,11 +313,13 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#collectnodes" class="tsd-kind-icon">collect<wbr>Nodes</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#explodecollections" class="tsd-kind-icon">explode<wbr>Collections</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#extract" class="tsd-kind-icon">extract</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#link" class="tsd-kind-icon">link</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#map" class="tsd-kind-icon">map</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#merge" class="tsd-kind-icon">merge</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#shortcut" class="tsd-kind-icon">shortcut</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#uncollectnodes" class="tsd-kind-icon">uncollect<wbr>Nodes</a></li>
 							</ul>
 							<h3>Utility Functions</h3>
 							<ul class="tsd-index-list">
@@ -1240,7 +1244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:311</li>
+									<li>Defined in index.ts:321</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3619,12 +3623,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in collection-node/collectNodes.ts:32</li>
+									<li>Defined in collection-node/collectNodes.ts:56</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Combines candidate collection sets into single nodes</p>
+									<p>Merge input nodes into new or existing collection nodes</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
@@ -3632,13 +3636,19 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// These are the same</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">())</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
-<span style="color: #000000">}))</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
-<span style="color: #000000">}))</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -3647,6 +3657,56 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/collectnodesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CollectNodesOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TransformFunction</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="explodecollections" class="tsd-anchor"></a>
+					<h3>explode<wbr>Collections</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">explode<wbr>Collections<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/explodecollectionsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExplodeCollectionsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransformFunction</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collection-node/explodeCollections.ts:32</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>For each collection node in the input, uncollect all nodes</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.153</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #008000">// These are the same</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">explodeCollections</span><span style="color: #000000">()</span>
+<span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">explodeCollections</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">explodeCollections</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/explodecollectionsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ExplodeCollectionsOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TransformFunction</span></h4>
@@ -3947,6 +4007,56 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="uncollectnodes" class="tsd-anchor"></a>
+					<h3>uncollect<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">uncollect<wbr>Nodes<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="interfaces/uncollectnodesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">UncollectNodesOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransformFunction</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collection-node/uncollectNodes.ts:34</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove the input nodes from their collection nodes</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.153</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #008000">// These are the same</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">uncollectNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">uncollectNodes</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">uncollectNodes</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">)</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="interfaces/uncollectnodesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">UncollectNodesOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TransformFunction</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Utility Functions</h2>
@@ -4090,6 +4200,9 @@
 						<a href="interfaces/egooptions.html" class="tsd-kind-icon">Ego<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/explodecollectionsoptions.html" class="tsd-kind-icon">Explode<wbr>Collections<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -4190,6 +4303,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/tweenpositionupdateevent.html" class="tsd-kind-icon">Tween<wbr>Position<wbr>Update<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/uncollectnodesoptions.html" class="tsd-kind-icon">Uncollect<wbr>Nodes<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a>
@@ -4396,6 +4512,9 @@
 						<a href="modules.html#ego" class="tsd-kind-icon">ego</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#explodecollections" class="tsd-kind-icon">explode<wbr>Collections</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#extract" class="tsd-kind-icon">extract</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -4550,6 +4669,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#triggerforcelayout" class="tsd-kind-icon">trigger<wbr>Force<wbr>Layout</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#uncollectnodes" class="tsd-kind-icon">uncollect<wbr>Nodes</a>
 					</li>
 				</ul>
 			</nav>
