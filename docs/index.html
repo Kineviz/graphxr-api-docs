@@ -103,14 +103,14 @@
 						</ul>
 					</li>
 					<li>Filter<ul>
-							<li>Handy filter functions e.g. <code>GraphXR.getGraphView().getNodes().filter(GraphXR.nodesByCategory(&quot;Episodes&quot;))</code></li>
+							<li>Handy filter functions e.g. <code>GraphXR.getLayoutGraph().getNodes().filter(GraphXR.nodesByCategory(&quot;Episodes&quot;))</code></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#filterbyproperties">filterByProperties</a></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#nodesbycategory">nodesByCategory</a></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#edgesbyrelationship">edgesByRelationship</a></li>
 						</ul>
 					</li>
 					<li>Graph<ul>
-							<li>e.g. <code>GraphXR.getGraphView()</code> -&gt; <a href="https://kineviz.github.io/graphxr-api-docs/classes/graphview.html">GraphView</a> // an API to the graph rendered in GraphXR<ul>
+							<li>e.g. <code>GraphXR.getLayoutGraph()</code> -&gt; <a href="https://kineviz.github.io/graphxr-api-docs/interfaces/layoutgraph.html">LayoutGraph</a> // an API to the main graph rendered in GraphXR<ul>
 									<li>Some member functions include</li>
 									<li>addEdges, addNodes, removeEdges, removeNodes</li>
 									<li>getEdges // Returns only visible edges</li>
@@ -146,7 +146,7 @@
 						</ul>
 					</li>
 					<li>Layout<ul>
-							<li>e.g. <code>GraphXR.getGraphView().applyLayout(GraphXR.cube())</code></li>
+							<li>e.g. <code>GraphXR.getLayoutGraph().applyLayout(GraphXR.cube())</code></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#alignby">alignBy</a></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#circle">circle</a></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#cube">cube</a></li>
@@ -192,7 +192,7 @@
 						</ul>
 					</li>
 					<li>Transform<ul>
-							<li>e.g. <code>GraphXR.getGraphView().applyTransform(GraphXR.collectNodes())</code></li>
+							<li>e.g. <code>GraphXR.getLayoutGraph().applyTransform(GraphXR.collectNodes())</code></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#aggregate">aggregate</a></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#collectnodes">collectNodes</a></li>
 							<li><a href="https://kineviz.github.io/graphxr-api-docs/modules.html#explodecollections">explodeCollections</a></li>
@@ -224,10 +224,10 @@
 <span style="color: #001080">GraphXR</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;graphxr-api@0.0.3&#039;</span><span style="color: #000000">)).</span><span style="color: #795E26">getApi</span><span style="color: #000000">()</span>
 
 <span style="color: #008000">// Get nodes</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
 
 <span style="color: #008000">// Apply Layout</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">()</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">()</span>
 <span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">sort:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;price&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #795E26">filter</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">node</span><span style="color: #000000">: </span><span style="color: #267F99">Node</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">properties</span><span style="color: #000000">.</span><span style="color: #001080">price</span><span style="color: #000000"> &gt; </span><span style="color: #098658">13</span><span style="color: #000000">,</span>
@@ -245,7 +245,7 @@
 <span style="color: #000000">}))</span>
 
 <span style="color: #008000">// Apply Transform</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">()</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">()</span>
 <span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">props:</span><span style="color: #000000"> [</span>
@@ -378,7 +378,7 @@
 						<a href="classes/basegraph.html" class="tsd-kind-icon">Base<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/graphview.html" class="tsd-kind-icon">Graph<wbr>View</a>
+						<a href="classes/legacylayoutgraph.html" class="tsd-kind-icon">Legacy<wbr>Layout<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/neo4jresult.html" class="tsd-kind-icon">Neo4j<wbr>Result</a>
@@ -432,9 +432,6 @@
 						<a href="interfaces/filteroptions.html" class="tsd-kind-icon">Filter<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -445,6 +442,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/layoutcontext.html" class="tsd-kind-icon">Layout<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/layoutgraph.html" class="tsd-kind-icon">Layout<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/layoutoptions.html" class="tsd-kind-icon">Layout<wbr>Options</a>
@@ -606,13 +606,13 @@
 						<a href="modules.html#mutableedge" class="tsd-kind-icon">Mutable<wbr>Edge</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#neo4jquerydata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Data</a>
+						<a href="modules.html#neo4jdata" class="tsd-kind-icon">Neo4j<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#neo4jquerygraphdata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Graph<wbr>Data</a>
+						<a href="modules.html#neo4jgraphdata" class="tsd-kind-icon">Neo4j<wbr>Graph<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#neo4jquerytabledata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Table<wbr>Data</a>
+						<a href="modules.html#neo4jtabledata" class="tsd-kind-icon">Neo4j<wbr>Table<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#node" class="tsd-kind-icon">Node</a>
@@ -759,7 +759,7 @@
 						<a href="modules.html#getgraphsnapshot" class="tsd-kind-icon">get<wbr>Graph<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="modules.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a>
+						<a href="modules.html#getlayoutgraph" class="tsd-kind-icon">get<wbr>Layout<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>

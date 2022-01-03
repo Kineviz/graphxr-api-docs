@@ -113,6 +113,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getcategorycolor" class="tsd-kind-icon">get<wbr>Category<wbr>Color</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getgraphsnapshot" class="tsd-kind-icon">get<wbr>Graph<wbr>Snapshot</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getlayoutgraph" class="tsd-kind-icon">get<wbr>Layout<wbr>Graph</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#grid" class="tsd-kind-icon">grid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api.html#layout" class="tsd-kind-icon">layout</a></li>
@@ -179,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:184</li>
+							<li>Defined in index.ts:183</li>
 						</ul>
 					</aside>
 				</section>
@@ -302,7 +303,7 @@
 					<a name="applylayout" class="tsd-anchor"></a>
 					<h3>apply<wbr>Layout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, computeLayout<span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweenLayoutOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, computeLayout<span class="tsd-signature-symbol">: </span><a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TweenLayoutOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -314,7 +315,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>view: <a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5>view: <a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>computeLayout: <a href="../modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h5>
@@ -337,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:221</li>
+									<li>Defined in index.ts:220</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -357,19 +358,19 @@
 					<a name="betweenness" class="tsd-anchor"></a>
 					<h3>betweenness</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">betweenness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">betweenness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:196</li>
+									<li>Defined in index.ts:195</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></h4>
@@ -403,19 +404,19 @@
 					<a name="closeness" class="tsd-anchor"></a>
 					<h3>closeness</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">closeness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">closeness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:197</li>
+									<li>Defined in index.ts:196</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></h4>
@@ -432,7 +433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:201</li>
+									<li>Defined in index.ts:200</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -478,19 +479,19 @@
 					<a name="connectedcomponent" class="tsd-anchor"></a>
 					<h3>connected<wbr>Component</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:207</li>
+									<li>Defined in index.ts:206</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></h4>
@@ -524,7 +525,7 @@
 					<a name="dijkstra" class="tsd-anchor"></a>
 					<h3>dijkstra</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">dijkstra<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, options<span class="tsd-signature-symbol">: </span><a href="dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="parent.html" class="tsd-signature-type" data-tsd-kind="Interface">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">dijkstra<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, options<span class="tsd-signature-symbol">: </span><a href="dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="parent.html" class="tsd-signature-type" data-tsd-kind="Interface">Parent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -536,7 +537,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>options: <a href="dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a></h5>
@@ -579,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:218</li>
+									<li>Defined in index.ts:217</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -625,7 +626,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:202</li>
+									<li>Defined in index.ts:201</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -694,7 +695,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:216</li>
+									<li>Defined in index.ts:215</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -711,19 +712,19 @@
 					<a name="flytocenter" class="tsd-anchor"></a>
 					<h3>fly<wbr>ToCenter</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToCenter<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">?: </span><a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vector3</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToCenter<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">?: </span><a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, nodeIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vector3</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:187</li>
+									<li>Defined in index.ts:186</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> view: <a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> view: <a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nodeIds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -749,7 +750,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:188</li>
+									<li>Defined in index.ts:187</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -778,7 +779,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:192</li>
+									<li>Defined in index.ts:191</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -795,19 +796,19 @@
 					<a name="getgraphsnapshot" class="tsd-anchor"></a>
 					<h3>get<wbr>Graph<wbr>Snapshot</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>Snapshot<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeStyleKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>Snapshot<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, nodeStyleKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:222</li>
+									<li>Defined in index.ts:221</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5>graph: <a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>nodeStyleKeys: <span class="tsd-signature-symbol">keyof </span><a href="nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol">[]</span></h5>
@@ -821,7 +822,24 @@
 					<a name="getgraphview" class="tsd-anchor"></a>
 					<h3>get<wbr>Graph<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:222</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getlayoutgraph" class="tsd-anchor"></a>
+					<h3>get<wbr>Layout<wbr>Graph</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Layout<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -830,7 +848,7 @@
 									<li>Defined in index.ts:223</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -950,19 +968,19 @@
 					<a name="louvain" class="tsd-anchor"></a>
 					<h3>louvain</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">louvain<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">louvain<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:208</li>
+									<li>Defined in index.ts:207</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></h4>
@@ -979,7 +997,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:204</li>
+									<li>Defined in index.ts:203</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1080,7 +1098,7 @@
 					<a name="makegraph" class="tsd-anchor"></a>
 					<h3>make<wbr>Graph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApiGraph</span></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1089,7 +1107,7 @@
 									<li>Defined in index.ts:224</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ApiGraph</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1223,7 +1241,7 @@
 					<a name="mergenodes" class="tsd-anchor"></a>
 					<h3>merge<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">merge<wbr>Nodes<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, queryCategory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, queryProperties<span class="tsd-signature-symbol">: </span><a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a>, setProperties<span class="tsd-signature-symbol">: </span><a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Nodes<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, queryCategory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, queryProperties<span class="tsd-signature-symbol">: </span><a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a>, setProperties<span class="tsd-signature-symbol">: </span><a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1235,7 +1253,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>queryCategory: <span class="tsd-signature-type">string</span></h5>
@@ -1287,7 +1305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:217</li>
+									<li>Defined in index.ts:216</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1310,7 +1328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:212</li>
+									<li>Defined in index.ts:211</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1342,7 +1360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:213</li>
+									<li>Defined in index.ts:212</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1362,19 +1380,19 @@
 					<a name="pagerank" class="tsd-anchor"></a>
 					<h3>page<wbr>Rank</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">page<wbr>Rank<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PageRankOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#pagerankresult" class="tsd-signature-type" data-tsd-kind="Type alias">PageRankResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">page<wbr>Rank<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PageRankOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#pagerankresult" class="tsd-signature-type" data-tsd-kind="Type alias">PageRankResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:198</li>
+									<li>Defined in index.ts:197</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">PageRankOptions</span></h5>
@@ -1509,7 +1527,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:189</li>
+									<li>Defined in index.ts:188</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1532,7 +1550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:193</li>
+									<li>Defined in index.ts:192</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1627,7 +1645,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:183</li>
+									<li>Defined in index.ts:182</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1759,19 +1777,19 @@
 					<a name="stronglyconnectedcomponent" class="tsd-anchor"></a>
 					<h3>strongly<wbr>Connected<wbr>Component</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">strongly<wbr>Connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">strongly<wbr>Connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:209</li>
+									<li>Defined in index.ts:208</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></h4>
@@ -1782,7 +1800,7 @@
 					<a name="traceneighbors" class="tsd-anchor"></a>
 					<h3>trace<wbr>Neighbors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">trace<wbr>Neighbors<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, rootId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="traceneighborsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TraceNeighborsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">trace<wbr>Neighbors<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, rootId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="traceneighborsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TraceNeighborsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1794,7 +1812,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>view: <a href="../classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5>view: <a href="../classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>rootId: <span class="tsd-signature-type">string</span></h5>
@@ -1834,7 +1852,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:203</li>
+									<li>Defined in index.ts:202</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1947,6 +1965,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api.html#getlayoutgraph" class="tsd-kind-icon">get<wbr>Layout<wbr>Graph</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>

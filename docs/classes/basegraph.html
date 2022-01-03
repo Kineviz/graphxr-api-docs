@@ -72,7 +72,7 @@
 						<span class="target">BaseGraph</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>
+								<a href="legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>
 							</li>
 						</ul>
 					</li>
@@ -81,7 +81,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></li>
+					<li><a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -101,19 +101,30 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#addedges" class="tsd-kind-icon">add<wbr>Edges</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#addnode" class="tsd-kind-icon">add<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#addnodes" class="tsd-kind-icon">add<wbr>Nodes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#findneighbors" class="tsd-kind-icon">find<wbr>Neighbors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getalledges" class="tsd-kind-icon">get<wbr>All<wbr>Edges</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getallnodes" class="tsd-kind-icon">get<wbr>All<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getedge" class="tsd-kind-icon">get<wbr>Edge</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getedgestyles" class="tsd-kind-icon">get<wbr>Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getedges" class="tsd-kind-icon">get<wbr>Edges</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getnode" class="tsd-kind-icon">get<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getnodestyles" class="tsd-kind-icon">get<wbr>Node<wbr>Styles</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#hideedges" class="tsd-kind-icon">hide<wbr>Edges</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#hidenodes" class="tsd-kind-icon">hide<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#removeedge" class="tsd-kind-icon">remove<wbr>Edge</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#removeedges" class="tsd-kind-icon">remove<wbr>Edges</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#removenode" class="tsd-kind-icon">remove<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#removenodes" class="tsd-kind-icon">remove<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#setedgeproperties" class="tsd-kind-icon">set<wbr>Edge<wbr>Properties</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#setedgestyles" class="tsd-kind-icon">set<wbr>Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#setnodecollection" class="tsd-kind-icon">set<wbr>Node<wbr>Collection</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#setnodeproperties" class="tsd-kind-icon">set<wbr>Node<wbr>Properties</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#setnodestyles" class="tsd-kind-icon">set<wbr>Node<wbr>Styles</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#showedges" class="tsd-kind-icon">show<wbr>Edges</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="basegraph.html#shownodes" class="tsd-kind-icon">show<wbr>Nodes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -142,14 +153,14 @@
 					<a name="addedge" class="tsd-anchor"></a>
 					<h3>add<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Edge<span class="tsd-signature-symbol">(</span>_edge<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Edge<span class="tsd-signature-symbol">(</span>_edge<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addedge">addEdge</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#addedge">addEdge</a></p>
 								<ul>
-									<li>Defined in graph.ts:63</li>
+									<li>Defined in layoutGraph.ts:106</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -158,7 +169,7 @@
 									<h5>_edge: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -166,14 +177,14 @@
 					<a name="addedges" class="tsd-anchor"></a>
 					<h3>add<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Edges<span class="tsd-signature-symbol">(</span>_edges<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Edges<span class="tsd-signature-symbol">(</span>_edges<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addedges">addEdges</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#addedges">addEdges</a></p>
 								<ul>
-									<li>Defined in graph.ts:66</li>
+									<li>Defined in layoutGraph.ts:109</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,7 +193,7 @@
 									<h5>_edges: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -190,14 +201,14 @@
 					<a name="addnode" class="tsd-anchor"></a>
 					<h3>add<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>_node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>_node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addnode">addNode</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#addnode">addNode</a></p>
 								<ul>
-									<li>Defined in graph.ts:39</li>
+									<li>Defined in layoutGraph.ts:73</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -206,7 +217,7 @@
 									<h5>_node: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -214,14 +225,14 @@
 					<a name="addnodes" class="tsd-anchor"></a>
 					<h3>add<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Nodes<span class="tsd-signature-symbol">(</span>_nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Nodes<span class="tsd-signature-symbol">(</span>_nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#addnodes">addNodes</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#addnodes">addNodes</a></p>
 								<ul>
-									<li>Defined in graph.ts:42</li>
+									<li>Defined in layoutGraph.ts:76</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -230,7 +241,25 @@
 									<h5>_nodes: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#clear">clear</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:46</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -238,17 +267,17 @@
 					<a name="clone" class="tsd-anchor"></a>
 					<h3>clone</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></li>
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#clone">clone</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in graph.ts:81</li>
+									<li>Defined in layoutGraph.ts:49</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -261,9 +290,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#findneighbors">findNeighbors</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#findneighbors">findNeighbors</a></p>
 								<ul>
-									<li>Defined in graph.ts:78</li>
+									<li>Defined in layoutGraph.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -280,17 +309,53 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getedge" class="tsd-anchor"></a>
-					<h3>get<wbr>Edge</h3>
+					<a name="getalledges" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Edge<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Edges<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getedge">getEdge</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getalledges">getAllEdges</a></p>
 								<ul>
-									<li>Defined in graph.ts:60</li>
+									<li>Defined in layoutGraph.ts:97</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getallnodes" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Nodes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getallnodes">getAllNodes</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:64</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getedge" class="tsd-anchor"></a>
+					<h3>get<wbr>Edge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Edge<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getedge">getEdge</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:103</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -299,7 +364,31 @@
 									<h5>_id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getedgestyles" class="tsd-anchor"></a>
+					<h3>get<wbr>Edge<wbr>Styles</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Edge<wbr>Styles<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/edgestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeStyles</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getedgestyles">getEdgeStyles</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:58</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/edgestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeStyles</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -307,17 +396,17 @@
 					<a name="getedges" class="tsd-anchor"></a>
 					<h3>get<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Edges<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Edges<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getedges">getEdges</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getedges">getEdges</a></p>
 								<ul>
-									<li>Defined in graph.ts:57</li>
+									<li>Defined in layoutGraph.ts:100</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -325,14 +414,14 @@
 					<a name="getnode" class="tsd-anchor"></a>
 					<h3>get<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getnode">getNode</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getnode">getNode</a></p>
 								<ul>
-									<li>Defined in graph.ts:36</li>
+									<li>Defined in layoutGraph.ts:70</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -341,7 +430,31 @@
 									<h5>_id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getnodestyles" class="tsd-anchor"></a>
+					<h3>get<wbr>Node<wbr>Styles</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>Styles<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getnodestyles">getNodeStyles</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:52</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -349,17 +462,65 @@
 					<a name="getnodes" class="tsd-anchor"></a>
 					<h3>get<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Nodes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Nodes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#getnodes">getNodes</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getnodes">getNodes</a></p>
 								<ul>
-									<li>Defined in graph.ts:33</li>
+									<li>Defined in layoutGraph.ts:67</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hideedges" class="tsd-anchor"></a>
+					<h3>hide<wbr>Edges</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">hide<wbr>Edges<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#hideedges">hideEdges</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:121</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hidenodes" class="tsd-anchor"></a>
+					<h3>hide<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">hide<wbr>Nodes<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#hidenodes">hideNodes</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:88</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -367,14 +528,14 @@
 					<a name="removeedge" class="tsd-anchor"></a>
 					<h3>remove<wbr>Edge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edge<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edge<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removeedge">removeEdge</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#removeedge">removeEdge</a></p>
 								<ul>
-									<li>Defined in graph.ts:69</li>
+									<li>Defined in layoutGraph.ts:112</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -383,7 +544,7 @@
 									<h5>_id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -391,14 +552,14 @@
 					<a name="removeedges" class="tsd-anchor"></a>
 					<h3>remove<wbr>Edges</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edges<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Edges<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removeedges">removeEdges</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#removeedges">removeEdges</a></p>
 								<ul>
-									<li>Defined in graph.ts:72</li>
+									<li>Defined in layoutGraph.ts:115</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -407,7 +568,7 @@
 									<h5>_ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#mutableedge" class="tsd-signature-type" data-tsd-kind="Type alias">MutableEdge</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -415,14 +576,14 @@
 					<a name="removenode" class="tsd-anchor"></a>
 					<h3>remove<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Node<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removenode">removeNode</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#removenode">removeNode</a></p>
 								<ul>
-									<li>Defined in graph.ts:45</li>
+									<li>Defined in layoutGraph.ts:79</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -431,7 +592,7 @@
 									<h5>_id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -439,14 +600,14 @@
 					<a name="removenodes" class="tsd-anchor"></a>
 					<h3>remove<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Nodes<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Nodes<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#removenodes">removeNodes</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#removenodes">removeNodes</a></p>
 								<ul>
-									<li>Defined in graph.ts:48</li>
+									<li>Defined in layoutGraph.ts:82</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -455,7 +616,7 @@
 									<h5>_ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mutablenode.html" class="tsd-signature-type" data-tsd-kind="Interface">MutableNode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="apinode.html" class="tsd-signature-type" data-tsd-kind="Class">ApiNode</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -468,9 +629,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#setedgeproperties">setEdgeProperties</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setedgeproperties">setEdgeProperties</a></p>
 								<ul>
-									<li>Defined in graph.ts:75</li>
+									<li>Defined in layoutGraph.ts:124</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -487,6 +648,33 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setedgestyles" class="tsd-anchor"></a>
+					<h3>set<wbr>Edge<wbr>Styles</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Edge<wbr>Styles<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _styles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/edgestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeStyles</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setedgestyles">setEdgeStyles</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:61</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>_styles: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/edgestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">EdgeStyles</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="setnodecollection" class="tsd-anchor"></a>
 					<h3>set<wbr>Node<wbr>Collection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -495,9 +683,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#setnodecollection">setNodeCollection</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setnodecollection">setNodeCollection</a></p>
 								<ul>
-									<li>Defined in graph.ts:54</li>
+									<li>Defined in layoutGraph.ts:94</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -522,9 +710,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/graph.html">Graph</a>.<a href="../interfaces/graph.html#setnodeproperties">setNodeProperties</a></p>
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setnodeproperties">setNodeProperties</a></p>
 								<ul>
-									<li>Defined in graph.ts:51</li>
+									<li>Defined in layoutGraph.ts:91</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -534,6 +722,81 @@
 								</li>
 								<li>
 									<h5>_properties: <a href="../modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setnodestyles" class="tsd-anchor"></a>
+					<h3>set<wbr>Node<wbr>Styles</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Node<wbr>Styles<span class="tsd-signature-symbol">(</span>_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _styles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setnodestyles">setNodeStyles</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:55</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>_styles: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/nodestyles.html" class="tsd-signature-type" data-tsd-kind="Interface">NodeStyles</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="showedges" class="tsd-anchor"></a>
+					<h3>show<wbr>Edges</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Edges<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#showedges">showEdges</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:118</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="shownodes" class="tsd-anchor"></a>
+					<h3>show<wbr>Nodes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Nodes<span class="tsd-signature-symbol">(</span>_ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#shownodes">showNodes</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:85</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -573,13 +836,25 @@
 								<a href="basegraph.html#addnodes" class="tsd-kind-icon">add<wbr>Nodes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#clone" class="tsd-kind-icon">clone</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#findneighbors" class="tsd-kind-icon">find<wbr>Neighbors</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#getalledges" class="tsd-kind-icon">get<wbr>All<wbr>Edges</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#getallnodes" class="tsd-kind-icon">get<wbr>All<wbr>Nodes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#getedge" class="tsd-kind-icon">get<wbr>Edge</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#getedgestyles" class="tsd-kind-icon">get<wbr>Edge<wbr>Styles</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#getedges" class="tsd-kind-icon">get<wbr>Edges</a>
@@ -588,7 +863,16 @@
 								<a href="basegraph.html#getnode" class="tsd-kind-icon">get<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#getnodestyles" class="tsd-kind-icon">get<wbr>Node<wbr>Styles</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#hideedges" class="tsd-kind-icon">hide<wbr>Edges</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#hidenodes" class="tsd-kind-icon">hide<wbr>Nodes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#removeedge" class="tsd-kind-icon">remove<wbr>Edge</a>
@@ -606,10 +890,22 @@
 								<a href="basegraph.html#setedgeproperties" class="tsd-kind-icon">set<wbr>Edge<wbr>Properties</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#setedgestyles" class="tsd-kind-icon">set<wbr>Edge<wbr>Styles</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#setnodecollection" class="tsd-kind-icon">set<wbr>Node<wbr>Collection</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="basegraph.html#setnodeproperties" class="tsd-kind-icon">set<wbr>Node<wbr>Properties</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#setnodestyles" class="tsd-kind-icon">set<wbr>Node<wbr>Styles</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#showedges" class="tsd-kind-icon">show<wbr>Edges</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="basegraph.html#shownodes" class="tsd-kind-icon">show<wbr>Nodes</a>
 							</li>
 						</ul>
 					</li>

@@ -67,7 +67,7 @@
 								<li class="tsd-kind-class"><a href="classes/apiedge.html" class="tsd-kind-icon">Api<wbr>Edge</a></li>
 								<li class="tsd-kind-class"><a href="classes/apinode.html" class="tsd-kind-icon">Api<wbr>Node</a></li>
 								<li class="tsd-kind-class"><a href="classes/basegraph.html" class="tsd-kind-icon">Base<wbr>Graph</a></li>
-								<li class="tsd-kind-class"><a href="classes/graphview.html" class="tsd-kind-icon">Graph<wbr>View</a></li>
+								<li class="tsd-kind-class"><a href="classes/legacylayoutgraph.html" class="tsd-kind-icon">Legacy<wbr>Layout<wbr>Graph</a></li>
 								<li class="tsd-kind-class"><a href="classes/neo4jresult.html" class="tsd-kind-icon">Neo4j<wbr>Result</a></li>
 							</ul>
 						</section>
@@ -90,11 +90,11 @@
 								<li class="tsd-kind-interface"><a href="interfaces/extractoptions.html" class="tsd-kind-icon">Extract<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/extractproperty.html" class="tsd-kind-icon">Extract<wbr>Property</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/filteroptions.html" class="tsd-kind-icon">Filter<wbr>Options</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/inmemoryproperties.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Properties</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/labelsconfig.html" class="tsd-kind-icon">Labels<wbr>Config</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/layoutcontext.html" class="tsd-kind-icon">Layout<wbr>Context</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/layoutgraph.html" class="tsd-kind-icon">Layout<wbr>Graph</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/layoutoptions.html" class="tsd-kind-icon">Layout<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/layoutresult.html" class="tsd-kind-icon">Layout<wbr>Result</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/legacygraph.html" class="tsd-kind-icon">Legacy<wbr>Graph</a></li>
@@ -153,9 +153,9 @@
 								<li class="tsd-kind-type-alias"><a href="modules.html#louvainresult" class="tsd-kind-icon">Louvain<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#mapformula" class="tsd-kind-icon">Map<wbr>Formula</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#mutableedge" class="tsd-kind-icon">Mutable<wbr>Edge</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#neo4jquerydata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Data</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#neo4jquerygraphdata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Graph<wbr>Data</a></li>
-								<li class="tsd-kind-type-alias"><a href="modules.html#neo4jquerytabledata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Table<wbr>Data</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#neo4jdata" class="tsd-kind-icon">Neo4j<wbr>Data</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#neo4jgraphdata" class="tsd-kind-icon">Neo4j<wbr>Graph<wbr>Data</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#neo4jtabledata" class="tsd-kind-icon">Neo4j<wbr>Table<wbr>Data</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#node" class="tsd-kind-icon">Node</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodecollection" class="tsd-kind-icon">Node<wbr>Collection</a></li>
 								<li class="tsd-kind-type-alias"><a href="modules.html#nodefilter" class="tsd-kind-icon">Node<wbr>Filter</a></li>
@@ -235,7 +235,7 @@
 							<h3>Graph Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#getgraphsnapshot" class="tsd-kind-icon">get<wbr>Graph<wbr>Snapshot</a></li>
-								<li class="tsd-kind-function"><a href="modules.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#getlayoutgraph" class="tsd-kind-icon">get<wbr>Layout<wbr>Graph</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#makegraph" class="tsd-kind-icon">make<wbr>Graph</a></li>
 							</ul>
 							<h3>Layout Functions</h3>
@@ -341,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">Aggregate<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>aggregateAlong<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol">; </span>aggregateTo<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#nodefilter" class="tsd-signature-type" data-tsd-kind="Type alias">NodeFilter</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>getPropertyFrom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;edge&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;node&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">AggregateProperty</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in transform/aggregate.ts:18</li>
+							<li>Defined in transform/aggregate.ts:17</li>
 						</ul>
 					</aside>
 				</section>
@@ -663,7 +663,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="layoutfunction" class="tsd-anchor"></a>
 					<h3>Layout<wbr>Function</h3>
-					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></div>
+					<div class="tsd-signature tsd-kind-icon">Layout<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in layout/layout.ts:23</li>
@@ -674,14 +674,14 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+												<h5>view: <a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutresult.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutResult</a></h4>
@@ -797,9 +797,9 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="neo4jquerydata" class="tsd-anchor"></a>
-					<h3>Neo4j<wbr>Query<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Query<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="modules.html#neo4jquerygraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jQueryGraphData</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#neo4jquerytabledata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jQueryTableData</a></div>
+					<a name="neo4jdata" class="tsd-anchor"></a>
+					<h3>Neo4j<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="modules.html#neo4jgraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jGraphData</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#neo4jtabledata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jTableData</a></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in neo4j/neo4j.ts:9</li>
@@ -807,9 +807,9 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="neo4jquerygraphdata" class="tsd-anchor"></a>
-					<h3>Neo4j<wbr>Query<wbr>Graph<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Query<wbr>Graph<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>relationships<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>endNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#edgeid" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeId</a><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">; </span>startNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<a name="neo4jgraphdata" class="tsd-anchor"></a>
+					<h3>Neo4j<wbr>Graph<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Graph<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>relationships<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>endNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#edgeid" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeId</a><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">; </span>startNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in neo4j/neo4j.ts:11</li>
@@ -828,9 +828,9 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="neo4jquerytabledata" class="tsd-anchor"></a>
-					<h3>Neo4j<wbr>Query<wbr>Table<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Query<wbr>Table<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="neo4jtabledata" class="tsd-anchor"></a>
+					<h3>Neo4j<wbr>Table<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Table<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in neo4j/neo4j.ts:26</li>
@@ -1269,7 +1269,7 @@
 					<a name="traceneighbors" class="tsd-anchor"></a>
 					<h3>trace<wbr>Neighbors</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">trace<wbr>Neighbors<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, rootId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/traceneighborsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TraceNeighborsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">trace<wbr>Neighbors<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, rootId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/traceneighborsoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TraceNeighborsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1295,7 +1295,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5>view: <a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>rootId: <a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a></h5>
@@ -1315,7 +1315,7 @@
 					<a name="flytocenter" class="tsd-anchor"></a>
 					<h3>fly<wbr>ToCenter</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToCenter<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">?: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeIds<span class="tsd-signature-symbol">?: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fly<wbr>ToCenter<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">?: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, nodeIds<span class="tsd-signature-symbol">?: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><a href="interfaces/tweenpositionoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TweenPositionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#position" class="tsd-signature-type" data-tsd-kind="Type alias">Position</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1337,13 +1337,13 @@
 <span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">flyToCenter</span><span style="color: #000000">(); </span>
 
 <span style="color: #008000">// Center of a slice of nodes</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">();</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">();</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">slice</span><span style="color: #000000"> = </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">slice</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">).</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">);</span>
 <span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">flyToCenter</span><span style="color: #000000">(</span><span style="color: #001080">view</span><span style="color: #000000">, </span><span style="color: #001080">slice</span><span style="color: #000000">); </span>
 
 
 <span style="color: #008000">// Center of a slice of nodes with offset and duration</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">();</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">();</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">slice</span><span style="color: #000000"> = </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">slice</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">).</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">);</span>
 <span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">flyToCenter</span><span style="color: #000000">(</span><span style="color: #001080">view</span><span style="color: #000000">, </span><span style="color: #001080">slice</span><span style="color: #000000">, -</span><span style="color: #098658">3</span><span style="color: #000000">, { </span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> });); </span>
 </code></pre>
@@ -1353,7 +1353,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> view: <a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nodeIds: <a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">[]</span></h5>
@@ -1391,7 +1391,7 @@
 									<dd><p>0.0.138</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">();</span>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">();</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">firstNode</span><span style="color: #000000"> = </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()[</span><span style="color: #098658">0</span><span style="color: #000000">];</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">position</span><span style="color: #000000"> = </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodeStyles</span><span style="color: #000000">(</span><span style="color: #001080">firstNode</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">).</span><span style="color: #001080">position</span><span style="color: #000000">;</span>
 <span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">flyToPosition</span><span style="color: #000000">(</span><span style="color: #001080">position</span><span style="color: #000000">); </span><span style="color: #008000">// no offset</span>
@@ -1537,7 +1537,7 @@
 					<a name="betweenness" class="tsd-anchor"></a>
 					<h3>betweenness</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">betweenness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">betweenness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1555,7 +1555,7 @@
 									<dd><p>0.0.100</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">betweenness</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">())</span>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">betweenness</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">())</span>
 <span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">((</span><span style="color: #001080">graph</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">  </span><span style="color: #001080">graph</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">forEach</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">properties</span><span style="color: #000000">.</span><span style="color: #001080">betweenness</span><span style="color: #000000"> = </span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
@@ -1569,7 +1569,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#betweennessresult" class="tsd-signature-type" data-tsd-kind="Type alias">BetweennessResult</a></h4>
@@ -1580,7 +1580,7 @@
 					<a name="closeness" class="tsd-anchor"></a>
 					<h3>closeness</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">closeness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">closeness<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1598,7 +1598,7 @@
 									<dd><p>0.0.101</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">closeness</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">())</span>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">closeness</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">())</span>
 <span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">((</span><span style="color: #001080">graph</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">  </span><span style="color: #001080">graph</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">forEach</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">properties</span><span style="color: #000000">.</span><span style="color: #001080">closeness</span><span style="color: #000000"> = </span><span style="color: #001080">result</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
@@ -1612,7 +1612,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#closenessresult" class="tsd-signature-type" data-tsd-kind="Type alias">ClosenessResult</a></h4>
@@ -1623,7 +1623,7 @@
 					<a name="pagerank" class="tsd-anchor"></a>
 					<h3>page<wbr>Rank</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">page<wbr>Rank<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PageRankOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#pagerankresult" class="tsd-signature-type" data-tsd-kind="Type alias">PageRankResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">page<wbr>Rank<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PageRankOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#pagerankresult" class="tsd-signature-type" data-tsd-kind="Type alias">PageRankResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1655,7 +1655,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>options: <span class="tsd-signature-type">PageRankOptions</span><span class="tsd-signature-symbol"> = ...</span></h5>
@@ -1672,7 +1672,7 @@
 					<a name="connectedcomponent" class="tsd-anchor"></a>
 					<h3>connected<wbr>Component</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1700,7 +1700,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></h4>
@@ -1711,7 +1711,7 @@
 					<a name="louvain" class="tsd-anchor"></a>
 					<h3>louvain</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">louvain<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">louvain<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1739,7 +1739,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#louvainresult" class="tsd-signature-type" data-tsd-kind="Type alias">LouvainResult</a></h4>
@@ -1750,7 +1750,7 @@
 					<a name="stronglyconnectedcomponent" class="tsd-anchor"></a>
 					<h3>strongly<wbr>Connected<wbr>Component</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">strongly<wbr>Connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">strongly<wbr>Connected<wbr>Component<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1778,7 +1778,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="modules.html#connectedcomponentresult" class="tsd-signature-type" data-tsd-kind="Type alias">ConnectedComponentResult</a></h4>
@@ -1891,7 +1891,7 @@
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #001080">personaNodes</span><span style="color: #000000"> = </span><span style="color: #795E26">observe</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #A31515">&#039;change&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">  () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">nodesByCategory</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Persona&#039;</span><span style="color: #000000">))</span>
+<span style="color: #000000">  () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">nodesByCategory</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Persona&#039;</span><span style="color: #000000">))</span>
 <span style="color: #000000">)</span>
 </code></pre>
 									</dd>
@@ -2003,7 +2003,7 @@
 					<a name="getgraphsnapshot" class="tsd-anchor"></a>
 					<h3>get<wbr>Graph<wbr>Snapshot</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>Snapshot<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, nodeStyles<span class="tsd-signature-symbol">?: </span><a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>Snapshot<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, nodeStyles<span class="tsd-signature-symbol">?: </span><a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2020,7 +2020,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5>graph: <a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>nodeStyles: <a href="modules.html#nodestyle" class="tsd-signature-type" data-tsd-kind="Type alias">NodeStyle</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
@@ -2031,24 +2031,36 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="getgraphview" class="tsd-anchor"></a>
-					<h3>get<wbr>Graph<wbr>View</h3>
+					<a name="getlayoutgraph" class="tsd-anchor"></a>
+					<h3>get<wbr>Layout<wbr>Graph</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Graph<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Layout<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in getGraphView.ts:8</li>
+									<li>Defined in getLayoutGraph.ts:16</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns a Graph which allows mutation of the Graph visualization.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.1</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">graph</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">();</span>
+<span style="color: #001080">graph</span><span style="color: #000000">.</span><span style="color: #795E26">addNodes</span><span style="color: #000000">([</span>
+<span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">makeNode</span><span style="color: #000000">({</span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">, </span><span style="color: #001080">properties:</span><span style="color: #000000"> {</span><span style="color: #001080">episodeNumber:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #001080">seasonNumber:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">}}),</span>
+<span style="color: #000000">]);</span>
+</code></pre>
+									</dd>
+								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2056,13 +2068,13 @@
 					<a name="makegraph" class="tsd-anchor"></a>
 					<h3>make<wbr>Graph</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApiGraph</span></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Graph<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in makeGraph.ts:8</li>
+									<li>Defined in makeGraph.ts:9</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2075,7 +2087,7 @@
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ApiGraph</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2126,7 +2138,7 @@
 					<a name="applylayout" class="tsd-anchor"></a>
 					<h3>apply<wbr>Layout</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a>, computeLayout<span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TweenLayoutOverrides</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Layout<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a>, computeLayout<span class="tsd-signature-symbol">: </span><a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a>, tweenOverrides<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TweenLayoutOverrides</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#nodeidtoposition" class="tsd-signature-type" data-tsd-kind="Type alias">NodeIdToPosition</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2148,15 +2160,15 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// Basic example</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">())</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">())</span>
 
 <span style="color: #008000">// Layouts can be tweened, or not.</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">circle</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">})</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">cube</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">, </span><span style="color: #001080">interpolate:</span><span style="color: #000000"> </span><span style="color: #001080">myInterpolate</span><span style="color: #000000">})</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">circle</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">})</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">(), </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">cube</span><span style="color: #000000">(), {</span><span style="color: #001080">duration:</span><span style="color: #000000"> </span><span style="color: #098658">3000</span><span style="color: #000000">, </span><span style="color: #001080">interpolate:</span><span style="color: #000000"> </span><span style="color: #001080">myInterpolate</span><span style="color: #000000">})</span>
 
 <span style="color: #008000">// Define your own layout!</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span>
-<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">(),</span>
+<span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">(),</span>
 <span style="color: #000000">  {</span>
 <span style="color: #000000">    </span><span style="color: #001080">final:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Map</span><span style="color: #000000">(</span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">n</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> [</span><span style="color: #001080">n</span><span style="color: #000000">, </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">makeRandomPosition</span><span style="color: #000000">()])),</span>
 <span style="color: #000000">    </span><span style="color: #001080">tween:</span><span style="color: #000000"> {</span>
@@ -2167,8 +2179,8 @@
 <span style="color: #000000">)</span>
 
 <span style="color: #008000">// Sort and Filter can apply to the geometric layouts.</span>
-<span style="color: #008000">// Also, note that you can call applyLayout on a GraphView.</span>
-<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span>
+<span style="color: #008000">// Also, note that you can call applyLayout on a LayoutGraph.</span>
+<span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyLayout</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">line</span><span style="color: #000000">({</span>
 <span style="color: #000000">    </span><span style="color: #001080">sort:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;price&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// shorthand for GraphXR.sortByProperty({property: &#039;price&#039;, ascending: true})</span>
 <span style="color: #000000">    </span><span style="color: #001080">filter:</span><span style="color: #000000"> </span><span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">nodesByCategory</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Item&#039;</span><span style="color: #000000">),</span>
@@ -2181,7 +2193,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>view: <a href="classes/graphview.html" class="tsd-signature-type" data-tsd-kind="Class">GraphView</a></h5>
+									<h5>view: <a href="classes/legacylayoutgraph.html" class="tsd-signature-type" data-tsd-kind="Class">LegacyLayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>computeLayout: <a href="modules.html#layoutfunction" class="tsd-signature-type" data-tsd-kind="Type alias">LayoutFunction</a></h5>
@@ -2807,7 +2819,7 @@
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// Merge result into graph workspace</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">graph</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (p:Person {name: &#039;Kevin Bacon&#039;})-[d:ACTED_IN *1..3]-(hollywood) return DISTINCT p, hollywood, d`</span><span style="color: #000000">)).</span><span style="color: #795E26">toGraph</span><span style="color: #000000">();</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #001080">graph</span><span style="color: #000000">)</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #001080">graph</span><span style="color: #000000">)</span>
 
 <span style="color: #008000">// It can return table data</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">tableData</span><span style="color: #000000"> = (</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (n) RETURN n.name`</span><span style="color: #000000">)).</span><span style="color: #001080">data</span>
@@ -2835,13 +2847,13 @@
 					<a name="neo4jgraphdatatograph" class="tsd-anchor"></a>
 					<h3>neo4j<wbr>Graph<wbr>Data<wbr>ToGraph</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">neo4j<wbr>Graph<wbr>Data<wbr>ToGraph<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="modules.html#neo4jquerygraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jQueryGraphData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApiGraph</span></li>
+						<li class="tsd-signature tsd-kind-icon">neo4j<wbr>Graph<wbr>Data<wbr>ToGraph<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="modules.html#neo4jgraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jGraphData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in neo4j/neo4jGraphDataToGraph.ts:19</li>
+									<li>Defined in neo4j/neo4jGraphDataToGraph.ts:20</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2853,7 +2865,7 @@
 									<dd><p>0.0.130</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4jQueryGraphContentToGraph</span><span style="color: #000000">(</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (p:Person {name: &#039;Kevin Bacon&#039;})-[d:ACTED_IN *1..3]-(hollywood) return DISTINCT p, hollywood, d`</span><span style="color: #000000">)))</span>
+									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">assign</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4jQueryGraphContentToGraph</span><span style="color: #000000">(</span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">neo4j</span><span style="color: #000000">(</span><span style="color: #A31515">`MATCH (p:Person {name: &#039;Kevin Bacon&#039;})-[d:ACTED_IN *1..3]-(hollywood) return DISTINCT p, hollywood, d`</span><span style="color: #000000">)))</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -2861,10 +2873,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>content: <a href="modules.html#neo4jquerygraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jQueryGraphData</a></h5>
+									<h5>content: <a href="modules.html#neo4jgraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jGraphData</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ApiGraph</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -2935,7 +2947,7 @@
 					<a name="mergenodes" class="tsd-anchor"></a>
 					<h3>merge<wbr>Nodes</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">merge<wbr>Nodes<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, queryCategory<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a>, queryProperties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a>, setProperties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Nodes<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, queryCategory<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a>, queryProperties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a>, setProperties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#node" class="tsd-signature-type" data-tsd-kind="Type alias">Node</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2958,7 +2970,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>queryCategory: <a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a></h5>
@@ -3198,7 +3210,7 @@
 					<a name="dijkstra" class="tsd-anchor"></a>
 					<h3>dijkstra</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">dijkstra<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">dijkstra<span class="tsd-signature-symbol">(</span>graph<span class="tsd-signature-symbol">: </span><a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#path" class="tsd-signature-type" data-tsd-kind="Type alias">Path</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -3216,7 +3228,7 @@
 									<dd><p>0.95</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">()</span>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">view</span><span style="color: #000000"> = </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">()</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">nodes</span><span style="color: #000000"> = </span><span style="color: #001080">view</span><span style="color: #000000">.</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">sourceId</span><span style="color: #000000"> = </span><span style="color: #001080">nodes</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">].</span><span style="color: #001080">id</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">targetId</span><span style="color: #000000"> = </span><span style="color: #001080">nodes</span><span style="color: #000000">[</span><span style="color: #001080">nodes</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000"> - </span><span style="color: #098658">1</span><span style="color: #000000">].</span><span style="color: #001080">id</span>
@@ -3233,7 +3245,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>graph: <a href="interfaces/graph.html" class="tsd-signature-type" data-tsd-kind="Interface">Graph</a></h5>
+									<h5>graph: <a href="interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
 								</li>
 								<li>
 									<h5>options: <a href="interfaces/dijkstraoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DijkstraOptions</a></h5>
@@ -3544,7 +3556,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in transform/aggregate.ts:75</li>
+									<li>Defined in transform/aggregate.ts:74</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3560,7 +3572,7 @@
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// For each Season Node, make a new property &quot;episodeNumbers&quot; which is a concatentation of all the</span>
 <span style="color: #008000">// episodeNumber property values from Episodes connected to the Season along the inSeason relationship</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;node&#039;</span><span style="color: #000000">,</span>
@@ -3571,7 +3583,7 @@
 
 <span style="color: #008000">// For each Season Node, make a new property &quot;maxEpisodeNumber&quot; which is the maximum of all the</span>
 <span style="color: #008000">// episodeNumber property values from inSeason edges connected to the Season.</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateAlong:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;inSeason&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">getPropertyFrom:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;edge&#039;</span><span style="color: #000000">,</span>
@@ -3581,19 +3593,19 @@
 <span style="color: #000000">}))</span>
 
 <span style="color: #008000">// aggregateTo can be a function, a category, an array of nodes, or an array of node ids</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #008000">// function</span>
 <span style="color: #000000">  </span><span style="color: #795E26">aggregateTo</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #008000">// category</span>
 <span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #008000">// array of nodes</span>
-<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">),</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">),</span>
 <span style="color: #000000">  </span><span style="color: #008000">// array of node ids</span>
-<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">).</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">),</span>
+<span style="color: #000000">  </span><span style="color: #001080">aggregateTo:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">filter</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">category</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;Season&#039;</span><span style="color: #000000">).</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">),</span>
 <span style="color: #000000">}))</span>
 
 <span style="color: #008000">// formula can be a function or a string</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">aggregate</span><span style="color: #000000">({</span>
 <span style="color: #000000"> </span><span style="color: #008000">// function</span>
 <span style="color: #000000"> </span><span style="color: #795E26">formula</span><span style="color: #001080">:</span><span style="color: #000000"> (</span><span style="color: #001080">values</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">values</span><span style="color: #000000">.</span><span style="color: #795E26">reduce</span><span style="color: #000000">((</span><span style="color: #001080">a</span><span style="color: #000000">, </span><span style="color: #001080">b</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> + </span><span style="color: #001080">b</span><span style="color: #000000">, </span><span style="color: #098658">0</span><span style="color: #000000">),</span>
 <span style="color: #000000"> </span><span style="color: #008000">// string</span>
@@ -3636,17 +3648,17 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// These are the same</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">()</span>
 <span style="color: #000000">)</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
 <span style="color: #000000">  })</span>
 <span style="color: #000000">)</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">collectNodes</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
 <span style="color: #000000">  })</span>
 <span style="color: #000000">)</span>
 </code></pre>
@@ -3686,17 +3698,17 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// These are the same</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">explodeCollections</span><span style="color: #000000">()</span>
 <span style="color: #000000">)</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">explodeCollections</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
 <span style="color: #000000">  })</span>
 <span style="color: #000000">)</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">explodeCollections</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
 <span style="color: #000000">  })</span>
 <span style="color: #000000">)</span>
 </code></pre>
@@ -3735,7 +3747,7 @@
 									<dd><p>0.0.1</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
+									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">extract</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">category:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Episodes&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">props:</span><span style="color: #000000"> [</span>
 <span style="color: #000000">    {</span>
@@ -4030,17 +4042,17 @@
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-js"><span style="color: #008000">// These are the same</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">uncollectNodes</span><span style="color: #000000">()</span>
 <span style="color: #000000">)</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">uncollectNodes</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">()</span>
 <span style="color: #000000">  })</span>
 <span style="color: #000000">)</span>
-<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">applyTransform</span><span style="color: #000000">(</span>
 <span style="color: #000000">  </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">uncollectNodes</span><span style="color: #000000">({</span>
-<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getGraphView</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
+<span style="color: #000000">    </span><span style="color: #001080">nodes:</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getLayoutGraph</span><span style="color: #000000">().</span><span style="color: #795E26">getNodes</span><span style="color: #000000">().</span><span style="color: #795E26">map</span><span style="color: #000000">(</span><span style="color: #001080">node</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">node</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000">)</span>
 <span style="color: #000000">  })</span>
 <span style="color: #000000">)</span>
 </code></pre>
@@ -4158,7 +4170,7 @@
 						<a href="classes/basegraph.html" class="tsd-kind-icon">Base<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/graphview.html" class="tsd-kind-icon">Graph<wbr>View</a>
+						<a href="classes/legacylayoutgraph.html" class="tsd-kind-icon">Legacy<wbr>Layout<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/neo4jresult.html" class="tsd-kind-icon">Neo4j<wbr>Result</a>
@@ -4212,9 +4224,6 @@
 						<a href="interfaces/filteroptions.html" class="tsd-kind-icon">Filter<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/graph.html" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -4225,6 +4234,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/layoutcontext.html" class="tsd-kind-icon">Layout<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/layoutgraph.html" class="tsd-kind-icon">Layout<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/layoutoptions.html" class="tsd-kind-icon">Layout<wbr>Options</a>
@@ -4386,13 +4398,13 @@
 						<a href="modules.html#mutableedge" class="tsd-kind-icon">Mutable<wbr>Edge</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#neo4jquerydata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Data</a>
+						<a href="modules.html#neo4jdata" class="tsd-kind-icon">Neo4j<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#neo4jquerygraphdata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Graph<wbr>Data</a>
+						<a href="modules.html#neo4jgraphdata" class="tsd-kind-icon">Neo4j<wbr>Graph<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#neo4jquerytabledata" class="tsd-kind-icon">Neo4j<wbr>Query<wbr>Table<wbr>Data</a>
+						<a href="modules.html#neo4jtabledata" class="tsd-kind-icon">Neo4j<wbr>Table<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#node" class="tsd-kind-icon">Node</a>
@@ -4539,7 +4551,7 @@
 						<a href="modules.html#getgraphsnapshot" class="tsd-kind-icon">get<wbr>Graph<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="modules.html#getgraphview" class="tsd-kind-icon">get<wbr>Graph<wbr>View</a>
+						<a href="modules.html#getlayoutgraph" class="tsd-kind-icon">get<wbr>Layout<wbr>Graph</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getscene" class="tsd-kind-icon">get<wbr>Scene</a>
