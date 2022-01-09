@@ -1092,7 +1092,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="graphxr_api_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> GRAPHXR_<wbr>API_<wbr>VERSION</h3>
-					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.162&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.162&#x27;</span></div>
+					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.163&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.163&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in version.ts:1</li>
@@ -2514,7 +2514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in layout/parametric.ts:53</li>
+									<li>Defined in layout/parametric.ts:55</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2522,6 +2522,7 @@
 									<p>Map the x, y, and/or z dimensions to the range [-2, 2] by applying a linear scale
 									to all or a subset of the domain of a property.</p>
 								</div>
+								<p>If a dimension is omitted, it is flattened to align with the grid.</p>
 								<dl class="tsd-comment-tags">
 									<dt>since</dt>
 									<dd><p>0.0.68</p>
@@ -2535,7 +2536,7 @@
 <span style="color: #000000">  </span><span style="color: #001080">z:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">,</span>
 <span style="color: #000000">})</span>
 
-<span style="color: #008000">// Line up Nodes on the x-axis, ordered by seasonNumber descending</span>
+<span style="color: #008000">// Line up Nodes on the x-axis, ordered by seasonNumber descending. Align y and z to the grid.</span>
 <span style="color: #001080">GraphXR</span><span style="color: #000000">.</span><span style="color: #795E26">parametric</span><span style="color: #000000">({</span>
 <span style="color: #000000">  </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;seasonNumber&#039;</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #001080">reverse:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
