@@ -1,0 +1,311 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ExpandNodesOptions | @kineviz/graphxr-api</title>
+	<meta name="description" content="Documentation for @kineviz/graphxr-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@kineviz/graphxr-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@kineviz/graphxr-api</a>
+				</li>
+				<li>
+					<a href="expandnodesoptions.html">ExpandNodesOptions</a>
+				</li>
+			</ul>
+			<h1>Interface ExpandNodesOptions</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ExpandNodesOptions</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#edgedirection" class="tsd-kind-icon">edge<wbr>Direction</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#excludededgeids" class="tsd-kind-icon">excluded<wbr>Edge<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#excludedrelationshipids" class="tsd-kind-icon">excluded<wbr>Relationship<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#expandbetweensourcenodes" class="tsd-kind-icon">expand<wbr>Between<wbr>Source<wbr>Nodes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#includedrelationshipids" class="tsd-kind-icon">included<wbr>Relationship<wbr>Ids</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#limit" class="tsd-kind-icon">limit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#maxhops" class="tsd-kind-icon">max<wbr>Hops</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="expandnodesoptions.html#sourcenodeids" class="tsd-kind-icon">source<wbr>Node<wbr>Ids</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="edgedirection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> edge<wbr>Direction</h3>
+					<div class="tsd-signature tsd-kind-icon">edge<wbr>Direction<span class="tsd-signature-symbol">:</span> <a href="../enums/expandnodesedgedirection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ExpandNodesEdgeDirection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Restrict returned edges to those that have the specified direction.
+								If <code>ExpandNodesEdgeDirection.INCOMING</code>, then <code>(n)&lt;-[r]-(m)</code>.
+								If <code>ExpandNodesEdgeDirection.OUTGOING</code>, then <code>(n)-[r]-&gt;(m)</code>.
+								If <code>ExpandNodesEdgeDirection.BOTH</code>, then <code>(n)&lt;-[r]-&gt;(m)</code>.
+							Default: <code>ExpandNodesEdgeDirection.ANY</code>, then <code>(n)-[r]-(m)</code>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="excludededgeids" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> excluded<wbr>Edge<wbr>Ids</h3>
+					<div class="tsd-signature tsd-kind-icon">excluded<wbr>Edge<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:34</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An array of edge ids that should be excluded from the result.
+								This is used to implement paging. To get the next page, exclude everything from the previous page(s).
+							Do not pass this parameter, since it is handled internally.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="excludedrelationshipids" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> excluded<wbr>Relationship<wbr>Ids</h3>
+					<div class="tsd-signature tsd-kind-icon">excluded<wbr>Relationship<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:40</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An optional array of relationships to exclude from the result.
+								If omitted, no relationships will be excluded.
+							e.g. [&quot;inSeason&quot;]</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="expandbetweensourcenodes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> expand<wbr>Between<wbr>Source<wbr>Nodes</h3>
+					<div class="tsd-signature tsd-kind-icon">expand<wbr>Between<wbr>Source<wbr>Nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:62</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>If true, only return edges and nodes that are on some path between two source nodes.
+							Defaults to false.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="includedrelationshipids" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> included<wbr>Relationship<wbr>Ids</h3>
+					<div class="tsd-signature tsd-kind-icon">included<wbr>Relationship<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:46</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An optional array of relationships to include in the result.
+								If omitted, all relationships are included.
+							e.g. [&quot;inSeason&quot;]</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="limit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> limit</h3>
+					<div class="tsd-signature tsd-kind-icon">limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum number of rows in the Neo4j query result.
+							Defaults to 1000.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxhops" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Hops</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Hops<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:57</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum number of hops between the start and end nodes.
+								Defaults to 1.
+							e.g., if maxHops is 2, then (n)-[r1]-(n1)-[r2]-(m)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sourcenodeids" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source<wbr>Node<wbr>Ids</h3>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Node<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in neo4j/expandNodes.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An optional array of node ids to whitelist as the source nodes in the result.
+							i.e. the expanded nodes. If absent, all nodes are included.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="expandnodesoptions.html" class="tsd-kind-icon">Expand<wbr>Nodes<wbr>Options</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#edgedirection" class="tsd-kind-icon">edge<wbr>Direction</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#excludededgeids" class="tsd-kind-icon">excluded<wbr>Edge<wbr>Ids</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#excludedrelationshipids" class="tsd-kind-icon">excluded<wbr>Relationship<wbr>Ids</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#expandbetweensourcenodes" class="tsd-kind-icon">expand<wbr>Between<wbr>Source<wbr>Nodes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#includedrelationshipids" class="tsd-kind-icon">included<wbr>Relationship<wbr>Ids</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#limit" class="tsd-kind-icon">limit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#maxhops" class="tsd-kind-icon">max<wbr>Hops</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="expandnodesoptions.html#sourcenodeids" class="tsd-kind-icon">source<wbr>Node<wbr>Ids</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
