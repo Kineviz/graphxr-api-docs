@@ -90,6 +90,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/axesoptions.html" class="tsd-kind-icon">Axes<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/axisoptions.html" class="tsd-kind-icon">Axis<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/categoryconfig.html" class="tsd-kind-icon">Category<wbr>Config</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/collectnodesoptions.html" class="tsd-kind-icon">Collect<wbr>Nodes<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/dijkstraoptions.html" class="tsd-kind-icon">Dijkstra<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a></li>
@@ -123,6 +124,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/parametricoptions.html" class="tsd-kind-icon">Parametric<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/parent.html" class="tsd-kind-icon">Parent</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/relationshipconfig.html" class="tsd-kind-icon">Relationship<wbr>Config</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/requestdata.html" class="tsd-kind-icon">Request<wbr>Data</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/runtime.html" class="tsd-kind-icon">Runtime</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/scaleoptions.html" class="tsd-kind-icon">Scale<wbr>Options</a></li>
@@ -220,6 +222,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="modules.html#getcategorycolor" class="tsd-kind-icon">get<wbr>Category<wbr>Color</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#setcategorycaptionproperties" class="tsd-kind-icon">set<wbr>Category<wbr>Caption<wbr>Properties</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#setcategorysizeproperty" class="tsd-kind-icon">set<wbr>Category<wbr>Size<wbr>Property</a></li>
 							</ul>
 							<h3>Centrality Functions</h3>
 							<ul class="tsd-index-list">
@@ -430,7 +433,7 @@
 					<div class="tsd-signature tsd-kind-icon">Category<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in category.ts:1</li>
+							<li>Defined in category.ts:3</li>
 						</ul>
 					</aside>
 				</section>
@@ -1093,7 +1096,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>CATEGORY_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;Node&quot;</span><span class="tsd-signature-symbol"> = &quot;Node&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in category.ts:7</li>
+							<li>Defined in category.ts:9</li>
 						</ul>
 					</aside>
 				</section>
@@ -1120,7 +1123,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="graphxr_api_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> GRAPHXR_<wbr>API_<wbr>VERSION</h3>
-					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.197&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.197&#x27;</span></div>
+					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.198&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.198&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in version.ts:1</li>
@@ -1266,7 +1269,7 @@
 					<div class="tsd-signature tsd-kind-icon">runtime<span class="tsd-signature-symbol">:</span> <a href="interfaces/runtime.html" class="tsd-signature-type" data-tsd-kind="Interface">Runtime</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:104</li>
+							<li>Defined in runtime.ts:112</li>
 						</ul>
 					</aside>
 				</section>
@@ -1283,7 +1286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:324</li>
+									<li>Defined in index.ts:327</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1533,13 +1536,13 @@
 					<a name="setcategorycaptionproperties" class="tsd-anchor"></a>
 					<h3>set<wbr>Category<wbr>Caption<wbr>Properties</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Category<wbr>Caption<wbr>Properties<span class="tsd-signature-symbol">(</span>category<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a>, properties<span class="tsd-signature-symbol">: </span><a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Category<wbr>Caption<wbr>Properties<span class="tsd-signature-symbol">(</span>category<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a>, properties<span class="tsd-signature-symbol">: </span><a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in setCategoryCaptionProperties.ts:17</li>
+									<li>Defined in setCategoryCaptionProperties.ts:18</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1565,7 +1568,47 @@
 									<h5>properties: <a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="setcategorysizeproperty" class="tsd-anchor"></a>
+					<h3>set<wbr>Category<wbr>Size<wbr>Property</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Category<wbr>Size<wbr>Property<span class="tsd-signature-symbol">(</span>category<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a>, property<span class="tsd-signature-symbol">: </span><a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in setCategorySizeProperty.ts:18</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the property which will affect the size of the nodes in the category.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.198</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">setCategorySizeProperty</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Movie&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;released&#039;</span><span style="color: #000000">]);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>category: <a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a></h5>
+								</li>
+								<li>
+									<h5>property: <a href="modules.html#propertykey" class="tsd-signature-type" data-tsd-kind="Type alias">PropertyKey</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3105,7 +3148,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in runtime.ts:109</li>
+									<li>Defined in runtime.ts:117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3127,7 +3170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in runtime.ts:102</li>
+									<li>Defined in runtime.ts:110</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -3446,7 +3489,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in runtime.ts:122</li>
+									<li>Defined in runtime.ts:130</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4238,6 +4281,9 @@
 						<a href="interfaces/category.html" class="tsd-kind-icon">Category</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/categoryconfig.html" class="tsd-kind-icon">Category<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/collectnodesoptions.html" class="tsd-kind-icon">Collect<wbr>Nodes<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -4335,6 +4381,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/relationshipconfig.html" class="tsd-kind-icon">Relationship<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/requestdata.html" class="tsd-kind-icon">Request<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/rotateoptions.html" class="tsd-kind-icon">Rotate<wbr>Options</a>
@@ -4704,6 +4753,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setcategorycaptionproperties" class="tsd-kind-icon">set<wbr>Category<wbr>Caption<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setcategorysizeproperty" class="tsd-kind-icon">set<wbr>Category<wbr>Size<wbr>Property</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#setedgescale" class="tsd-kind-icon">set<wbr>Edge<wbr>Scale</a>
