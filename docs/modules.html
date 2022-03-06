@@ -78,6 +78,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/api.html" class="tsd-kind-icon">API</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/alignbyoptions.html" class="tsd-kind-icon">Align<wbr>ByOptions</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/apinodecollection.html" class="tsd-kind-icon">Api<wbr>Node<wbr>Collection</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/aregraphsnapshotsequaloptions.html" class="tsd-kind-icon">Are<wbr>Graph<wbr>Snapshots<wbr>Equal<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/axesoptions.html" class="tsd-kind-icon">Axes<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/axisoptions.html" class="tsd-kind-icon">Axis<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
@@ -102,6 +103,8 @@
 								<li class="tsd-kind-interface"><a href="interfaces/mappedproperty.html" class="tsd-kind-icon">Mapped<wbr>Property</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/mergeoptions.html" class="tsd-kind-icon">Merge<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/mutablenode.html" class="tsd-kind-icon">Mutable<wbr>Node</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/neo4jedge.html" class="tsd-kind-icon">Neo4j<wbr>Edge</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/neo4jnode.html" class="tsd-kind-icon">Neo4j<wbr>Node</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/neo4joptions.html" class="tsd-kind-icon">Neo4j<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodecollectionsnapshot.html" class="tsd-kind-icon">Node<wbr>Collection<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a></li>
@@ -771,27 +774,27 @@
 					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="modules.html#neo4jgraphdata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jGraphData</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#neo4jtabledata" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jTableData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in neo4j/neo4j.ts:9</li>
+							<li>Defined in neo4j/neo4j.ts:4</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="neo4jgraphdata" class="tsd-anchor"></a>
 					<h3>Neo4j<wbr>Graph<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Graph<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>relationships<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>endNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#edgeid" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeId</a><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">; </span>startNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Graph<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/neo4jnode.html" class="tsd-signature-type" data-tsd-kind="Interface">Neo4jNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>relationships<span class="tsd-signature-symbol">: </span><a href="interfaces/neo4jedge.html" class="tsd-signature-type" data-tsd-kind="Interface">Neo4jEdge</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in neo4j/neo4j.ts:11</li>
+							<li>Defined in neo4j/neo4j.ts:20</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>nodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="modules.html#categoryid" class="tsd-signature-type" data-tsd-kind="Type alias">CategoryId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>nodes<span class="tsd-signature-symbol">: </span><a href="interfaces/neo4jnode.html" class="tsd-signature-type" data-tsd-kind="Interface">Neo4jNode</a><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>relationships<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>endNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><a href="modules.html#edgeid" class="tsd-signature-type" data-tsd-kind="Type alias">EdgeId</a><span class="tsd-signature-symbol">; </span>properties<span class="tsd-signature-symbol">: </span><a href="modules.html#properties" class="tsd-signature-type" data-tsd-kind="Type alias">Properties</a><span class="tsd-signature-symbol">; </span>startNodeId<span class="tsd-signature-symbol">: </span><a href="modules.html#nodeid" class="tsd-signature-type" data-tsd-kind="Type alias">NodeId</a><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><a href="modules.html#relationshipid" class="tsd-signature-type" data-tsd-kind="Type alias">RelationshipId</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>relationships<span class="tsd-signature-symbol">: </span><a href="interfaces/neo4jedge.html" class="tsd-signature-type" data-tsd-kind="Interface">Neo4jEdge</a><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -802,7 +805,7 @@
 					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in neo4j/neo4j.ts:40</li>
+							<li>Defined in neo4j/neo4j.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -812,7 +815,7 @@
 					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in neo4j/neo4j.ts:41</li>
+							<li>Defined in neo4j/neo4j.ts:40</li>
 						</ul>
 					</aside>
 				</section>
@@ -822,7 +825,7 @@
 					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Query<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#neo4jquery" class="tsd-signature-type" data-tsd-kind="Type alias">Neo4jQuery</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in neo4j/neo4j.ts:42</li>
+							<li>Defined in neo4j/neo4j.ts:41</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -847,7 +850,7 @@
 					<div class="tsd-signature tsd-kind-icon">Neo4j<wbr>Table<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in neo4j/neo4j.ts:26</li>
+							<li>Defined in neo4j/neo4j.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -1105,7 +1108,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="graphxr_api_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> GRAPHXR_<wbr>API_<wbr>VERSION</h3>
-					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.189&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.189&#x27;</span></div>
+					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.190&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.190&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in version.ts:1</li>
@@ -1251,7 +1254,7 @@
 					<div class="tsd-signature tsd-kind-icon">runtime<span class="tsd-signature-symbol">:</span> <a href="interfaces/runtime.html" class="tsd-signature-type" data-tsd-kind="Interface">Runtime</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:102</li>
+							<li>Defined in runtime.ts:104</li>
 						</ul>
 					</aside>
 				</section>
@@ -1268,7 +1271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:321</li>
+									<li>Defined in index.ts:322</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2787,7 +2790,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in neo4j/neo4j.ts:63</li>
+									<li>Defined in neo4j/neo4j.ts:62</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2985,7 +2988,7 @@
 					<a name="aregraphsnapshotsequal" class="tsd-anchor"></a>
 					<h3>are<wbr>Graph<wbr>Snapshots<wbr>Equal</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">are<wbr>Graph<wbr>Snapshots<wbr>Equal<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a>, right<span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">are<wbr>Graph<wbr>Snapshots<wbr>Equal<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a>, right<span class="tsd-signature-symbol">: </span><a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/aregraphsnapshotsequaloptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AreGraphSnapshotsEqualOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -3002,6 +3005,9 @@
 								<li>
 									<h5>right: <a href="interfaces/graphsnapshot.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphSnapshot</a></h5>
 								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/aregraphsnapshotsequaloptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AreGraphSnapshotsEqualOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
@@ -3017,7 +3023,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in areGraphSnapshotsEqual.ts:138</li>
+									<li>Defined in areGraphSnapshotsEqual.ts:151</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3043,7 +3049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in runtime.ts:107</li>
+									<li>Defined in runtime.ts:109</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3065,7 +3071,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in runtime.ts:100</li>
+									<li>Defined in runtime.ts:102</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -3361,7 +3367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in runtime.ts:121</li>
+									<li>Defined in runtime.ts:122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4132,6 +4138,9 @@
 						<a href="interfaces/apinodecollection.html" class="tsd-kind-icon">Api<wbr>Node<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/aregraphsnapshotsequaloptions.html" class="tsd-kind-icon">Are<wbr>Graph<wbr>Snapshots<wbr>Equal<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/axesoptions.html" class="tsd-kind-icon">Axes<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -4202,6 +4211,12 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/mutablenode.html" class="tsd-kind-icon">Mutable<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/neo4jedge.html" class="tsd-kind-icon">Neo4j<wbr>Edge</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/neo4jnode.html" class="tsd-kind-icon">Neo4j<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/neo4joptions.html" class="tsd-kind-icon">Neo4j<wbr>Options</a>

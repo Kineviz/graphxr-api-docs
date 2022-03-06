@@ -85,8 +85,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="runtime.html#_app" class="tsd-kind-icon">_app</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="runtime.html#_hd" class="tsd-kind-icon">_hd</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="runtime.html#_plot" class="tsd-kind-icon">_plot</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="runtime.html#_testenvironmentmocks" class="tsd-kind-icon">_test<wbr>Environment<wbr>Mocks</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="runtime.html#globalvariable" class="tsd-kind-icon">global<wbr>Variable</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="runtime.html#makenodeid" class="tsd-kind-icon">make<wbr>Node<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -384,6 +384,39 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="_testenvironmentmocks" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> _test<wbr>Environment<wbr>Mocks</h3>
+					<div class="tsd-signature tsd-kind-icon">_test<wbr>Environment<wbr>Mocks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>makeNodeId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>projectId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in runtime.ts:73</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> make<wbr>Node<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> project<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="globalvariable" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> global<wbr>Variable</h3>
 					<div class="tsd-signature tsd-kind-icon">global<wbr>Variable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
@@ -397,31 +430,6 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="makenodeid" class="tsd-anchor"></a>
-					<h3>make<wbr>Node<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">make<wbr>Node<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in runtime.ts:73</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-									</li>
-								</ul>
 							</li>
 						</ul>
 					</div>
@@ -459,10 +467,10 @@
 								<a href="runtime.html#_plot" class="tsd-kind-icon">_plot</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="runtime.html#globalvariable" class="tsd-kind-icon">global<wbr>Variable</a>
+								<a href="runtime.html#_testenvironmentmocks" class="tsd-kind-icon">_test<wbr>Environment<wbr>Mocks</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="runtime.html#makenodeid" class="tsd-kind-icon">make<wbr>Node<wbr>Id</a>
+								<a href="runtime.html#globalvariable" class="tsd-kind-icon">global<wbr>Variable</a>
 							</li>
 						</ul>
 					</li>
