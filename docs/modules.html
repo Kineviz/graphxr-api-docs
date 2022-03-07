@@ -92,6 +92,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/category.html" class="tsd-kind-icon">Category</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/categoryconfig.html" class="tsd-kind-icon">Category<wbr>Config</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/collectnodesoptions.html" class="tsd-kind-icon">Collect<wbr>Nodes<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/colornodesbypropertyoptions.html" class="tsd-kind-icon">Color<wbr>Nodes<wbr>ByProperty<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/dijkstraoptions.html" class="tsd-kind-icon">Dijkstra<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a></li>
@@ -273,6 +274,10 @@
 								<li class="tsd-kind-function"><a href="modules.html#setparametricaxesoptions" class="tsd-kind-icon">set<wbr>Parametric<wbr>Axes<wbr>Options</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#shift" class="tsd-kind-icon">shift</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#spiral" class="tsd-kind-icon">spiral</a></li>
+							</ul>
+							<h3>Legend Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#colornodesbyproperty" class="tsd-kind-icon">color<wbr>Nodes<wbr>ByProperty</a></li>
 							</ul>
 							<h3>Neo4j Functions</h3>
 							<ul class="tsd-index-list">
@@ -1123,7 +1128,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable">
 					<a name="graphxr_api_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> GRAPHXR_<wbr>API_<wbr>VERSION</h3>
-					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.200&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.200&#x27;</span></div>
+					<div class="tsd-signature tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;0.0.201&quot;</span><span class="tsd-signature-symbol"> = &#x27;0.0.201&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in version.ts:1</li>
@@ -1286,7 +1291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:327</li>
+									<li>Defined in index.ts:332</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2834,6 +2839,47 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Legend Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="colornodesbyproperty" class="tsd-anchor"></a>
+					<h3>color<wbr>Nodes<wbr>ByProperty</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">color<wbr>Nodes<wbr>ByProperty<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="interfaces/colornodesbypropertyoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ColorNodesByPropertyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in colorNodesByProperty.ts:22</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Applies a color scale to all nodes by a certain property.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>since</dt>
+									<dd><p>0.0.201</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">colorNodesByProperty</span><span style="color: #000000">({</span><span style="color: #001080">property:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Episodes&#039;</span><span style="color: #000000">});</span>
+<span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">colorNodesByProperty</span><span style="color: #000000">({</span><span style="color: #001080">property:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Episodes&#039;</span><span style="color: #000000">, </span><span style="color: #001080">scale:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;BuGn&#039;</span><span style="color: #000000">});</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="interfaces/colornodesbypropertyoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ColorNodesByPropertyOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Neo4j Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="expandnodes" class="tsd-anchor"></a>
@@ -4287,6 +4333,9 @@
 						<a href="interfaces/collectnodesoptions.html" class="tsd-kind-icon">Collect<wbr>Nodes<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/colornodesbypropertyoptions.html" class="tsd-kind-icon">Color<wbr>Nodes<wbr>ByProperty<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/dijkstraoptions.html" class="tsd-kind-icon">Dijkstra<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -4609,6 +4658,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#collectnodes" class="tsd-kind-icon">collect<wbr>Nodes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#colornodesbyproperty" class="tsd-kind-icon">color<wbr>Nodes<wbr>ByProperty</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#comparepropertyvalues" class="tsd-kind-icon">compare<wbr>Property<wbr>Values</a>
