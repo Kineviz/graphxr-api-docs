@@ -286,15 +286,10 @@
 					<h2>Integration (<code>cypress/</code>)</h2>
 				</a>
 				<p>The integration tests run the API against a local GraphXR instance.</p>
+				<p>It assumes auth is disabled. Comment out adminEmail in GraphXR&#39;s config.js to disable auth.</p>
 				<p>First create file <code>.env</code> in the root folder (web/api/.env) with contents.</p>
 				<pre><code><span style="color: #000000"># </span><span style="color: #001080">Points</span><span style="color: #000000"> </span><span style="color: #001080">at</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> </span><span style="color: #001080">GraphXR</span><span style="color: #000000"> </span><span style="color: #001080">instance</span>
 <span style="color: #001080">CYPRESS_baseUrl</span><span style="color: #000000">=https:</span><span style="color: #008000">//localhost:3000</span>
-
-<span style="color: #000000"># </span><span style="color: #0070C1">A</span><span style="color: #000000"> </span><span style="color: #001080">GraphXR</span><span style="color: #000000"> </span><span style="color: #001080">user</span><span style="color: #A31515">&#039;s usernam</span><span style="color: #CD3131">e</span>
-<span style="color: #0070C1">CYPRESS_ADMIN_EMAIL</span><span style="color: #000000">=</span><span style="color: #001080">cypress</span><span style="color: #000000">@</span><span style="color: #001080">kineviz</span><span style="color: #000000">.</span><span style="color: #001080">com</span>
-
-<span style="color: #000000"># </span><span style="color: #0070C1">A</span><span style="color: #000000"> </span><span style="color: #001080">GraphXR</span><span style="color: #000000"> </span><span style="color: #001080">user</span><span style="color: #A31515">&#039;s passwor</span><span style="color: #CD3131">d</span>
-<span style="color: #0070C1">CYPRESS_ADMIN_PASSWORD</span><span style="color: #000000">=4</span><span style="color: #001080">SuG2GvbZs2K4fN</span>
 </code></pre>
 				<p>Run once: <code>yarn test</code> or <code>yarn test:integration</code></p>
 				<a href="#coverage" id="coverage" style="color: inherit; text-decoration: none;">
@@ -772,6 +767,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#dijkstra" class="tsd-kind-icon">dijkstra</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#dispatchgraphdataupdate" class="tsd-kind-icon">dispatch<wbr>Graph<wbr>Data<wbr>Update</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#distributionby" class="tsd-kind-icon">distribution<wbr>By</a>
