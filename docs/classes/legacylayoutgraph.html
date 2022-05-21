@@ -123,10 +123,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#getnodes" class="tsd-kind-icon">get<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#hideedges" class="tsd-kind-icon">hide<wbr>Edges</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#hidenodes" class="tsd-kind-icon">hide<wbr>Nodes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="legacylayoutgraph.html#merge" class="tsd-kind-icon">merge</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#removeedge" class="tsd-kind-icon">remove<wbr>Edge</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#removeedges" class="tsd-kind-icon">remove<wbr>Edges</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#removenode" class="tsd-kind-icon">remove<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#removenodes" class="tsd-kind-icon">remove<wbr>Nodes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="legacylayoutgraph.html#replace" class="tsd-kind-icon">replace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#setedgeproperties" class="tsd-kind-icon">set<wbr>Edge<wbr>Properties</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#setedgestyles" class="tsd-kind-icon">set<wbr>Edge<wbr>Styles</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="legacylayoutgraph.html#setnodecategory" class="tsd-kind-icon">set<wbr>Node<wbr>Category</a></li>
@@ -294,7 +296,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#applylayout">applyLayout</a></p>
 								<p>Inherited from <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#applylayout">applyLayout</a></p>
 								<ul>
-									<li>Defined in layoutGraph.ts:154</li>
+									<li>Defined in layoutGraph.ts:75</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -347,9 +349,16 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#assign">assign</a></p>
 								<p>Inherited from <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#assign">assign</a></p>
 								<ul>
-									<li>Defined in layoutGraph.ts:165</li>
+									<li>Defined in layoutGraph.ts:90</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>assign</code> copies the source graph into this graph, similar to Object.assign(target, source).
+										<code>assign</code> calls <code>merge</code> with deleteMissingNodesAndEdges = false.
+									Useful when you get a Neo4j result and want to overlay it on the graph workspace.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -410,7 +419,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#findneighbors">findNeighbors</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#findneighbors">findNeighbors</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:232</li>
+									<li>Defined in legacyLayoutGraph.ts:256</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,7 +510,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#getedgestyles">getEdgeStyles</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#getedgestyles">getEdgeStyles</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:182</li>
+									<li>Defined in legacyLayoutGraph.ts:194</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -614,7 +623,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#hideedges">hideEdges</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#hideedges">hideEdges</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:222</li>
+									<li>Defined in legacyLayoutGraph.ts:246</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -639,7 +648,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#hidenodes">hideNodes</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#hidenodes">hideNodes</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:202</li>
+									<li>Defined in legacyLayoutGraph.ts:226</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -649,6 +658,44 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3>merge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/graphmergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphMergeOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#merge">merge</a></p>
+								<p>Inherited from <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#merge">merge</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:111</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>merge</code> takes a source graph and merges it into this graph.
+										New nodes and edges from the source graph are added.
+										Attributes (e.g. <code>properties</code>, <code>styles</code>, <code>category</code>) of nodes with same id are copied.
+										Attributes (e.g. <code>properties</code>, <code>styles</code>, <code>relationship</code>) of edges with same id are copied.
+										If options.deleteMissingNodesAndEdges is true, then any nodes and edges in the source graph that are not in the target graph (this graph) will be <strong>deleted</strong>.
+									If options.deleteMissingNodesAndEdges is false, then any nodes and edges in the source graph that are not in the target graph (this graph) will be <strong>kept</strong>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/graphmergeoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GraphMergeOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -752,6 +799,38 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="replace" class="tsd-anchor"></a>
+					<h3>replace</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#replace">replace</a></p>
+								<p>Inherited from <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#replace">replace</a></p>
+								<ul>
+									<li>Defined in layoutGraph.ts:99</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p><code>replace</code> is like <code>assign</code> but deletes nodes from the target that are not in the source graph.
+										<code>replace</code> calls <code>merge</code> with deleteMissingNodesAndEdges = true.
+									Useful when you want to replace the target graph with a transformed one.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/layoutgraph.html" class="tsd-signature-type" data-tsd-kind="Interface">LayoutGraph</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="setedgeproperties" class="tsd-anchor"></a>
 					<h3>set<wbr>Edge<wbr>Properties</h3>
@@ -792,7 +871,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setedgestyles">setEdgeStyles</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#setedgestyles">setEdgeStyles</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:196</li>
+									<li>Defined in legacyLayoutGraph.ts:209</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -904,7 +983,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#setnodestyles">setNodeStyles</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#setnodestyles">setNodeStyles</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:176</li>
+									<li>Defined in legacyLayoutGraph.ts:177</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -932,7 +1011,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#showedges">showEdges</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#showedges">showEdges</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:226</li>
+									<li>Defined in legacyLayoutGraph.ts:250</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -957,7 +1036,7 @@
 								<p>Implementation of <a href="../interfaces/layoutgraph.html">LayoutGraph</a>.<a href="../interfaces/layoutgraph.html#shownodes">showNodes</a></p>
 								<p>Overrides <a href="basegraph.html">BaseGraph</a>.<a href="basegraph.html#shownodes">showNodes</a></p>
 								<ul>
-									<li>Defined in legacyLayoutGraph.ts:211</li>
+									<li>Defined in legacyLayoutGraph.ts:235</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1053,6 +1132,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="legacylayoutgraph.html#hidenodes" class="tsd-kind-icon">hide<wbr>Nodes</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="legacylayoutgraph.html#merge" class="tsd-kind-icon">merge</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="legacylayoutgraph.html#removeedge" class="tsd-kind-icon">remove<wbr>Edge</a>
 							</li>
@@ -1064,6 +1146,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="legacylayoutgraph.html#removenodes" class="tsd-kind-icon">remove<wbr>Nodes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="legacylayoutgraph.html#replace" class="tsd-kind-icon">replace</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="legacylayoutgraph.html#setedgeproperties" class="tsd-kind-icon">set<wbr>Edge<wbr>Properties</a>
