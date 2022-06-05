@@ -87,6 +87,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#edges" class="tsd-kind-icon">edges</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#getedgewithid" class="tsd-kind-icon">get<wbr>Edge<wbr>With<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#getnodewithprops" class="tsd-kind-icon">get<wbr>Node<wbr>With<wbr>Props</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#layoutedges" class="tsd-kind-icon">layout<wbr>Edges</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#layoutnodes" class="tsd-kind-icon">layout<wbr>Nodes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="legacygraph.html#nodeset" class="tsd-kind-icon">node<wbr>Set</a></li>
@@ -107,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">add<wbr>Edges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>edges<span class="tsd-signature-symbol">: </span><a href="../classes/apiedge.html" class="tsd-signature-type" data-tsd-kind="Class">ApiEdge</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:92</li>
+							<li>Defined in runtime.ts:96</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -138,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">add<wbr>Nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:93</li>
+							<li>Defined in runtime.ts:97</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -169,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:94</li>
+							<li>Defined in runtime.ts:98</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -194,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">edge<wbr>Set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:98</li>
+							<li>Defined in runtime.ts:102</li>
 						</ul>
 					</aside>
 				</section>
@@ -204,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:97</li>
+							<li>Defined in runtime.ts:101</li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +215,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Edge<wbr>With<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, relationship<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:101</li>
+							<li>Defined in runtime.ts:105</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -251,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>ById<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:102</li>
+							<li>Defined in runtime.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -277,12 +278,43 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="getnodewithprops" class="tsd-anchor"></a>
+					<h3>get<wbr>Node<wbr>With<wbr>Props</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>With<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../modules.html#objecttype" class="tsd-signature-type" data-tsd-kind="Type alias">ObjectType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in runtime.ts:107</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../modules.html#objecttype" class="tsd-signature-type" data-tsd-kind="Type alias">ObjectType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>props: <a href="../modules.html#objecttype" class="tsd-signature-type" data-tsd-kind="Type alias">ObjectType</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="layoutedges" class="tsd-anchor"></a>
 					<h3>layout<wbr>Edges</h3>
 					<div class="tsd-signature tsd-kind-icon">layout<wbr>Edges<span class="tsd-signature-symbol">:</span> <a href="../modules.html#legacyedge" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyEdge</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:100</li>
+							<li>Defined in runtime.ts:104</li>
 						</ul>
 					</aside>
 				</section>
@@ -292,7 +324,7 @@
 					<div class="tsd-signature tsd-kind-icon">layout<wbr>Nodes<span class="tsd-signature-symbol">:</span> <a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:99</li>
+							<li>Defined in runtime.ts:103</li>
 						</ul>
 					</aside>
 				</section>
@@ -302,7 +334,7 @@
 					<div class="tsd-signature tsd-kind-icon">node<wbr>Set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:96</li>
+							<li>Defined in runtime.ts:100</li>
 						</ul>
 					</aside>
 				</section>
@@ -312,7 +344,7 @@
 					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <a href="../modules.html#legacynode" class="tsd-signature-type" data-tsd-kind="Type alias">LegacyNode</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:95</li>
+							<li>Defined in runtime.ts:99</li>
 						</ul>
 					</aside>
 				</section>
@@ -322,7 +354,7 @@
 					<div class="tsd-signature tsd-kind-icon">remove<wbr>Edges<wbr>ByIds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:103</li>
+							<li>Defined in runtime.ts:108</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -353,7 +385,7 @@
 					<div class="tsd-signature tsd-kind-icon">remove<wbr>Nodes<wbr>ByIds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, onlyVisible<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:104</li>
+							<li>Defined in runtime.ts:109</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -387,7 +419,7 @@
 					<div class="tsd-signature tsd-kind-icon">update_<wbr>degree<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in runtime.ts:105</li>
+							<li>Defined in runtime.ts:110</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -443,6 +475,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="legacygraph.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="legacygraph.html#getnodewithprops" class="tsd-kind-icon">get<wbr>Node<wbr>With<wbr>Props</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="legacygraph.html#layoutedges" class="tsd-kind-icon">layout<wbr>Edges</a>
