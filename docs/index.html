@@ -121,7 +121,7 @@
 									</li>
 									<li>Nodes and Edges returned from API functions are immutable, so you need to use these setters<ul>
 											<li>setEdgeProperties, setNodeProperties</li>
-											<li>setEdgeStyles, setNodeStyles</li>
+											<li>node.setStyle, edge.setStyle</li>
 											<li>setNodeCollection</li>
 										</ul>
 									</li>
@@ -375,6 +375,9 @@
 					<li class=" tsd-kind-enum">
 						<a href="enums/neo4jresulttype.html" class="tsd-kind-icon">Neo4j<wbr>Result<wbr>Type</a>
 					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/propertymergestrategy.html" class="tsd-kind-icon">Property<wbr>Merge<wbr>Strategy</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/apiedge.html" class="tsd-kind-icon">Api<wbr>Edge</a>
 					</li>
@@ -398,9 +401,6 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/alignbyoptions.html" class="tsd-kind-icon">Align<wbr>ByOptions</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/apinodecollection.html" class="tsd-kind-icon">Api<wbr>Node<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/aregraphsnapshotsequaloptions.html" class="tsd-kind-icon">Are<wbr>Graph<wbr>Snapshots<wbr>Equal<wbr>Options</a>
@@ -430,9 +430,6 @@
 						<a href="interfaces/edgesnapshot.html" class="tsd-kind-icon">Edge<wbr>Snapshot</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/edgestyles.html" class="tsd-kind-icon">Edge<wbr>Styles</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/egooptions.html" class="tsd-kind-icon">Ego<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -452,9 +449,6 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/graphsnapshot.html" class="tsd-kind-icon">Graph<wbr>Snapshot</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/inmemoryproperties.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Properties</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/labelsconfig.html" class="tsd-kind-icon">Labels<wbr>Config</a>
@@ -487,9 +481,6 @@
 						<a href="interfaces/mergeoptions.html" class="tsd-kind-icon">Merge<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/mutablenode.html" class="tsd-kind-icon">Mutable<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/neo4jedge.html" class="tsd-kind-icon">Neo4j<wbr>Edge</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -506,9 +497,6 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/nodesnapshot.html" class="tsd-kind-icon">Node<wbr>Snapshot</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/nodestyles.html" class="tsd-kind-icon">Node<wbr>Styles</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/parametricdimension.html" class="tsd-kind-icon">Parametric<wbr>Dimension</a>
@@ -568,9 +556,6 @@
 						<a href="modules.html#aggregateoptions" class="tsd-kind-icon">Aggregate<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#apiedgestyles" class="tsd-kind-icon">Api<wbr>Edge<wbr>Styles</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#apievent" class="tsd-kind-icon">Api<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -578,9 +563,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#apieventcallbackid" class="tsd-kind-icon">Api<wbr>Event<wbr>Callback<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#apinodestyles" class="tsd-kind-icon">Api<wbr>Node<wbr>Styles</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#betweennessresult" class="tsd-kind-icon">Betweenness<wbr>Result</a>
@@ -607,13 +589,19 @@
 						<a href="modules.html#distributionoptions" class="tsd-kind-icon">Distribution<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#edge" class="tsd-kind-icon">Edge</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#edgefilter" class="tsd-kind-icon">Edge<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#edgeid" class="tsd-kind-icon">Edge<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#edgestyle" class="tsd-kind-icon">Edge<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#edgestylevalue" class="tsd-kind-icon">Edge<wbr>Style<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#edgestyles" class="tsd-kind-icon">Edge<wbr>Styles</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#emitter" class="tsd-kind-icon">Emitter</a>
@@ -634,22 +622,13 @@
 						<a href="modules.html#legacyedge" class="tsd-kind-icon">Legacy<wbr>Edge</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#legacyedgestyles" class="tsd-kind-icon">Legacy<wbr>Edge<wbr>Styles</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#legacynode" class="tsd-kind-icon">Legacy<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#legacynodestyles" class="tsd-kind-icon">Legacy<wbr>Node<wbr>Styles</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#louvainresult" class="tsd-kind-icon">Louvain<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#mapformula" class="tsd-kind-icon">Map<wbr>Formula</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#mutableedge" class="tsd-kind-icon">Mutable<wbr>Edge</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#neo4jdata" class="tsd-kind-icon">Neo4j<wbr>Data</a>
@@ -670,12 +649,6 @@
 						<a href="modules.html#neo4jtabledata" class="tsd-kind-icon">Neo4j<wbr>Table<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#node" class="tsd-kind-icon">Node</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#nodecollection" class="tsd-kind-icon">Node<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#nodefilter" class="tsd-kind-icon">Node<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -689,6 +662,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#nodestyle" class="tsd-kind-icon">Node<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#nodestylevalue" class="tsd-kind-icon">Node<wbr>Style<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#nodestyles" class="tsd-kind-icon">Node<wbr>Styles</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#pagerankresult" class="tsd-kind-icon">Page<wbr>Rank<wbr>Result</a>
@@ -727,10 +706,16 @@
 						<a href="modules.html#dimensions" class="tsd-kind-icon">DIMENSIONS</a>
 					</li>
 					<li class=" tsd-kind-variable">
+						<a href="modules.html#edge_styles" class="tsd-kind-icon">EDGE_<wbr>STYLES</a>
+					</li>
+					<li class=" tsd-kind-variable">
 						<a href="modules.html#graphxr_api_version" class="tsd-kind-icon">GRAPHXR_<wbr>API_<wbr>VERSION</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#minimum_graphxr_version" class="tsd-kind-icon">MINIMUM_<wbr>GRAPHXR_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#node_styles" class="tsd-kind-icon">NODE_<wbr>STYLES</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#defaultlinkoptions" class="tsd-kind-icon">default<wbr>Link<wbr>Options</a>
