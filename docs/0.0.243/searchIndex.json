@@ -1,0 +1,278 @@
+[
+  {
+    "description": "For each Node in the aggregateTo Category, collect the value of the targetProperty from every neighbor of that\nNode connected by an Edge of the aggregateAlong Relationship into an array. Then, run a\nmapping function formula on the array and store the resulting value in a property of the Node.",
+    "name": "aggregate"
+  },
+  {
+    "description": "Given one of x, y, or z, find the center of that dimension\nand align all Nodes to that center on that dimension only.",
+    "name": "alignBy"
+  },
+  {
+    "description": "Sets the positions of Nodes. Optionally animate the position.\nIf tween provided with the LayoutResult, use it.\nOverride the default tweens returned by (for example) line() and circle() by providing TweenLayoutOverrides.\nIf tween is undefined, set all the positions immediately",
+    "name": "applyLayout"
+  },
+  {
+    "description": "",
+    "name": "areGraphSnapshotsEqual"
+  },
+  {
+    "description": "Compute Betweenness score for each node in the graph",
+    "name": "betweenness"
+  },
+  {
+    "description": "All the Nodes spread on a circle",
+    "name": "circle"
+  },
+  {
+    "description": "Compute Closeness score for each node in the graph",
+    "name": "closeness"
+  },
+  {
+    "description": "Merge input nodes into new or existing collection nodes",
+    "name": "collectNodes"
+  },
+  {
+    "description": "Applies a color scale to all nodes by a certain property.",
+    "name": "colorNodesByProperty"
+  },
+  {
+    "description": "Returns -1 if left < right, 0 if left == right, and 1 if left > right\nFlips the sign if ascending = false.",
+    "name": "comparePropertyValues"
+  },
+  {
+    "description": "Find all Connected Components in the graph",
+    "name": "connectedComponent"
+  },
+  {
+    "description": "All the Nodes spread on a cube.",
+    "name": "cube"
+  },
+  {
+    "description": "Returns all shortest paths from the source to target node.",
+    "name": "dijkstra"
+  },
+  {
+    "description": "Useful for forcing the UI to update after updating graph data.",
+    "name": "dispatchGraphDataUpdate"
+  },
+  {
+    "description": "Equally space Nodes on one of the x, y, or z axes while keeping the other two\ndimensions constant. Optionally bin the Nodes by a property value. Optionally\nscale the spacing by a \"spread\" factor (the higher the spread, the farther apart).",
+    "name": "distributionBy"
+  },
+  {
+    "description": "Returns a function which, given a Graph, returns all edges of a specific relationship",
+    "name": "edgesByRelationship"
+  },
+  {
+    "description": "Ego reveals hierarchal data by arranging nodes in a tree, where a node's depth in\nthe tree is equal to the length of the shortest path to the node. The tree projects\nlinearly in one direction, or radially around the root[s].",
+    "name": "ego"
+  },
+  {
+    "description": "Queries Neo4j for nodes connected to the source nodes and then adds them to the graph.",
+    "name": "expandNodes"
+  },
+  {
+    "description": "For each collection node in the input, uncollect all nodes",
+    "name": "explodeCollections"
+  },
+  {
+    "description": "Extract creates a new Category and Relationship linked to the input Nodes, based on the input prop options.",
+    "name": "extract"
+  },
+  {
+    "description": "Fly the camera to the center of a slice of nodes, optionally with an offset, optionally with a custom duration or tween function",
+    "name": "flyToCenter"
+  },
+  {
+    "description": "Fly the camera to a position, optionally with an offset, optionally with a custom duration or tween function",
+    "name": "flyToPosition"
+  },
+  {
+    "description": "Returns the default Node Color of a Category",
+    "name": "getCategoryColor"
+  },
+  {
+    "description": "Returns a Graph which allows mutation of the Graph visualization.",
+    "name": "getLayoutGraph"
+  },
+  {
+    "description": "Returns a Generator which resolves to the LegacyLayoutGraph. The Generator emits whenever the window global GraphXR owned GraphObservable object emits.\nIt's useful in Grove to create cells which react to graph data changes.",
+    "name": "getObservableLayoutGraph"
+  },
+  {
+    "description": "",
+    "name": "getRuntime"
+  },
+  {
+    "description": "Returns a THREE.Group in which one can add new THREE objects to the 3d space",
+    "name": "getScene"
+  },
+  {
+    "description": "Equally space Nodes on the x-axis, y-axis, z=0.",
+    "name": "grid"
+  },
+  {
+    "description": "A decorator for the circle, cube, grid, line, and spiral layouts.\nYou can construct your own layout by providing a layout function.",
+    "name": "layout"
+  },
+  {
+    "description": "Equally space Nodes on the x-axis, y=0, z=0.",
+    "name": "line"
+  },
+  {
+    "description": "For each Node A in the source category, create an edge to a Node B in the target category,\nwhere A.sourceProperty === B.targetProperty",
+    "name": "link"
+  },
+  {
+    "description": "Find all Louvain components in the graph",
+    "name": "louvain"
+  },
+  {
+    "description": "",
+    "name": "makeCollectionNode"
+  },
+  {
+    "description": "",
+    "name": "makeColor"
+  },
+  {
+    "description": "Creates an Edge object but does not add it to the graph space",
+    "name": "makeEdge"
+  },
+  {
+    "description": "Returns a Graph useful for in-memory Graph operations",
+    "name": "makeGraph"
+  },
+  {
+    "description": "Creates a Node object but does not add it to the graph space",
+    "name": "makeNode"
+  },
+  {
+    "description": "Creates a random NodeId",
+    "name": "makeNodeId"
+  },
+  {
+    "description": "Creates a Position (x,y,z)",
+    "name": "makePosition"
+  },
+  {
+    "description": "Creates a random Position (x,y,z)",
+    "name": "makeRandomPosition"
+  },
+  {
+    "description": "For each Node in the category, or each Edge in the relationship, map the mappedProperties using\nformula provided in the options. Optionally create a new name for the property.",
+    "name": "map"
+  },
+  {
+    "description": "Combine Nodes or Edges which have equivalent key properties.",
+    "name": "merge"
+  },
+  {
+    "description": "Find matching Nodes with given category and properties, and update their properties.\nIf there are no matches, create a new Node in the given category",
+    "name": "mergeNodes"
+  },
+  {
+    "description": "Execute a Neo4j query. Results appear in the graph workspace",
+    "name": "neo4j"
+  },
+  {
+    "description": "Returns a function which, given a Node, returns true if the Node is in a certain category",
+    "name": "nodesByCategory"
+  },
+  {
+    "description": "Convert an async API event, like 'change', into an Iterator.\nUseful in Grove to define variables which react to data changes",
+    "name": "observe"
+  },
+  {
+    "description": "",
+    "name": "on"
+  },
+  {
+    "description": "Compute PageRank for the entire graph",
+    "name": "pageRank"
+  },
+  {
+    "description": "Map the x, y, and/or z dimensions to the range [-2, 2] by applying a linear scale\nto all or a subset of the domain of a property.",
+    "name": "parametric"
+  },
+  {
+    "description": "Set each node to a random point.",
+    "name": "random"
+  },
+  {
+    "description": "Given one of the x, y, or z dimensions, find the center point of all the Nodes\nand rotate all Nodes around the axis passing through the center point\nand lying on the dimension given.",
+    "name": "rotate"
+  },
+  {
+    "description": "Scale the distance of each node from a computed center by a constant factor.",
+    "name": "scale"
+  },
+  {
+    "description": "Enable or disable auto-show image on Nodes.",
+    "name": "setAutoShowImage"
+  },
+  {
+    "description": "Enable or disable rotating of the graph scene",
+    "name": "setCameraRotating"
+  },
+  {
+    "description": "Set the properties which will display as captions for the given category.",
+    "name": "setCategoryCaptionProperties"
+  },
+  {
+    "description": "Set the property which will affect the size of the nodes in the category.",
+    "name": "setCategorySizeProperty"
+  },
+  {
+    "description": "Set the edge scale",
+    "name": "setEdgeScale"
+  },
+  {
+    "description": "Hide panels and controls if fullscreen is enabled",
+    "name": "setFullscreen"
+  },
+  {
+    "description": "Sets the axes options. Parametric layout automatically sets these.",
+    "name": "setParametricAxesOptions"
+  },
+  {
+    "description": "An optional function which enables test runners to inject a mock Window object into the API. Most of the time, you won't call this function because the API runtime object defaults to `window`.",
+    "name": "setRuntime"
+  },
+  {
+    "description": "Add a constant vector to the position of each node.",
+    "name": "shift"
+  },
+  {
+    "description": "Given incomingRelationship, centerCategory, and outgoingRelationship, Shortcut finds all unique paths\nfrom node A to node C, traveling first along incomingRelationship, passing through centerCategory, and\ntravelling lastly through outgoingRelationship to arrive at C. Once it finds all unique paths from A to C,\nShortcut creates an edge A -> C with properties aggregated from the center nodes.",
+    "name": "shortcut"
+  },
+  {
+    "description": "Returns a promise that resolves after the given amount of milliseconds.",
+    "name": "sleep"
+  },
+  {
+    "description": "Returns a function which compares two property values.",
+    "name": "sortByProperty"
+  },
+  {
+    "description": "All the Nodes spread on a spiral",
+    "name": "spiral"
+  },
+  {
+    "description": "Find all Strongly Connected Components in the graph",
+    "name": "stronglyConnectedComponent"
+  },
+  {
+    "description": "Highlight the root Node and all connected Edges and neighboring Nodes up to a specified depth.",
+    "name": "traceNeighbors"
+  },
+  {
+    "description": "",
+    "name": "triggerForceLayout"
+  },
+  {
+    "description": "Remove the input nodes from their collection nodes",
+    "name": "uncollectNodes"
+  }
+]
